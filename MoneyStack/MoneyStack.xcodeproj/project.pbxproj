@@ -1,0 +1,1078 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		401FDFE872B4DACD0CB67F94 /* Pods_MoneyStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */; };
+		485395C77EE137AEBBD6DF1D /* Pods_MoneyStack_UAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */; };
+		9880712921749DD000B11705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
+		9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
+		9880712D21749DD000B11705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
+		9880713621749DFE00B11705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
+		9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
+		9880713A21749DFE00B11705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
+		9880714221749E5400B11705 /* Info_UAT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714021749E5400B11705 /* Info_UAT.plist */; };
+		9880714421749E5400B11705 /* Info_UAT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714021749E5400B11705 /* Info_UAT.plist */; };
+		9880714521749E5400B11705 /* Info_DEV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714121749E5400B11705 /* Info_DEV.plist */; };
+		9880714621749E5400B11705 /* Info_DEV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714121749E5400B11705 /* Info_DEV.plist */; };
+		9880714A21749EAF00B11705 /* MSBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880714921749EAF00B11705 /* MSBaseVC.swift */; };
+		9880714B21749EAF00B11705 /* MSBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880714921749EAF00B11705 /* MSBaseVC.swift */; };
+		9880714C21749EAF00B11705 /* MSBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880714921749EAF00B11705 /* MSBaseVC.swift */; };
+		9880715721749EAF00B11705 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
+		9880715821749EAF00B11705 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
+		9880715921749EAF00B11705 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
+		9880716B21749EAF00B11705 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
+		9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
+		9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
+		9880716F21749EAF00B11705 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
+		9880717021749EAF00B11705 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
+		9880717121749EAF00B11705 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
+		988071752174B9A700B11705 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071732174B9A700B11705 /* MSFirstVC.xib */; };
+		988071762174B9A700B11705 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071732174B9A700B11705 /* MSFirstVC.xib */; };
+		988071772174B9A700B11705 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071732174B9A700B11705 /* MSFirstVC.xib */; };
+		988071782174B9A700B11705 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071742174B9A700B11705 /* MSFirstVC.swift */; };
+		988071792174B9A700B11705 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071742174B9A700B11705 /* MSFirstVC.swift */; };
+		9880717A2174B9A700B11705 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071742174B9A700B11705 /* MSFirstVC.swift */; };
+		988071802174DEE200B11705 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880717F2174DEE200B11705 /* MSConstant.swift */; };
+		988071812174DEE200B11705 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880717F2174DEE200B11705 /* MSConstant.swift */; };
+		988071822174DEE200B11705 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880717F2174DEE200B11705 /* MSConstant.swift */; };
+		988071892174EAF700B11705 /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = 988071882174EAF700B11705 /* OpenSans */; };
+		9880718A2174EAF700B11705 /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = 988071882174EAF700B11705 /* OpenSans */; };
+		9880718B2174EAF700B11705 /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = 988071882174EAF700B11705 /* OpenSans */; };
+		9880718E2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */; };
+		9880718F2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */; };
+		988071902174EC0900B11705 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */; };
+		988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */; };
+		988071922174EC0900B11705 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */; };
+		988071932174EC0900B11705 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */; };
+		988071A22174ED2D00B11705 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071942174ED2D00B11705 /* UIWindowExtension.swift */; };
+		988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071942174ED2D00B11705 /* UIWindowExtension.swift */; };
+		988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071942174ED2D00B11705 /* UIWindowExtension.swift */; };
+		988071A52174ED2D00B11705 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071952174ED2D00B11705 /* NSObject.swift */; };
+		988071A62174ED2D00B11705 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071952174ED2D00B11705 /* NSObject.swift */; };
+		988071A72174ED2D00B11705 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071952174ED2D00B11705 /* NSObject.swift */; };
+		988071A82174ED2D00B11705 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071962174ED2D00B11705 /* String.swift */; };
+		988071A92174ED2D00B11705 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071962174ED2D00B11705 /* String.swift */; };
+		988071AA2174ED2D00B11705 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071962174ED2D00B11705 /* String.swift */; };
+		988071AB2174ED2D00B11705 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071972174ED2D00B11705 /* UIViewController.swift */; };
+		988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071972174ED2D00B11705 /* UIViewController.swift */; };
+		988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071972174ED2D00B11705 /* UIViewController.swift */; };
+		988071AE2174ED2D00B11705 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071982174ED2D00B11705 /* UIView.swift */; };
+		988071AF2174ED2D00B11705 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071982174ED2D00B11705 /* UIView.swift */; };
+		988071B02174ED2D00B11705 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071982174ED2D00B11705 /* UIView.swift */; };
+		988071B12174ED2D00B11705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071992174ED2D00B11705 /* UIColor.swift */; };
+		988071B22174ED2E00B11705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071992174ED2D00B11705 /* UIColor.swift */; };
+		988071B32174ED2E00B11705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071992174ED2D00B11705 /* UIColor.swift */; };
+		988071B42174ED2E00B11705 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719A2174ED2D00B11705 /* UIApplication.swift */; };
+		988071B52174ED2E00B11705 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719A2174ED2D00B11705 /* UIApplication.swift */; };
+		988071B62174ED2E00B11705 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719A2174ED2D00B11705 /* UIApplication.swift */; };
+		988071B72174ED2E00B11705 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
+		988071B82174ED2E00B11705 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
+		988071B92174ED2E00B11705 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
+		988071BA2174ED2E00B11705 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719C2174ED2D00B11705 /* UITableViewExtension.swift */; };
+		988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719C2174ED2D00B11705 /* UITableViewExtension.swift */; };
+		988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719C2174ED2D00B11705 /* UITableViewExtension.swift */; };
+		988071BD2174ED2E00B11705 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719D2174ED2D00B11705 /* UIImage.swift */; };
+		988071BE2174ED2E00B11705 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719D2174ED2D00B11705 /* UIImage.swift */; };
+		988071BF2174ED2E00B11705 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719D2174ED2D00B11705 /* UIImage.swift */; };
+		988071C02174ED2E00B11705 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719E2174ED2D00B11705 /* UITextField.swift */; };
+		988071C12174ED2E00B11705 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719E2174ED2D00B11705 /* UITextField.swift */; };
+		988071C22174ED2E00B11705 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719E2174ED2D00B11705 /* UITextField.swift */; };
+		988071C32174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */; };
+		988071C42174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */; };
+		988071C52174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */; };
+		988071C62174ED2E00B11705 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A02174ED2D00B11705 /* UIViewExtensions.swift */; };
+		988071C72174ED2E00B11705 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A02174ED2D00B11705 /* UIViewExtensions.swift */; };
+		988071C82174ED2E00B11705 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A02174ED2D00B11705 /* UIViewExtensions.swift */; };
+		988071C92174ED2E00B11705 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A12174ED2D00B11705 /* UIImageView.swift */; };
+		988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A12174ED2D00B11705 /* UIImageView.swift */; };
+		988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A12174ED2D00B11705 /* UIImageView.swift */; };
+		988071CD217508C500B11705 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
+		988071CE217508C500B11705 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
+		988071CF217508C500B11705 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
+		988071D1217508D600B11705 /* MSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D0217508D600B11705 /* MSUtils.swift */; };
+		988071D2217508D600B11705 /* MSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D0217508D600B11705 /* MSUtils.swift */; };
+		988071D3217508D600B11705 /* MSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D0217508D600B11705 /* MSUtils.swift */; };
+		988071D5217508ED00B11705 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
+		988071D6217508ED00B11705 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
+		988071D7217508ED00B11705 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
+		988071D9217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
+		988071DA217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
+		988071DB217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
+		988071DD2175194500B11705 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegateExtension.swift */; };
+		988071DE2175194500B11705 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegateExtension.swift */; };
+		988071DF2175194500B11705 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegateExtension.swift */; };
+		988071E121751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
+		988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
+		988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
+		988071E7217522E000B11705 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E5217522E000B11705 /* MSRegisterVC.swift */; };
+		988071E8217522E000B11705 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E5217522E000B11705 /* MSRegisterVC.swift */; };
+		988071E9217522E000B11705 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E5217522E000B11705 /* MSRegisterVC.swift */; };
+		988071EA217522E000B11705 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071E6217522E000B11705 /* MSRegisterVC.xib */; };
+		988071EB217522E000B11705 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071E6217522E000B11705 /* MSRegisterVC.xib */; };
+		988071EC217522E000B11705 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071E6217522E000B11705 /* MSRegisterVC.xib */; };
+		989FB7E921752CC4002E15CE /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */; };
+		989FB7EA21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */; };
+		989FB7EB21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */; };
+		989FB7EC21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */; };
+		989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */; };
+		989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */; };
+		98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
+		98FE70DE217499F1007164EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
+		98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
+		EA1E0F695BC8805418073BA7 /* Pods_MoneyStack_DEV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_UAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FEA4E866B17198A19B89FC /* Pods-MoneyStack DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.debug.xcconfig"; sourceTree = "<group>"; };
+		795AAA9AA14128DC13506621 /* Pods-MoneyStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack.debug.xcconfig"; sourceTree = "<group>"; };
+		96758BE11DE1BF87FB196226 /* Pods-MoneyStack UAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.release.xcconfig"; sourceTree = "<group>"; };
+		9880713121749DD000B11705 /* MoneyStack UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoneyStack UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9880713E21749DFE00B11705 /* MoneyStack DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoneyStack DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9880714021749E5400B11705 /* Info_UAT.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_UAT.plist; sourceTree = "<group>"; };
+		9880714121749E5400B11705 /* Info_DEV.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_DEV.plist; sourceTree = "<group>"; };
+		9880714921749EAF00B11705 /* MSBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseVC.swift; sourceTree = "<group>"; };
+		9880715621749EAF00B11705 /* MSBaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseVM.swift; sourceTree = "<group>"; };
+		9880716A21749EAF00B11705 /* MSNavigationVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSNavigationVM.swift; sourceTree = "<group>"; };
+		9880716E21749EAF00B11705 /* MSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConfig.swift; sourceTree = "<group>"; };
+		988071732174B9A700B11705 /* MSFirstVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstVC.xib; sourceTree = "<group>"; };
+		988071742174B9A700B11705 /* MSFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstVC.swift; sourceTree = "<group>"; };
+		9880717F2174DEE200B11705 /* MSConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConstant.swift; sourceTree = "<group>"; };
+		988071882174EAF700B11705 /* OpenSans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenSans; sourceTree = "<group>"; };
+		9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLeftMenuCell.swift; sourceTree = "<group>"; };
+		9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLeftMenuCell.xib; sourceTree = "<group>"; };
+		988071942174ED2D00B11705 /* UIWindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
+		988071952174ED2D00B11705 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		988071962174ED2D00B11705 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		988071972174ED2D00B11705 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		988071982174ED2D00B11705 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		988071992174ED2D00B11705 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9880719A2174ED2D00B11705 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		9880719B2174ED2D00B11705 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		9880719C2174ED2D00B11705 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		9880719D2174ED2D00B11705 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		9880719E2174ED2D00B11705 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		988071A02174ED2D00B11705 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		988071A12174ED2D00B11705 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		988071CC217508C500B11705 /* MSBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseService.swift; sourceTree = "<group>"; };
+		988071D0217508D600B11705 /* MSUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSUtils.swift; sourceTree = "<group>"; };
+		988071D4217508ED00B11705 /* MSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSModel.swift; sourceTree = "<group>"; };
+		988071D8217508FD00B11705 /* MSFirstVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFirstVM.swift; sourceTree = "<group>"; };
+		988071DC2175194500B11705 /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		988071E021751BBF00B11705 /* MSBaseVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseVCExtension.swift; sourceTree = "<group>"; };
+		988071E5217522E000B11705 /* MSRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
+		988071E6217522E000B11705 /* MSRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSRegisterVC.xib; sourceTree = "<group>"; };
+		989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLeftMenuVC.swift; sourceTree = "<group>"; };
+		989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLeftMenuVC.xib; sourceTree = "<group>"; };
+		98FE70D3217499ED007164EC /* MoneyStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FE70D6217499ED007164EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98FE70DD217499F1007164EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98FE70E0217499F1007164EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98FE70E2217499F1007164EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2E55C0CD54175673DB36C6 /* Pods-MoneyStack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack.release.xcconfig"; sourceTree = "<group>"; };
+		DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.debug.xcconfig"; sourceTree = "<group>"; };
+		E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_DEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
+		E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9880712A21749DD000B11705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485395C77EE137AEBBD6DF1D /* Pods_MoneyStack_UAT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9880713721749DFE00B11705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1E0F695BC8805418073BA7 /* Pods_MoneyStack_DEV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FE70D0217499ED007164EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401FDFE872B4DACD0CB67F94 /* Pods_MoneyStack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64E873FE6346BFE1011656A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				795AAA9AA14128DC13506621 /* Pods-MoneyStack.debug.xcconfig */,
+				9A2E55C0CD54175673DB36C6 /* Pods-MoneyStack.release.xcconfig */,
+				69FEA4E866B17198A19B89FC /* Pods-MoneyStack DEV.debug.xcconfig */,
+				E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */,
+				DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */,
+				96758BE11DE1BF87FB196226 /* Pods-MoneyStack UAT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9880714821749EAF00B11705 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				989FB7EF21753170002E15CE /* LeftMenu */,
+				9880714921749EAF00B11705 /* MSBaseVC.swift */,
+				9880715621749EAF00B11705 /* MSBaseVM.swift */,
+				9880716A21749EAF00B11705 /* MSNavigationVM.swift */,
+				988071E021751BBF00B11705 /* MSBaseVCExtension.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		9880714D21749EAF00B11705 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				9880717F2174DEE200B11705 /* MSConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		9880714E21749EAF00B11705 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				988071D0217508D600B11705 /* MSUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9880714F21749EAF00B11705 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				988071872174EAD600B11705 /* Font */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		9880715021749EAF00B11705 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				988071D4217508ED00B11705 /* MSModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9880715121749EAF00B11705 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9880719B2174ED2D00B11705 /* Collection.swift */,
+				988071952174ED2D00B11705 /* NSObject.swift */,
+				988071962174ED2D00B11705 /* String.swift */,
+				9880719A2174ED2D00B11705 /* UIApplication.swift */,
+				988071992174ED2D00B11705 /* UIColor.swift */,
+				9880719D2174ED2D00B11705 /* UIImage.swift */,
+				988071A12174ED2D00B11705 /* UIImageView.swift */,
+				9880719C2174ED2D00B11705 /* UITableViewExtension.swift */,
+				9880719E2174ED2D00B11705 /* UITextField.swift */,
+				988071982174ED2D00B11705 /* UIView.swift */,
+				988071972174ED2D00B11705 /* UIViewController.swift */,
+				9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */,
+				988071A02174ED2D00B11705 /* UIViewExtensions.swift */,
+				988071942174ED2D00B11705 /* UIWindowExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9880715221749EAF00B11705 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9880716E21749EAF00B11705 /* MSConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9880715321749EAF00B11705 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				988071CC217508C500B11705 /* MSBaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9880715421749EAF00B11705 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */,
+				9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9880715521749EAF00B11705 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				988071E4217522AB00B11705 /* Register */,
+				988071722174B97A00B11705 /* First */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		988071722174B97A00B11705 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				988071742174B9A700B11705 /* MSFirstVC.swift */,
+				988071732174B9A700B11705 /* MSFirstVC.xib */,
+				988071D8217508FD00B11705 /* MSFirstVM.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		988071872174EAD600B11705 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				988071882174EAF700B11705 /* OpenSans */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		988071E4217522AB00B11705 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				988071E5217522E000B11705 /* MSRegisterVC.swift */,
+				988071E6217522E000B11705 /* MSRegisterVC.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		989FB7EF21753170002E15CE /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */,
+				989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */,
+			);
+			path = LeftMenu;
+			sourceTree = "<group>";
+		};
+		98FE70CA217499ED007164EC = {
+			isa = PBXGroup;
+			children = (
+				98FE70D5217499ED007164EC /* MoneyStack */,
+				98FE70D4217499ED007164EC /* Products */,
+				64E873FE6346BFE1011656A1 /* Pods */,
+				A289E3BB5A811F6929675BE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98FE70D4217499ED007164EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98FE70D3217499ED007164EC /* MoneyStack.app */,
+				9880713121749DD000B11705 /* MoneyStack UAT.app */,
+				9880713E21749DFE00B11705 /* MoneyStack DEV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98FE70D5217499ED007164EC /* MoneyStack */ = {
+			isa = PBXGroup;
+			children = (
+				9880714821749EAF00B11705 /* BaseView */,
+				9880715521749EAF00B11705 /* View */,
+				9880715021749EAF00B11705 /* Model */,
+				9880715421749EAF00B11705 /* Common */,
+				9880715321749EAF00B11705 /* Service */,
+				9880715221749EAF00B11705 /* Config */,
+				9880715121749EAF00B11705 /* Extension */,
+				9880714F21749EAF00B11705 /* Vendor */,
+				9880714E21749EAF00B11705 /* Utils */,
+				9880714D21749EAF00B11705 /* Constant */,
+				98FE70D6217499ED007164EC /* AppDelegate.swift */,
+				988071DC2175194500B11705 /* AppDelegateExtension.swift */,
+				98FE70DD217499F1007164EC /* Assets.xcassets */,
+				98FE70DF217499F1007164EC /* LaunchScreen.storyboard */,
+				98FE70E2217499F1007164EC /* Info.plist */,
+				9880714121749E5400B11705 /* Info_DEV.plist */,
+				9880714021749E5400B11705 /* Info_UAT.plist */,
+			);
+			path = MoneyStack;
+			sourceTree = "<group>";
+		};
+		A289E3BB5A811F6929675BE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */,
+				E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */,
+				4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9880712621749DD000B11705 /* MoneyStack UAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9880712E21749DD000B11705 /* Build configuration list for PBXNativeTarget "MoneyStack UAT" */;
+			buildPhases = (
+				F1E2D2FCA5E6F546000931A9 /* [CP] Check Pods Manifest.lock */,
+				9880712721749DD000B11705 /* Sources */,
+				9880712A21749DD000B11705 /* Frameworks */,
+				9880712B21749DD000B11705 /* Resources */,
+				B280772770227AD8D492B83C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MoneyStack UAT";
+			productName = MoneyStack;
+			productReference = 9880713121749DD000B11705 /* MoneyStack UAT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9880713321749DFE00B11705 /* MoneyStack DEV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9880713B21749DFE00B11705 /* Build configuration list for PBXNativeTarget "MoneyStack DEV" */;
+			buildPhases = (
+				5BE60C97AFC419012131EAB3 /* [CP] Check Pods Manifest.lock */,
+				9880713421749DFE00B11705 /* Sources */,
+				9880713721749DFE00B11705 /* Frameworks */,
+				9880713821749DFE00B11705 /* Resources */,
+				9B6B7701FD0A5ED8B083AB3D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MoneyStack DEV";
+			productName = MoneyStack;
+			productReference = 9880713E21749DFE00B11705 /* MoneyStack DEV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98FE70D2217499ED007164EC /* MoneyStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FE70E5217499F1007164EC /* Build configuration list for PBXNativeTarget "MoneyStack" */;
+			buildPhases = (
+				005155C73300CDF629147DD9 /* [CP] Check Pods Manifest.lock */,
+				98FE70CF217499ED007164EC /* Sources */,
+				98FE70D0217499ED007164EC /* Frameworks */,
+				98FE70D1217499ED007164EC /* Resources */,
+				3562C9584C6AD73EFDB765D8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyStack;
+			productName = MoneyStack;
+			productReference = 98FE70D3217499ED007164EC /* MoneyStack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98FE70CB217499ED007164EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = MoneyStack;
+				TargetAttributes = {
+					98FE70D2217499ED007164EC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 98FE70CE217499ED007164EC /* Build configuration list for PBXProject "MoneyStack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98FE70CA217499ED007164EC;
+			productRefGroup = 98FE70D4217499ED007164EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98FE70D2217499ED007164EC /* MoneyStack */,
+				9880712621749DD000B11705 /* MoneyStack UAT */,
+				9880713321749DFE00B11705 /* MoneyStack DEV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9880712B21749DD000B11705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */,
+				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
+				989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
+				9880714621749E5400B11705 /* Info_DEV.plist in Resources */,
+				988071922174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				9880718A2174EAF700B11705 /* OpenSans in Resources */,
+				988071EB217522E000B11705 /* MSRegisterVC.xib in Resources */,
+				988071762174B9A700B11705 /* MSFirstVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9880713821749DFE00B11705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */,
+				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
+				989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
+				9880714421749E5400B11705 /* Info_UAT.plist in Resources */,
+				988071932174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				9880718B2174EAF700B11705 /* OpenSans in Resources */,
+				988071EC217522E000B11705 /* MSRegisterVC.xib in Resources */,
+				988071772174B9A700B11705 /* MSFirstVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FE70D1217499ED007164EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */,
+				988071892174EAF700B11705 /* OpenSans in Resources */,
+				988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
+				9880714521749E5400B11705 /* Info_DEV.plist in Resources */,
+				9880714221749E5400B11705 /* Info_UAT.plist in Resources */,
+				988071752174B9A700B11705 /* MSFirstVC.xib in Resources */,
+				989FB7EC21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
+				988071EA217522E000B11705 /* MSRegisterVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		005155C73300CDF629147DD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyStack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3562C9584C6AD73EFDB765D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE60C97AFC419012131EAB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyStack DEV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6B7701FD0A5ED8B083AB3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B280772770227AD8D492B83C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E2D2FCA5E6F546000931A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyStack UAT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9880712721749DD000B11705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988071C72174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
+				988071B52174ED2E00B11705 /* UIApplication.swift in Sources */,
+				9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
+				988071B82174ED2E00B11705 /* Collection.swift in Sources */,
+				988071A62174ED2D00B11705 /* NSObject.swift in Sources */,
+				988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
+				988071DE2175194500B11705 /* AppDelegateExtension.swift in Sources */,
+				988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
+				988071C42174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
+				988071812174DEE200B11705 /* MSConstant.swift in Sources */,
+				988071B22174ED2E00B11705 /* UIColor.swift in Sources */,
+				9880712921749DD000B11705 /* AppDelegate.swift in Sources */,
+				9880717021749EAF00B11705 /* MSConfig.swift in Sources */,
+				988071A92174ED2D00B11705 /* String.swift in Sources */,
+				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
+				988071E8217522E000B11705 /* MSRegisterVC.swift in Sources */,
+				989FB7EA21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
+				988071C12174ED2E00B11705 /* UITextField.swift in Sources */,
+				9880714B21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				988071AF2174ED2D00B11705 /* UIView.swift in Sources */,
+				988071D6217508ED00B11705 /* MSModel.swift in Sources */,
+				9880718F2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
+				988071CE217508C500B11705 /* MSBaseService.swift in Sources */,
+				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */,
+				988071D2217508D600B11705 /* MSUtils.swift in Sources */,
+				988071BE2174ED2E00B11705 /* UIImage.swift in Sources */,
+				9880715821749EAF00B11705 /* MSBaseVM.swift in Sources */,
+				988071792174B9A700B11705 /* MSFirstVC.swift in Sources */,
+				988071DA217508FD00B11705 /* MSFirstVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9880713421749DFE00B11705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988071C82174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
+				988071B62174ED2E00B11705 /* UIApplication.swift in Sources */,
+				9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
+				988071B92174ED2E00B11705 /* Collection.swift in Sources */,
+				988071A72174ED2D00B11705 /* NSObject.swift in Sources */,
+				988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
+				988071DF2175194500B11705 /* AppDelegateExtension.swift in Sources */,
+				988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
+				988071C52174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
+				988071822174DEE200B11705 /* MSConstant.swift in Sources */,
+				988071B32174ED2E00B11705 /* UIColor.swift in Sources */,
+				9880713621749DFE00B11705 /* AppDelegate.swift in Sources */,
+				9880717121749EAF00B11705 /* MSConfig.swift in Sources */,
+				988071AA2174ED2D00B11705 /* String.swift in Sources */,
+				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
+				988071E9217522E000B11705 /* MSRegisterVC.swift in Sources */,
+				989FB7EB21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
+				988071C22174ED2E00B11705 /* UITextField.swift in Sources */,
+				9880714C21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				988071B02174ED2D00B11705 /* UIView.swift in Sources */,
+				988071D7217508ED00B11705 /* MSModel.swift in Sources */,
+				988071902174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
+				988071CF217508C500B11705 /* MSBaseService.swift in Sources */,
+				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */,
+				988071D3217508D600B11705 /* MSUtils.swift in Sources */,
+				988071BF2174ED2E00B11705 /* UIImage.swift in Sources */,
+				9880715921749EAF00B11705 /* MSBaseVM.swift in Sources */,
+				9880717A2174B9A700B11705 /* MSFirstVC.swift in Sources */,
+				988071DB217508FD00B11705 /* MSFirstVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FE70CF217499ED007164EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988071C62174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
+				988071B42174ED2E00B11705 /* UIApplication.swift in Sources */,
+				9880716B21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
+				988071B72174ED2E00B11705 /* Collection.swift in Sources */,
+				988071A52174ED2D00B11705 /* NSObject.swift in Sources */,
+				988071A22174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
+				988071DD2175194500B11705 /* AppDelegateExtension.swift in Sources */,
+				988071E121751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
+				988071C32174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
+				988071802174DEE200B11705 /* MSConstant.swift in Sources */,
+				988071B12174ED2D00B11705 /* UIColor.swift in Sources */,
+				98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */,
+				9880716F21749EAF00B11705 /* MSConfig.swift in Sources */,
+				988071A82174ED2D00B11705 /* String.swift in Sources */,
+				988071AB2174ED2D00B11705 /* UIViewController.swift in Sources */,
+				988071E7217522E000B11705 /* MSRegisterVC.swift in Sources */,
+				989FB7E921752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
+				988071C02174ED2E00B11705 /* UITextField.swift in Sources */,
+				9880714A21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				988071AE2174ED2D00B11705 /* UIView.swift in Sources */,
+				988071D5217508ED00B11705 /* MSModel.swift in Sources */,
+				9880718E2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
+				988071CD217508C500B11705 /* MSBaseService.swift in Sources */,
+				988071BA2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				988071C92174ED2E00B11705 /* UIImageView.swift in Sources */,
+				988071D1217508D600B11705 /* MSUtils.swift in Sources */,
+				988071BD2174ED2E00B11705 /* UIImage.swift in Sources */,
+				9880715721749EAF00B11705 /* MSBaseVM.swift in Sources */,
+				988071782174B9A700B11705 /* MSFirstVC.swift in Sources */,
+				988071D9217508FD00B11705 /* MSFirstVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98FE70DF217499F1007164EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FE70E0217499F1007164EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9880712F21749DD000B11705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MoneyStack/Info_UAT.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneystack.uat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9880713021749DD000B11705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96758BE11DE1BF87FB196226 /* Pods-MoneyStack UAT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MoneyStack/Info_UAT.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneystack.uat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9880713C21749DFE00B11705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69FEA4E866B17198A19B89FC /* Pods-MoneyStack DEV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MoneyStack/Info_DEV.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneystack.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9880713D21749DFE00B11705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MoneyStack/Info_DEV.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneystack.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		98FE70E3217499F1007164EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98FE70E4217499F1007164EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98FE70E6217499F1007164EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795AAA9AA14128DC13506621 /* Pods-MoneyStack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MoneyStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneystack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		98FE70E7217499F1007164EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2E55C0CD54175673DB36C6 /* Pods-MoneyStack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MoneyStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneystack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9880712E21749DD000B11705 /* Build configuration list for PBXNativeTarget "MoneyStack UAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9880712F21749DD000B11705 /* Debug */,
+				9880713021749DD000B11705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9880713B21749DFE00B11705 /* Build configuration list for PBXNativeTarget "MoneyStack DEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9880713C21749DFE00B11705 /* Debug */,
+				9880713D21749DFE00B11705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FE70CE217499ED007164EC /* Build configuration list for PBXProject "MoneyStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FE70E3217499F1007164EC /* Debug */,
+				98FE70E4217499F1007164EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FE70E5217499F1007164EC /* Build configuration list for PBXNativeTarget "MoneyStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FE70E6217499F1007164EC /* Debug */,
+				98FE70E7217499F1007164EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98FE70CB217499ED007164EC /* Project object */;
+}

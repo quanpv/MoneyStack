@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+
+def usedpod
+pod 'Alamofire'
+end
+
+target 'MoneyStack' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MoneyStack
+  usedpod
+end
+
+target 'MoneyStack DEV' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MoneyStack DEV
+  usedpod
+end
+
+target 'MoneyStack UAT' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MoneyStack UAT
+  usedpod
+end
