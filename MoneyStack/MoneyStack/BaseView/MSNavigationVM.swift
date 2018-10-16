@@ -16,9 +16,6 @@ protocol MSNavigationVMProtocol {
 }
 
 class MSNavigationVM: MSBaseVM {
-    func openFirst() {
-        self.ownerView?.openView(MSFirstVC(nibName: "MSFirstVC", bundle: nil) , animated: true)
-    }
     func closeCurrent() {
         self.ownerView?.selfClose(animated: true)
     }

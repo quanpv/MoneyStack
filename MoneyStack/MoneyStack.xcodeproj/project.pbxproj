@@ -103,9 +103,9 @@
 		988071D9217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
 		988071DA217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
 		988071DB217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
-		988071DD2175194500B11705 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegateExtension.swift */; };
-		988071DE2175194500B11705 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegateExtension.swift */; };
-		988071DF2175194500B11705 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegateExtension.swift */; };
+		988071DD2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */; };
+		988071DE2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */; };
+		988071DF2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */; };
 		988071E121751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
 		988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
 		988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
@@ -164,7 +164,7 @@
 		988071D0217508D600B11705 /* MSUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSUtils.swift; sourceTree = "<group>"; };
 		988071D4217508ED00B11705 /* MSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSModel.swift; sourceTree = "<group>"; };
 		988071D8217508FD00B11705 /* MSFirstVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFirstVM.swift; sourceTree = "<group>"; };
-		988071DC2175194500B11705 /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate_LeftMenu.swift; sourceTree = "<group>"; };
 		988071E021751BBF00B11705 /* MSBaseVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseVCExtension.swift; sourceTree = "<group>"; };
 		988071E5217522E000B11705 /* MSRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
 		988071E6217522E000B11705 /* MSRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSRegisterVC.xib; sourceTree = "<group>"; };
@@ -228,9 +228,9 @@
 			children = (
 				989FB7EF21753170002E15CE /* LeftMenu */,
 				9880714921749EAF00B11705 /* MSBaseVC.swift */,
+				988071E021751BBF00B11705 /* MSBaseVCExtension.swift */,
 				9880715621749EAF00B11705 /* MSBaseVM.swift */,
 				9880716A21749EAF00B11705 /* MSNavigationVM.swift */,
-				988071E021751BBF00B11705 /* MSBaseVCExtension.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -392,7 +392,7 @@
 				9880714E21749EAF00B11705 /* Utils */,
 				9880714D21749EAF00B11705 /* Constant */,
 				98FE70D6217499ED007164EC /* AppDelegate.swift */,
-				988071DC2175194500B11705 /* AppDelegateExtension.swift */,
+				988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */,
 				98FE70DD217499F1007164EC /* Assets.xcassets */,
 				98FE70DF217499F1007164EC /* LaunchScreen.storyboard */,
 				98FE70E2217499F1007164EC /* Info.plist */,
@@ -678,7 +678,7 @@
 				988071B82174ED2E00B11705 /* Collection.swift in Sources */,
 				988071A62174ED2D00B11705 /* NSObject.swift in Sources */,
 				988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
-				988071DE2175194500B11705 /* AppDelegateExtension.swift in Sources */,
+				988071DE2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
 				988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
 				988071C42174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				988071812174DEE200B11705 /* MSConstant.swift in Sources */,
@@ -715,7 +715,7 @@
 				988071B92174ED2E00B11705 /* Collection.swift in Sources */,
 				988071A72174ED2D00B11705 /* NSObject.swift in Sources */,
 				988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
-				988071DF2175194500B11705 /* AppDelegateExtension.swift in Sources */,
+				988071DF2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
 				988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
 				988071C52174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				988071822174DEE200B11705 /* MSConstant.swift in Sources */,
@@ -752,7 +752,7 @@
 				988071B72174ED2E00B11705 /* Collection.swift in Sources */,
 				988071A52174ED2D00B11705 /* NSObject.swift in Sources */,
 				988071A22174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
-				988071DD2175194500B11705 /* AppDelegateExtension.swift in Sources */,
+				988071DD2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
 				988071E121751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
 				988071C32174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				988071802174DEE200B11705 /* MSConstant.swift in Sources */,

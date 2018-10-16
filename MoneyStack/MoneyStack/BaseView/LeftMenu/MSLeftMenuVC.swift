@@ -9,7 +9,10 @@
 import UIKit
 
 class MSLeftMenuVC: UITableViewController {
-        
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,13 +28,17 @@ class MSLeftMenuVC: UITableViewController {
             
             table.separatorStyle = .singleLine
             table.separatorInset = UIEdgeInsets.zero
-            table.backgroundColor = UIColor(hex: "c9c9c9")
             table.tableFooterView = UIView()
             
             table.reloadData()
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,13 +50,17 @@ class MSLeftMenuVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return AppDelegate.leftMenuContent.count
+        return MSDelegate.leftMenuItemAndRootView.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MSLeftMenuCell.className, for: indexPath) as! MSLeftMenuCell
-        cell.textLabel?.text = AppDelegate.leftMenuContent[indexPath.row].keys.first
+        cell.textLabel?.text = MSDelegate.leftMenuItemAndRootView[indexPath.row].keys.first
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        MSDelegate.onLeftMenuClicked(index: indexPath.row)
     }
 
     /*

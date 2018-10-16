@@ -18,3 +18,7 @@ struct UIScreenConstant {
 struct MSBaseVCConstant {
     static let HEIGHT_TOP_MENU_BAR: CGFloat = 50
 }
+
+struct MSLeftMenuVCConstant {
+    static let SHOWING_WIDTH_RATIO: CGFloat = 0.4 // 40% of Screen width
+}
