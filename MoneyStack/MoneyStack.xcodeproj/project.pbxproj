@@ -124,6 +124,12 @@
 		98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
 		98FE70DE217499F1007164EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
 		98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
+		E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
+		E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
+		E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
+		E63601302176E24E00E4F898 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E636012C2176E24E00E4F898 /* MSLoginVC.xib */; };
+		E63601312176E24E00E4F898 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E636012C2176E24E00E4F898 /* MSLoginVC.xib */; };
+		E63601322176E24E00E4F898 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E636012C2176E24E00E4F898 /* MSLoginVC.xib */; };
 		EA1E0F695BC8805418073BA7 /* Pods_MoneyStack_DEV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +185,8 @@
 		DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_DEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
+		E636012B2176E24E00E4F898 /* MSLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
+		E636012C2176E24E00E4F898 /* MSLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
 		E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -316,6 +324,7 @@
 		9880715521749EAF00B11705 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E636012A2176E20200E4F898 /* Login */,
 				988071E4217522AB00B11705 /* Register */,
 				988071722174B97A00B11705 /* First */,
 			);
@@ -410,6 +419,15 @@
 				4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E636012A2176E20200E4F898 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E636012B2176E24E00E4F898 /* MSLoginVC.swift */,
+				E636012C2176E24E00E4F898 /* MSLoginVC.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +534,7 @@
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
 				989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				9880714621749E5400B11705 /* Info_DEV.plist in Resources */,
+				E63601312176E24E00E4F898 /* MSLoginVC.xib in Resources */,
 				988071922174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
 				9880718A2174EAF700B11705 /* OpenSans in Resources */,
 				988071EB217522E000B11705 /* MSRegisterVC.xib in Resources */,
@@ -531,6 +550,7 @@
 				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
 				989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				9880714421749E5400B11705 /* Info_UAT.plist in Resources */,
+				E63601322176E24E00E4F898 /* MSLoginVC.xib in Resources */,
 				988071932174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
 				988071EC217522E000B11705 /* MSRegisterVC.xib in Resources */,
@@ -544,6 +564,7 @@
 			files = (
 				98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */,
 				988071892174EAF700B11705 /* OpenSans in Resources */,
+				E63601302176E24E00E4F898 /* MSLoginVC.xib in Resources */,
 				988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
 				9880714521749E5400B11705 /* Info_DEV.plist in Resources */,
@@ -696,6 +717,7 @@
 				9880718F2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CE217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
 				988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D2217508D600B11705 /* MSUtils.swift in Sources */,
 				988071BE2174ED2E00B11705 /* UIImage.swift in Sources */,
@@ -733,6 +755,7 @@
 				988071902174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CF217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
 				988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D3217508D600B11705 /* MSUtils.swift in Sources */,
 				988071BF2174ED2E00B11705 /* UIImage.swift in Sources */,
@@ -770,6 +793,7 @@
 				9880718E2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CD217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BA2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
 				988071C92174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D1217508D600B11705 /* MSUtils.swift in Sources */,
 				988071BD2174ED2E00B11705 /* UIImage.swift in Sources */,
