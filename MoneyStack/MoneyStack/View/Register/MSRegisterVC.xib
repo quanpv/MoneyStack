@@ -25,10 +25,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSRegisterVC" customModule="MoneyStack" customModuleProvider="target">
             <connections>
                 <outlet property="imageBack" destination="Zlv-Ry-2Pu" id="5sB-Cl-zTE"/>
-                <outlet property="textfieldBirthday" destination="lM9-sJ-EOY" id="haS-do-7ES"/>
+                <outlet property="imageQuestionMark" destination="7TI-7c-Mc1" id="F5q-qr-Zjb"/>
+                <outlet property="labelBirthday" destination="3cO-mH-RWs" id="9FC-UA-rGR"/>
+                <outlet property="labelGender" destination="pus-hp-P3k" id="SQX-dL-LLK"/>
                 <outlet property="textfieldEmail" destination="oKS-nN-Nff" id="I1r-3S-OJS"/>
                 <outlet property="textfieldFullName" destination="Ejm-eE-jA4" id="8l0-IK-rMN"/>
-                <outlet property="textfieldGender" destination="hic-D7-q54" id="q0a-sN-zep"/>
                 <outlet property="textfieldJob" destination="QET-4o-18F" id="reL-6g-l2X"/>
                 <outlet property="textfieldKindOfUser" destination="byL-p7-6Fa" id="VYD-OE-wwZ"/>
                 <outlet property="textfieldPassword" destination="f9z-Ik-eug" id="dUs-dQ-GmM"/>
@@ -82,7 +83,7 @@
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="namePhonePad" returnKeyType="continue" textContentType="name"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ngày sinh" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-sJ-EOY" userLabel="textfieldBirthDay">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-sJ-EOY" userLabel="textfieldBirthDay">
                             <rect key="frame" x="-2" y="98" width="187.5" height="45"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -92,7 +93,7 @@
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Giới tính" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hic-D7-q54" userLabel="textfieldGender">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hic-D7-q54" userLabel="textfieldGender">
                             <rect key="frame" x="189.5" y="98" width="187.5" height="45"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -102,6 +103,18 @@
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới Tính" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pus-hp-P3k">
+                            <rect key="frame" x="187.5" y="98" width="187.5" height="45"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                            <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gk-o6-lbY">
+                            <rect key="frame" x="187.5" y="98" width="187.5" height="45"/>
+                            <connections>
+                                <action selector="actionPressGenderPicker:" destination="-1" eventType="touchUpInside" id="6lg-2Y-nn0"/>
+                            </connections>
+                        </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Tên đầy đủ của bạn?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ejm-eE-jA4" userLabel="textfieldFullName">
                             <rect key="frame" x="-2" y="147" width="379" height="45"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -152,49 +165,78 @@
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TI-7c-Mc1">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TI-7c-Mc1">
                             <rect key="frame" x="335.5" y="252" width="30" height="30"/>
-                            <color key="backgroundColor" red="0.0" green="0.6470588235294118" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="CsZ-vs-Ly7"/>
                                 <constraint firstAttribute="height" constant="30" id="ya2-pG-uoH"/>
                             </constraints>
+                            <state key="normal" image="ic_QuestionMark"/>
                             <connections>
                                 <action selector="actionPressQuestionMark:" destination="-1" eventType="touchUpInside" id="Doi-Iz-69Q"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày Sinh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-mH-RWs">
+                            <rect key="frame" x="0.0" y="98" width="187.5" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-0h-qpF">
+                            <rect key="frame" x="-2" y="97.5" width="188" height="45"/>
+                            <connections>
+                                <action selector="actionPressBirthday:" destination="-1" eventType="touchUpInside" id="j1m-gl-itx"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="h4t-0h-qpF" firstAttribute="width" secondItem="lM9-sJ-EOY" secondAttribute="width" id="1TK-LD-whA"/>
                         <constraint firstItem="lM9-sJ-EOY" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="4QV-uJ-6hi"/>
+                        <constraint firstItem="3cO-mH-RWs" firstAttribute="centerY" secondItem="lM9-sJ-EOY" secondAttribute="centerY" id="7WS-ww-Vic"/>
                         <constraint firstItem="QET-4o-18F" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="7hM-9C-QX2"/>
+                        <constraint firstItem="8Gk-o6-lbY" firstAttribute="width" secondItem="pus-hp-P3k" secondAttribute="width" id="8Zs-ZW-77n"/>
+                        <constraint firstItem="h4t-0h-qpF" firstAttribute="height" secondItem="lM9-sJ-EOY" secondAttribute="height" id="Aa0-0y-3af"/>
                         <constraint firstItem="oKS-nN-Nff" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="BJz-B8-W2f"/>
+                        <constraint firstItem="8Gk-o6-lbY" firstAttribute="trailing" secondItem="pus-hp-P3k" secondAttribute="trailing" id="BcC-nz-V1n"/>
                         <constraint firstItem="byL-p7-6Fa" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="D3w-hE-e4j"/>
+                        <constraint firstItem="h4t-0h-qpF" firstAttribute="centerY" secondItem="lM9-sJ-EOY" secondAttribute="centerY" id="DTJ-5T-7by"/>
                         <constraint firstItem="Qkq-Us-vbU" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="EzY-di-IVy"/>
                         <constraint firstItem="hic-D7-q54" firstAttribute="top" secondItem="Ud5-4R-Iih" secondAttribute="bottom" constant="4" id="F7P-oV-9bc"/>
+                        <constraint firstItem="8Gk-o6-lbY" firstAttribute="height" secondItem="pus-hp-P3k" secondAttribute="height" id="Gyg-Vv-2rY"/>
                         <constraint firstItem="Qkq-Us-vbU" firstAttribute="top" secondItem="f9z-Ik-eug" secondAttribute="bottom" constant="4" id="Hbw-DX-Kfq"/>
+                        <constraint firstItem="3cO-mH-RWs" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" id="L7u-bL-cVy"/>
                         <constraint firstItem="f9z-Ik-eug" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="LcX-Jf-vlh"/>
+                        <constraint firstItem="h4t-0h-qpF" firstAttribute="centerX" secondItem="lM9-sJ-EOY" secondAttribute="centerX" id="NwK-Zn-lPj"/>
+                        <constraint firstAttribute="trailing" secondItem="pus-hp-P3k" secondAttribute="trailing" id="Oa4-Jv-vhi"/>
                         <constraint firstItem="byL-p7-6Fa" firstAttribute="top" secondItem="QET-4o-18F" secondAttribute="bottom" constant="4" id="PHs-3x-8Hw"/>
                         <constraint firstAttribute="trailing" secondItem="byL-p7-6Fa" secondAttribute="trailing" constant="-2" id="PYh-Gj-5Nj"/>
                         <constraint firstItem="7TI-7c-Mc1" firstAttribute="centerY" secondItem="byL-p7-6Fa" secondAttribute="centerY" id="QZL-oX-naZ"/>
                         <constraint firstItem="lM9-sJ-EOY" firstAttribute="width" secondItem="Ekw-sm-aBX" secondAttribute="width" multiplier="1:2" id="RhF-Eb-MbK"/>
                         <constraint firstAttribute="trailing" secondItem="oKS-nN-Nff" secondAttribute="trailing" constant="-2" id="XZG-nM-maL"/>
+                        <constraint firstItem="pus-hp-P3k" firstAttribute="centerY" secondItem="hic-D7-q54" secondAttribute="centerY" id="YL8-ny-bVD"/>
                         <constraint firstItem="QET-4o-18F" firstAttribute="top" secondItem="Ejm-eE-jA4" secondAttribute="bottom" constant="4" id="YOl-S1-hOc"/>
                         <constraint firstAttribute="trailing" secondItem="Ud5-4R-Iih" secondAttribute="trailing" constant="-2" id="abj-lA-Llb"/>
                         <constraint firstAttribute="trailing" secondItem="Ejm-eE-jA4" secondAttribute="trailing" constant="-2" id="b7d-dS-Bvl"/>
                         <constraint firstAttribute="trailing" secondItem="QET-4o-18F" secondAttribute="trailing" constant="-2" id="cIo-yb-UdY"/>
                         <constraint firstItem="Ud5-4R-Iih" firstAttribute="top" secondItem="oKS-nN-Nff" secondAttribute="bottom" constant="4" id="cW1-06-my1"/>
                         <constraint firstItem="Ud5-4R-Iih" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="dtJ-bl-CAU"/>
+                        <constraint firstItem="3cO-mH-RWs" firstAttribute="width" secondItem="lM9-sJ-EOY" secondAttribute="width" id="eW3-jf-C8V"/>
                         <constraint firstItem="7TI-7c-Mc1" firstAttribute="trailing" secondItem="byL-p7-6Fa" secondAttribute="trailing" constant="-11.5" id="g1O-1X-2Xv"/>
                         <constraint firstItem="Ejm-eE-jA4" firstAttribute="top" secondItem="lM9-sJ-EOY" secondAttribute="bottom" constant="4" id="gl8-hU-srm"/>
                         <constraint firstAttribute="height" constant="388" id="gr2-G8-G15"/>
+                        <constraint firstItem="pus-hp-P3k" firstAttribute="height" secondItem="hic-D7-q54" secondAttribute="height" id="iM8-NE-geH"/>
                         <constraint firstAttribute="trailing" secondItem="Qkq-Us-vbU" secondAttribute="trailing" constant="-2" id="pmC-Vp-gTS"/>
                         <constraint firstItem="lM9-sJ-EOY" firstAttribute="top" secondItem="Ud5-4R-Iih" secondAttribute="bottom" constant="4" id="qmr-HI-olu"/>
                         <constraint firstItem="hic-D7-q54" firstAttribute="width" secondItem="Ekw-sm-aBX" secondAttribute="width" multiplier="1:2" id="s31-Fd-gqP"/>
                         <constraint firstItem="Ejm-eE-jA4" firstAttribute="leading" secondItem="Ekw-sm-aBX" secondAttribute="leading" constant="-2" id="tKW-xu-R0f"/>
                         <constraint firstAttribute="trailing" secondItem="hic-D7-q54" secondAttribute="trailing" constant="-2" id="ty0-Cd-0io"/>
+                        <constraint firstItem="pus-hp-P3k" firstAttribute="width" secondItem="hic-D7-q54" secondAttribute="width" id="vLQ-55-KsZ"/>
                         <constraint firstAttribute="trailing" secondItem="f9z-Ik-eug" secondAttribute="trailing" constant="-2" id="vgJ-r9-TNY"/>
                         <constraint firstItem="oKS-nN-Nff" firstAttribute="top" secondItem="Ekw-sm-aBX" secondAttribute="top" id="xgY-xZ-V1Z"/>
+                        <constraint firstItem="8Gk-o6-lbY" firstAttribute="centerY" secondItem="pus-hp-P3k" secondAttribute="centerY" id="yEY-vb-5k8"/>
+                        <constraint firstItem="3cO-mH-RWs" firstAttribute="height" secondItem="lM9-sJ-EOY" secondAttribute="height" id="ygk-QR-LnS"/>
                         <constraint firstItem="f9z-Ik-eug" firstAttribute="top" secondItem="byL-p7-6Fa" secondAttribute="bottom" constant="4" id="zF1-qW-sSZ"/>
                     </constraints>
                 </view>
@@ -286,6 +328,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_back" width="578" height="980"/>
+        <image name="ic_QuestionMark" width="256" height="256"/>
+        <image name="ic_back" width="39" height="63"/>
     </resources>
 </document>
