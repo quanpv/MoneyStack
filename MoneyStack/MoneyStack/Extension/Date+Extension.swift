@@ -15,8 +15,9 @@ extension Date{
         formatter.dateFormat = "yyyy/MM/dd HH:mm"
         formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
-        let calculatedDate = formatter.date(from: "\(year)/\(month)/\(day)")
-        return calculatedDate!
+        let calculated = formatter.date(from: "\(year)/\(month)/\(day)")
+        
+        return calculated!
     }
     
     func getAllAboutDate() -> (day:Int, month: Int, year: Int){

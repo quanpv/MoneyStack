@@ -17,17 +17,22 @@ class MSRegisterVC: MSBaseVC {
     @IBOutlet weak var textfieldKindOfUser: UITextField!
     @IBOutlet weak var textfieldPassword: UITextField!
     @IBOutlet weak var textfieldRepeatPassword: UITextField!
-    @IBOutlet weak var labelBirthday: UILabel!
     
+    @IBOutlet weak var labelBirthday: UILabel!
+    @IBOutlet weak var labelKind: UILabel!
     @IBOutlet weak var labelGender: UILabel!
+    
     @IBOutlet weak var imageQuestionMark: UIButton!
     @IBOutlet weak var imageBack: UIImageView!
     
     private var pickerDataSource:[String] = ["Nam", "Nữ", "Gay", "Lesbian "]
+    private var pickerKindDataSource:[String] = ["Cá Nhân", "Gia Đình", "Nhóm"]
     
     let subview = UIView()
     let pickerview = UIPickerView()
     let datePicker = UIDatePicker()
+    
+    private var kindOfPicker:KindOfPicker = .None
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +42,11 @@ class MSRegisterVC: MSBaseVC {
         imageQuestionMark.tintColor = UIColor(hex: "#00A6FF")
         datePicker.addTarget(self, action: #selector(dateChanged), for: .valueChanged)
     }
-
+    
     @objc func dateChanged(sender: UIDatePicker){
         labelBirthday.text = "\(sender.date.getAllAboutDate().day)/\(sender.date.getAllAboutDate().month)/\(sender.date.getAllAboutDate().year)"
+        labelBirthday.textColor = UIColor.black
+        subview.removeFromSuperview()
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,6 +79,7 @@ class MSRegisterVC: MSBaseVC {
     }
     
     @IBAction func actionPressGenderPicker(_ sender: Any) {
+        kindOfPicker = .Gender
         pickerview.dataSource = self
         pickerview.delegate = self
         pickerview.showsSelectionIndicator = true
@@ -80,10 +88,32 @@ class MSRegisterVC: MSBaseVC {
     
     @IBAction func actionPressBirthday(_ sender: Any) {
         createSubview(datePicker)
-        datePicker.datePickerMode = .dateAndTime
-        datePicker.minimumDate = Date.calculateDate(day: 1, month: 1, year: 1900)
-        datePicker.maximumDate = Date.calculateDate(day: 31, month: 12, year: 2018)
+        datePicker.datePickerMode = .date
+        let gregorian: NSCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
+        let currentDate: NSDate = NSDate()
+        let components: NSDateComponents = NSDateComponents()
+        
+        components.year = -18
+        let minDate: NSDate = gregorian.date(byAdding: components as DateComponents, to: currentDate as Date, options: NSCalendar.Options(rawValue: 0))! as NSDate
+        
+        components.year = -150
+        let maxDate: NSDate = gregorian.date(byAdding: components as DateComponents, to: currentDate as Date, options: NSCalendar.Options(rawValue: 0))! as NSDate
+        
+        self.datePicker.minimumDate = minDate as Date
+        self.datePicker.maximumDate = maxDate as Date
+        
+        datePicker.maximumDate = maxDate as Date
+        datePicker.minimumDate = minDate as Date
     }
+    
+    @IBAction func actionPressKindOfUser(_ sender: Any) {
+        kindOfPicker = .KindOfUser
+        pickerview.dataSource = self
+        pickerview.delegate = self
+        pickerview.showsSelectionIndicator = true
+        createSubview(pickerview)
+    }
+    
 }
 
 //MARK: - Extension PickerView
@@ -93,17 +123,40 @@ extension MSRegisterVC:UIPickerViewDataSource, UIPickerViewDelegate{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerDataSource.count
+        switch kindOfPicker {
+        case .None:
+            return 0
+        case .Gender:
+            return pickerDataSource.count
+        case .KindOfUser:
+            return pickerKindDataSource.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerDataSource[row]
+        switch kindOfPicker {
+        case .None:
+            return ""
+        case .Gender:
+            return pickerDataSource[row]
+        case .KindOfUser:
+            return pickerKindDataSource[row]
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        labelGender.text = pickerDataSource[row]
-        labelGender.textColor = UIColor.black
+        switch kindOfPicker {
+        case .None:
+            break
+        case .Gender:
+            labelGender.text = pickerDataSource[row]
+            labelGender.textColor = UIColor.black
+        case .KindOfUser:
+            labelKind.text = pickerKindDataSource[row]
+            labelKind.textColor = UIColor.black
+        }
         subview.removeFromSuperview()
+        kindOfPicker = .None
     }
     
 }
