@@ -13,6 +13,11 @@ class MSUtils:NSObject{
         obj.layer.cornerRadius = radius
         obj.clipsToBounds = true
     }
+    
+    class func makeViewBorder(_ obj:UIView ,_ width:Int, _ color:CGColor){
+        obj.layer.borderWidth = 1
+        obj.layer.borderColor = color
+    }
 }
 
 
