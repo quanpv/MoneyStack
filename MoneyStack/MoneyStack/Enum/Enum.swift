@@ -8,12 +8,30 @@
 
 import Foundation
 
-class Enum:NSObject{
+class Enum: NSObject{
     
 }
 
-enum KindOfPicker:Int {
+enum KindOfPicker: Int {
     case None = 1,
     Gender,
     KindOfUser
+}
+
+enum TopBarPosition: Int {
+    case Left,
+    Middle, Right
+}
+
+enum LeftMenuItem: Int {
+    case Dashboard,
+    News,
+    Expense,
+    BalanceInfo,
+    Saving,
+    Plan,
+    Member,
+    Personalize,
+    Password,
+    Logout
 }

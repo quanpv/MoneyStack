@@ -16,18 +16,16 @@ class MSLeftMenuVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        view.backgroundColor = MSDelegate.config.mainColor
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         if let table = view as? UITableView {
-            table.register(UINib(nibName: MSLeftMenuCell.className, bundle: nil), forCellReuseIdentifier: MSLeftMenuCell.className)
+            table.registerCellNib(MSLeftMenuCell.self)
             table.delegate = self
             table.dataSource = self
             
             table.separatorStyle = .singleLine
             table.separatorInset = UIEdgeInsets.zero
+            table.separatorColor = MSDelegate.config.mainColor
             table.tableFooterView = UIView()
             
             table.reloadData()

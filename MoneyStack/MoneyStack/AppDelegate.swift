@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var windowLeftMenu: UIWindow?
     
     var leftMenuItemAndRootView: [[String:Any]] = [] // Used for LeftMenu Item and Contain RootView
+    
+    var config: MSConfig = MSConfig()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

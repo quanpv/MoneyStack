@@ -18,12 +18,32 @@ extension AppDelegate {
         createLeftMenuItem()
     }
     
+    /** enum LeftMenuItem: Int {
+        case Dashboard,
+        News,
+        Expense,
+        BalanceInfo,
+        Saving,
+        Plan,
+        Member,
+        Personalize,
+        Password,
+        Logout
+        }
+    */
     func createLeftMenuItem() {
-        leftMenuItemAndRootView = [
-            ["Item1": MSFirstVC(nibName: MSFirstVC.className, bundle: nil)],
-            ["Item2": MSFirstVC(nibName: MSFirstVC.className, bundle: nil)],
-            ["Item3": MSFirstVC(nibName: MSFirstVC.className, bundle: nil)]
-        ]
+        leftMenuItemAndRootView.append(contentsOf: [
+            ["Trang chủ": MSDashboardVC.loadFromNib()],
+            ["Tin tức": MSNewsVC.loadFromNib()],
+            ["Chi tiêu": MSExpenseVC.loadFromNib()],
+            ["Tiền": MSBalanceInfoVC.loadFromNib()],
+            ["Tiết kiệm": MSSavingVC.loadFromNib()],
+            ["Dự định": MSPlanVC.loadFromNib()],
+            ["Thành viên": MSMemberVC.loadFromNib()],
+            ["Cá nhân hoá": MSPersonalizeVC.loadFromNib()],
+            ["Mật khẩu": MSPasswordVC.loadFromNib()],
+            ["Đăng xuất": LeftMenuItem.Logout]
+        ])
     }
     
     func closeLeftMenu() {
@@ -62,7 +82,28 @@ extension AppDelegate {
     }
     
     func onLeftMenuClicked(index: Int) {
-        window?.rootViewController = leftMenuItemAndRootView[index].values.first as? UIViewController
+        let obj = leftMenuItemAndRootView[index].values.first
+        if let vc: MSBaseVC = obj as? MSBaseVC {
+            window?.rootViewController = vc
+        }
+        if let actionItem = obj as? LeftMenuItem {
+            switch actionItem {
+            case .Logout:
+                print("User click logout, move to Login screen")
+                logOut()
+                moveToLoginScreen()
+            default: break
+            }
+        }
         closeLeftMenu()
+    }
+    
+    func logOut() {
+        leftMenuItemAndRootView.removeAll()
+        createLeftMenuItem()
+    }
+    
+    func moveToLoginScreen() {
+        window?.rootViewController = MSLoginVC.loadFromNib()
     }
 }
