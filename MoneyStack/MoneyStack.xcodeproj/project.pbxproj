@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		401FDFE872B4DACD0CB67F94 /* Pods_MoneyStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */; };
 		485395C77EE137AEBBD6DF1D /* Pods_MoneyStack_UAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */; };
+		5B67096821787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */; };
+		5B67096921787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */; };
+		5B67096A21787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */; };
+		5B67096B21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */; };
+		5B67096C21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */; };
+		5B67096D21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */; };
+		5B67096F21799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */; };
+		5B67097021799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */; };
+		5B67097121799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */; };
+		5B6709742179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */; };
+		5B6709752179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */; };
+		5B6709762179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */; };
 		9880712921749DD000B11705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
 		9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
 		9880712D21749DD000B11705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
@@ -138,6 +150,10 @@
 
 /* Begin PBXFileReference section */
 		4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_UAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVC.swift; sourceTree = "<group>"; };
+		5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
+		5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
+		5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
 		69FEA4E866B17198A19B89FC /* Pods-MoneyStack DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.debug.xcconfig"; sourceTree = "<group>"; };
 		795AAA9AA14128DC13506621 /* Pods-MoneyStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack.debug.xcconfig"; sourceTree = "<group>"; };
 		96758BE11DE1BF87FB196226 /* Pods-MoneyStack UAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +238,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B67096521787E1C00CFF579 /* FirstBalanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */,
+				5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */,
+				5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */,
+			);
+			path = FirstBalanceInfo;
+			sourceTree = "<group>";
+		};
+		5B6709722179C78700CFF579 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
 		64E873FE6346BFE1011656A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +272,7 @@
 		9880714821749EAF00B11705 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				5B6709722179C78700CFF579 /* Label */,
 				989FB7EF21753170002E15CE /* LeftMenu */,
 				9880714921749EAF00B11705 /* MSBaseVC.swift */,
 				988071E021751BBF00B11705 /* MSBaseVCExtension.swift */,
@@ -329,6 +364,7 @@
 		9880715521749EAF00B11705 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B67096521787E1C00CFF579 /* FirstBalanceInfo */,
 				E636012A2176E20200E4F898 /* Login */,
 				988071E4217522AB00B11705 /* Register */,
 				988071722174B97A00B11705 /* First */,
@@ -535,6 +571,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B67096C21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */,
 				9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */,
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
 				989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
@@ -551,6 +588,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B67096D21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */,
 				9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */,
 				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
 				989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
@@ -573,6 +611,7 @@
 				988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
 				9880714521749E5400B11705 /* Info_DEV.plist in Resources */,
+				5B67096B21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */,
 				9880714221749E5400B11705 /* Info_UAT.plist in Resources */,
 				988071752174B9A700B11705 /* MSFirstVC.xib in Resources */,
 				989FB7EC21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
@@ -702,12 +741,14 @@
 				988071B52174ED2E00B11705 /* UIApplication.swift in Sources */,
 				9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
 				988071B82174ED2E00B11705 /* Collection.swift in Sources */,
+				5B67097021799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071A62174ED2D00B11705 /* NSObject.swift in Sources */,
 				988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
 				988071DE2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
 				988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
 				988071C42174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				988071812174DEE200B11705 /* MSConstant.swift in Sources */,
+				5B6709752179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */,
 				988071B22174ED2E00B11705 /* UIColor.swift in Sources */,
 				9880712921749DD000B11705 /* AppDelegate.swift in Sources */,
 				9880717021749EAF00B11705 /* MSConfig.swift in Sources */,
@@ -723,6 +764,7 @@
 				9880718F2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CE217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				5B67096921787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */,
 				E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
 				988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D2217508D600B11705 /* MSUtils.swift in Sources */,
@@ -741,12 +783,14 @@
 				988071B62174ED2E00B11705 /* UIApplication.swift in Sources */,
 				9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
 				988071B92174ED2E00B11705 /* Collection.swift in Sources */,
+				5B67097121799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071A72174ED2D00B11705 /* NSObject.swift in Sources */,
 				988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
 				988071DF2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
 				988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
 				988071C52174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				988071822174DEE200B11705 /* MSConstant.swift in Sources */,
+				5B6709762179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */,
 				988071B32174ED2E00B11705 /* UIColor.swift in Sources */,
 				9880713621749DFE00B11705 /* AppDelegate.swift in Sources */,
 				9880717121749EAF00B11705 /* MSConfig.swift in Sources */,
@@ -762,6 +806,7 @@
 				988071902174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CF217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				5B67096A21787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */,
 				E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
 				988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D3217508D600B11705 /* MSUtils.swift in Sources */,
@@ -780,12 +825,14 @@
 				988071B42174ED2E00B11705 /* UIApplication.swift in Sources */,
 				9880716B21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
 				988071B72174ED2E00B11705 /* Collection.swift in Sources */,
+				5B67096F21799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071A52174ED2D00B11705 /* NSObject.swift in Sources */,
 				988071A22174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
 				988071DD2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
 				988071E121751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
 				988071C32174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				988071802174DEE200B11705 /* MSConstant.swift in Sources */,
+				5B6709742179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */,
 				988071B12174ED2D00B11705 /* UIColor.swift in Sources */,
 				98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */,
 				9880716F21749EAF00B11705 /* MSConfig.swift in Sources */,
@@ -801,6 +848,7 @@
 				9880718E2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CD217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BA2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				5B67096821787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */,
 				E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
 				988071C92174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D1217508D600B11705 /* MSUtils.swift in Sources */,
