@@ -124,6 +124,12 @@
 		98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
 		98FE70DE217499F1007164EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
 		98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
+		E6127F46217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
+		E6127F47217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
+		E6127F48217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
+		E6127F49217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
+		E6127F4A217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
+		E6127F4B217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
 		E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
 		E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
 		E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
@@ -197,6 +203,8 @@
 		DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_DEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
+		E6127F44217989460045123D /* CustomDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogVC.swift; sourceTree = "<group>"; };
+		E6127F45217989460045123D /* CustomDialogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomDialogVC.xib; sourceTree = "<group>"; };
 		E636012B2176E24E00E4F898 /* MSLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
 		E636012C2176E24E00E4F898 /* MSLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
 		E636013321773CD900E4F898 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -332,6 +340,7 @@
 		9880715421749EAF00B11705 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E6127F3B217980900045123D /* ViewController */,
 				9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */,
 				9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */,
 			);
@@ -438,6 +447,15 @@
 				4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6127F3B217980900045123D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E6127F44217989460045123D /* CustomDialogVC.swift */,
+				E6127F45217989460045123D /* CustomDialogVC.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E636012A2176E20200E4F898 /* Login */ = {
@@ -568,6 +586,7 @@
 			files = (
 				9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */,
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
+				E6127F4A217989460045123D /* CustomDialogVC.xib in Resources */,
 				989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				9880714621749E5400B11705 /* Info_DEV.plist in Resources */,
 				E63601312176E24E00E4F898 /* MSLoginVC.xib in Resources */,
@@ -585,6 +604,7 @@
 			files = (
 				9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */,
 				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
+				E6127F4B217989460045123D /* CustomDialogVC.xib in Resources */,
 				989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				9880714421749E5400B11705 /* Info_UAT.plist in Resources */,
 				E63601322176E24E00E4F898 /* MSLoginVC.xib in Resources */,
@@ -603,6 +623,7 @@
 				98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */,
 				988071892174EAF700B11705 /* OpenSans in Resources */,
 				E63601302176E24E00E4F898 /* MSLoginVC.xib in Resources */,
+				E6127F49217989460045123D /* CustomDialogVC.xib in Resources */,
 				988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
 				9880714521749E5400B11705 /* Info_DEV.plist in Resources */,
@@ -747,6 +768,7 @@
 				9880712921749DD000B11705 /* AppDelegate.swift in Sources */,
 				9880717021749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071A92174ED2D00B11705 /* String.swift in Sources */,
+				E6127F47217989460045123D /* CustomDialogVC.swift in Sources */,
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071E8217522E000B11705 /* MSRegisterVC.swift in Sources */,
 				989FB7EA21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
@@ -788,6 +810,7 @@
 				9880713621749DFE00B11705 /* AppDelegate.swift in Sources */,
 				9880717121749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071AA2174ED2D00B11705 /* String.swift in Sources */,
+				E6127F48217989460045123D /* CustomDialogVC.swift in Sources */,
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071E9217522E000B11705 /* MSRegisterVC.swift in Sources */,
 				989FB7EB21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
@@ -829,6 +852,7 @@
 				98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */,
 				9880716F21749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071A82174ED2D00B11705 /* String.swift in Sources */,
+				E6127F46217989460045123D /* CustomDialogVC.swift in Sources */,
 				988071AB2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071E7217522E000B11705 /* MSRegisterVC.swift in Sources */,
 				989FB7E921752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
