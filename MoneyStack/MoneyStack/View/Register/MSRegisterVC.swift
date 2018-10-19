@@ -73,6 +73,15 @@ class MSRegisterVC: MSBaseVC {
     }
     
     @IBAction func actionPressRegister(_ sender: Any) {
+        let customDialog = CustomDialogVC(nibName: "CustomDialogVC", bundle: nil)
+        customDialog.providesPresentationContextTransitionStyle = true
+        customDialog.definesPresentationContext = true
+        customDialog.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        customDialog.delegate = self
+        self.present(customDialog, animated: true, completion: {
+            
+        })
     }
     
     @IBAction func actionPressQuestionMark(_ sender: Any) {
@@ -159,4 +168,15 @@ extension MSRegisterVC:UIPickerViewDataSource, UIPickerViewDelegate{
         kindOfPicker = .None
     }
     
+}
+
+extension MSRegisterVC:CustomDialogDelegate{
+    func okButtonPressed() {
+        print("1 con vịt xoè ra 2 cái cánh")
+
+    }
+
+    func cancelButtonPressed() {
+        print("Nó kêu rằng quác quác quác - quạc quạc quạc")
+    }
 }

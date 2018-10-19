@@ -187,6 +187,12 @@
 		98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
 		98FE70DE217499F1007164EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
 		98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
+		E6127F46217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
+		E6127F47217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
+		E6127F48217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
+		E6127F49217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
+		E6127F4A217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
+		E6127F4B217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
 		E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
 		E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
 		E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
@@ -199,6 +205,12 @@
 		E64625432178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
 		E64625442178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
 		E64625452178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
+		E646254921783C23004B3DFD /* MSForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E646254721783C23004B3DFD /* MSForgotPasswordVC.swift */; };
+		E646254A21783C23004B3DFD /* MSForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E646254721783C23004B3DFD /* MSForgotPasswordVC.swift */; };
+		E646254B21783C23004B3DFD /* MSForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E646254721783C23004B3DFD /* MSForgotPasswordVC.swift */; };
+		E646254C21783C23004B3DFD /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E646254821783C23004B3DFD /* MSForgotPasswordVC.xib */; };
+		E646254D21783C23004B3DFD /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E646254821783C23004B3DFD /* MSForgotPasswordVC.xib */; };
+		E646254E21783C23004B3DFD /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E646254821783C23004B3DFD /* MSForgotPasswordVC.xib */; };
 		EA1E0F695BC8805418073BA7 /* Pods_MoneyStack_DEV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */; };
 /* End PBXBuildFile section */
 
@@ -275,10 +287,14 @@
 		DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_DEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
+		E6127F44217989460045123D /* CustomDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogVC.swift; sourceTree = "<group>"; };
+		E6127F45217989460045123D /* CustomDialogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomDialogVC.xib; sourceTree = "<group>"; };
 		E636012B2176E24E00E4F898 /* MSLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
 		E636012C2176E24E00E4F898 /* MSLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
 		E636013321773CD900E4F898 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E64625422178348F004B3DFD /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		E646254721783C23004B3DFD /* MSForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSForgotPasswordVC.swift; sourceTree = "<group>"; };
+		E646254821783C23004B3DFD /* MSForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSForgotPasswordVC.xib; sourceTree = "<group>"; };
 		E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -412,6 +428,9 @@
 				98BE8724217A05E40075BD76 /* LeftMenuCell */,
 				98C5C86021798AE7005286D6 /* MSTopBarView.swift */,
 				98C5C8682179E888005286D6 /* MSButtonView.swift */,
+				E6127F3B217980900045123D /* ViewController */,
+				9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */,
+				9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -428,6 +447,7 @@
 				98BE8730217A34620075BD76 /* Member */,
 				98BE874C217A390E0075BD76 /* Personalize */,
 				98BE8731217A34720075BD76 /* Password */,
+				E646254621783AB3004B3DFD /* ForgotPassword */,
 				E636012A2176E20200E4F898 /* Login */,
 				988071E4217522AB00B11705 /* Register */,
 				988071722174B97A00B11705 /* First */,
@@ -469,96 +489,6 @@
 				989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */,
 			);
 			path = LeftMenu;
-			sourceTree = "<group>";
-		};
-		98BE8724217A05E40075BD76 /* LeftMenuCell */ = {
-			isa = PBXGroup;
-			children = (
-				9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */,
-				9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */,
-			);
-			path = LeftMenuCell;
-			sourceTree = "<group>";
-		};
-		98BE8725217A2D1A0075BD76 /* Expense */ = {
-			isa = PBXGroup;
-			children = (
-				98BE8726217A2D5A0075BD76 /* MSExpenseVC.swift */,
-				98BE8727217A2D5A0075BD76 /* MSExpenseVC.xib */,
-			);
-			path = Expense;
-			sourceTree = "<group>";
-		};
-		98BE872E217A34430075BD76 /* News */ = {
-			isa = PBXGroup;
-			children = (
-				98BE8733217A354B0075BD76 /* MSNewsVC.swift */,
-				98BE8734217A354B0075BD76 /* MSNewsVC.xib */,
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
-		98BE872F217A344A0075BD76 /* Saving */ = {
-			isa = PBXGroup;
-			children = (
-				98BE8744217A39050075BD76 /* MSSavingVC.swift */,
-				98BE8745217A39050075BD76 /* MSSavingVC.xib */,
-			);
-			path = Saving;
-			sourceTree = "<group>";
-		};
-		98BE8730217A34620075BD76 /* Member */ = {
-			isa = PBXGroup;
-			children = (
-				98BE8755217A3A270075BD76 /* MSMemberVC.swift */,
-				98BE8756217A3A270075BD76 /* MSMemberVC.xib */,
-			);
-			path = Member;
-			sourceTree = "<group>";
-		};
-		98BE8731217A34720075BD76 /* Password */ = {
-			isa = PBXGroup;
-			children = (
-				98BE875D217A3A3D0075BD76 /* MSPasswordVC.swift */,
-				98BE875E217A3A3D0075BD76 /* MSPasswordVC.xib */,
-			);
-			path = Password;
-			sourceTree = "<group>";
-		};
-		98BE8732217A34860075BD76 /* Balance */ = {
-			isa = PBXGroup;
-			children = (
-				98BE873C217A360E0075BD76 /* MSBalanceInfoVC.swift */,
-				98BE873D217A360E0075BD76 /* MSBalanceInfoVC.xib */,
-			);
-			path = Balance;
-			sourceTree = "<group>";
-		};
-		98BE874C217A390E0075BD76 /* Personalize */ = {
-			isa = PBXGroup;
-			children = (
-				98BE874D217A39E70075BD76 /* MSPersonalizeVC.swift */,
-				98BE874E217A39E70075BD76 /* MSPersonalizeVC.xib */,
-			);
-			path = Personalize;
-			sourceTree = "<group>";
-		};
-		98BE8765217A48840075BD76 /* Plan */ = {
-			isa = PBXGroup;
-			children = (
-				98BE8766217A48AE0075BD76 /* MSPlanVC.swift */,
-				98BE8767217A48AE0075BD76 /* MSPlanVC.xib */,
-			);
-			path = Plan;
-			sourceTree = "<group>";
-		};
-		98C5C85721798A4E005286D6 /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				98C5C85821798A7E005286D6 /* MSDashboardVC.swift */,
-				98C5C85921798A7E005286D6 /* MSDashboardVC.xib */,
-			);
-			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		98FE70CA217499ED007164EC = {
@@ -616,6 +546,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E6127F3B217980900045123D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E6127F44217989460045123D /* CustomDialogVC.swift */,
+				E6127F45217989460045123D /* CustomDialogVC.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		E636012A2176E20200E4F898 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +570,15 @@
 				E64625422178348F004B3DFD /* Enum.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		E646254621783AB3004B3DFD /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				E646254721783C23004B3DFD /* MSForgotPasswordVC.swift */,
+				E646254821783C23004B3DFD /* MSForgotPasswordVC.xib */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -738,11 +686,13 @@
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
 				98BE872C217A2D5A0075BD76 /* MSExpenseVC.xib in Resources */,
 				98BE8739217A354B0075BD76 /* MSNewsVC.xib in Resources */,
+				E6127F4A217989460045123D /* CustomDialogVC.xib in Resources */,
 				989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				98C5C85E21798A7E005286D6 /* MSDashboardVC.xib in Resources */,
 				9880714621749E5400B11705 /* Info_DEV.plist in Resources */,
 				E63601312176E24E00E4F898 /* MSLoginVC.xib in Resources */,
 				988071922174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				E646254D21783C23004B3DFD /* MSForgotPasswordVC.xib in Resources */,
 				9880718A2174EAF700B11705 /* OpenSans in Resources */,
 				98BE874A217A39050075BD76 /* MSSavingVC.xib in Resources */,
 				98BE8753217A39E70075BD76 /* MSPersonalizeVC.xib in Resources */,
@@ -763,11 +713,13 @@
 				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
 				98BE872D217A2D5A0075BD76 /* MSExpenseVC.xib in Resources */,
 				98BE873A217A354B0075BD76 /* MSNewsVC.xib in Resources */,
+				E6127F4B217989460045123D /* CustomDialogVC.xib in Resources */,
 				989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				98C5C85F21798A7E005286D6 /* MSDashboardVC.xib in Resources */,
 				9880714421749E5400B11705 /* Info_UAT.plist in Resources */,
 				E63601322176E24E00E4F898 /* MSLoginVC.xib in Resources */,
 				988071932174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				E646254E21783C23004B3DFD /* MSForgotPasswordVC.xib in Resources */,
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
 				98BE874B217A39050075BD76 /* MSSavingVC.xib in Resources */,
 				98BE8754217A39E70075BD76 /* MSPersonalizeVC.xib in Resources */,
@@ -787,6 +739,7 @@
 				98BE875A217A3A270075BD76 /* MSMemberVC.xib in Resources */,
 				988071892174EAF700B11705 /* OpenSans in Resources */,
 				E63601302176E24E00E4F898 /* MSLoginVC.xib in Resources */,
+				E6127F49217989460045123D /* CustomDialogVC.xib in Resources */,
 				988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
 				98BE8762217A3A3D0075BD76 /* MSPasswordVC.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
@@ -802,6 +755,7 @@
 				98BE8749217A39050075BD76 /* MSSavingVC.xib in Resources */,
 				988071EA217522E000B11705 /* MSRegisterVC.xib in Resources */,
 				98C5C85D21798A7E005286D6 /* MSDashboardVC.xib in Resources */,
+				E646254C21783C23004B3DFD /* MSForgotPasswordVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +879,7 @@
 			files = (
 				988071C72174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
 				988071B52174ED2E00B11705 /* UIApplication.swift in Sources */,
+				E646254A21783C23004B3DFD /* MSForgotPasswordVC.swift in Sources */,
 				9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
 				98BE8750217A39E70075BD76 /* MSPersonalizeVC.swift in Sources */,
 				988071B82174ED2E00B11705 /* Collection.swift in Sources */,
@@ -944,6 +899,7 @@
 				98C5C86A2179E888005286D6 /* MSButtonView.swift in Sources */,
 				9880717021749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071A92174ED2D00B11705 /* String.swift in Sources */,
+				E6127F47217989460045123D /* CustomDialogVC.swift in Sources */,
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				98BE8729217A2D5A0075BD76 /* MSExpenseVC.swift in Sources */,
 				988071E8217522E000B11705 /* MSRegisterVC.swift in Sources */,
@@ -977,6 +933,7 @@
 			files = (
 				988071C82174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
 				988071B62174ED2E00B11705 /* UIApplication.swift in Sources */,
+				E646254B21783C23004B3DFD /* MSForgotPasswordVC.swift in Sources */,
 				9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
 				98BE8751217A39E70075BD76 /* MSPersonalizeVC.swift in Sources */,
 				988071B92174ED2E00B11705 /* Collection.swift in Sources */,
@@ -996,6 +953,7 @@
 				98C5C86B2179E888005286D6 /* MSButtonView.swift in Sources */,
 				9880717121749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071AA2174ED2D00B11705 /* String.swift in Sources */,
+				E6127F48217989460045123D /* CustomDialogVC.swift in Sources */,
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				98BE872A217A2D5A0075BD76 /* MSExpenseVC.swift in Sources */,
 				988071E9217522E000B11705 /* MSRegisterVC.swift in Sources */,
@@ -1029,6 +987,7 @@
 			files = (
 				988071C62174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
 				988071B42174ED2E00B11705 /* UIApplication.swift in Sources */,
+				E646254921783C23004B3DFD /* MSForgotPasswordVC.swift in Sources */,
 				9880716B21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
 				98BE874F217A39E70075BD76 /* MSPersonalizeVC.swift in Sources */,
 				988071B72174ED2E00B11705 /* Collection.swift in Sources */,
@@ -1048,6 +1007,7 @@
 				98C5C8692179E888005286D6 /* MSButtonView.swift in Sources */,
 				9880716F21749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071A82174ED2D00B11705 /* String.swift in Sources */,
+				E6127F46217989460045123D /* CustomDialogVC.swift in Sources */,
 				988071AB2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				98BE8728217A2D5A0075BD76 /* MSExpenseVC.swift in Sources */,
 				988071E7217522E000B11705 /* MSRegisterVC.swift in Sources */,
