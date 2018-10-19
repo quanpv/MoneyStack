@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+class MSUtils:NSObject{
+    class func objectCorner(_ obj:UIView ,_ radius:CGFloat){
+        obj.layer.cornerRadius = radius
+        obj.clipsToBounds = true
+    }
+}
+
+
