@@ -133,6 +133,9 @@
 		E636013421773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
 		E636013521773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
 		E636013621773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
+		E64625432178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
+		E64625442178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
+		E64625452178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
 		EA1E0F695BC8805418073BA7 /* Pods_MoneyStack_DEV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */; };
 /* End PBXBuildFile section */
 
@@ -191,6 +194,7 @@
 		E636012B2176E24E00E4F898 /* MSLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
 		E636012C2176E24E00E4F898 /* MSLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
 		E636013321773CD900E4F898 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		E64625422178348F004B3DFD /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -395,6 +399,7 @@
 		98FE70D5217499ED007164EC /* MoneyStack */ = {
 			isa = PBXGroup;
 			children = (
+				E64625412178347A004B3DFD /* Enum */,
 				9880714821749EAF00B11705 /* BaseView */,
 				9880715521749EAF00B11705 /* View */,
 				9880715021749EAF00B11705 /* Model */,
@@ -433,6 +438,14 @@
 				E636012C2176E24E00E4F898 /* MSLoginVC.xib */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E64625412178347A004B3DFD /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				E64625422178348F004B3DFD /* Enum.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -724,6 +737,7 @@
 				988071CE217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
 				E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
+				E64625442178348F004B3DFD /* Enum.swift in Sources */,
 				988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D2217508D600B11705 /* MSUtils.swift in Sources */,
 				988071BE2174ED2E00B11705 /* UIImage.swift in Sources */,
@@ -763,6 +777,7 @@
 				988071CF217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
 				E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
+				E64625452178348F004B3DFD /* Enum.swift in Sources */,
 				988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D3217508D600B11705 /* MSUtils.swift in Sources */,
 				988071BF2174ED2E00B11705 /* UIImage.swift in Sources */,
@@ -802,6 +817,7 @@
 				988071CD217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BA2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
 				E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
+				E64625432178348F004B3DFD /* Enum.swift in Sources */,
 				988071C92174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D1217508D600B11705 /* MSUtils.swift in Sources */,
 				988071BD2174ED2E00B11705 /* UIImage.swift in Sources */,
