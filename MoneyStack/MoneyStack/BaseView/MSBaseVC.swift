@@ -10,6 +10,8 @@ import UIKit
 
 class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     
+    var topBarType: TopBarType = .None
+    
     private var viewHolder: MSStackOfView? // Root view will own this object
     
     var isStartedScreen: Bool {

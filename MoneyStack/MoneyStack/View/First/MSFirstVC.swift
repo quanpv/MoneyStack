@@ -10,6 +10,7 @@ import UIKit
 
 class MSFirstVC: MSBaseVC {
     @IBOutlet weak var buttonStart: UIButton!
+    @IBOutlet weak var buttonStartWidth: NSLayoutConstraint!
     
     var firstVM: MSFirstVM {
         return MSFirstVM(self)
@@ -22,8 +23,9 @@ class MSFirstVC: MSBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        buttonStart.setImage(UIImage(named: "ic_dollar_1")?.withRenderingMode(.alwaysTemplate), for: UIControlState.normal)
-        buttonStart.tintColor = UIColor.white
+        buttonStartWidth.constant = UIScreenConstant.WIDTH == 414 ? 200 : 150
+        buttonStart.layer.cornerRadius = (UIScreenConstant.WIDTH == 414 ? 200 : 150) / 10
+        buttonStart.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +43,8 @@ class MSFirstVC: MSBaseVC {
     }
     */
     @IBAction func actionClickStart(_ sender: Any) {
-        firstVM.processOpenRegister()
+//        firstVM.processOpenRegister()
+        self.openView(MSDashboardVC(nibName: MSDashboardVC.className, bundle: nil))
     }
     
 }

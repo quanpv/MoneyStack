@@ -36,7 +36,9 @@ extension MSBaseVC {
     }
     
     func onViewDidLoad() {
-        view.insertSubview(backGroundImage, at: 0)
+        if !isStartedScreen {
+            view.insertSubview(backGroundImage, at: 0)
+        }
         setupViewHolder()
     }
 }
@@ -75,3 +77,4 @@ class MSStackOfView {
         return stackOfViews.last!
     }
 }
+
