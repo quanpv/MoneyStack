@@ -1,5 +1,5 @@
 //
-//  CustomDialogVC.swift
+//  MSConfirmDialog.swift
 //  MoneyStack
 //
 //  Created by Squall on 10/19/18.
@@ -8,12 +8,7 @@
 
 import UIKit
 
-protocol CustomDialogDelegate:class {
-    func okButtonPressed()
-    func cancelButtonPressed()
-}
-
-class CustomDialogVC: UIViewController {
+class MSConfirmDialog: UIViewController {
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelMessage: UILabel!
@@ -29,12 +24,10 @@ class CustomDialogVC: UIViewController {
     @IBOutlet weak var cancelView: UIView!
     //---------------------------------------------
     
-    var delegate:CustomDialogDelegate?
+    var delegate:MSBaseDialogDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor.clear
-        
     }
     
     override func viewWillAppear(_ animated:Bool){

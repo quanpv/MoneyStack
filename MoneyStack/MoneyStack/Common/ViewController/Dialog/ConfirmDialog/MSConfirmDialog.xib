@@ -19,7 +19,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDialogVC" customModule="MoneyStack" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSConfirmDialog" customModule="MoneyStack" customModuleProvider="target">
             <connections>
                 <outlet property="bodyView" destination="CCN-mf-ckC" id="Mvf-Pd-xnV"/>
                 <outlet property="cancelView" destination="fkk-Ij-nHd" id="VRa-sb-bLD"/>

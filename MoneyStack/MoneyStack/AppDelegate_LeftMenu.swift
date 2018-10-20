@@ -92,6 +92,7 @@ extension AppDelegate {
                 print("User click logout, move to Login screen")
                 logOut()
                 moveToLoginScreen()
+            
             default: break
             }
         }
@@ -105,5 +106,9 @@ extension AppDelegate {
     
     func moveToLoginScreen() {
         window?.rootViewController = MSLoginVC.loadFromNib()
+    }
+    
+    func moveToRegisterScreen(){
+        window?.rootViewController = MSRegisterVC.loadFromNib()
     }
 }

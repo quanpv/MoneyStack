@@ -84,19 +84,16 @@
 		98A8D023217A762100765F69 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878B217A743A0075BD76 /* MSFirstVC.swift */; };
 		98A8D024217A762100765F69 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878D217A743A0075BD76 /* MSFirstVM.swift */; };
 		98A8D025217A762100765F69 /* MSForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8792217A743A0075BD76 /* MSForgotPasswordVC.swift */; };
-		98A8D026217A762100765F69 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8795217A743A0075BD76 /* MSLoginVC.swift */; };
 		98A8D027217A762100765F69 /* MSMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8788217A743A0075BD76 /* MSMemberVC.swift */; };
 		98A8D028217A762100765F69 /* MSNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878F217A743A0075BD76 /* MSNewsVC.swift */; };
 		98A8D029217A762100765F69 /* MSPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE877C217A74390075BD76 /* MSPasswordVC.swift */; };
 		98A8D02A217A762100765F69 /* MSPersonalizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879B217A743A0075BD76 /* MSPersonalizeVC.swift */; };
 		98A8D02B217A762100765F69 /* MSPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879E217A743A0075BD76 /* MSPlanVC.swift */; };
-		98A8D02C217A762100765F69 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE877F217A74390075BD76 /* MSRegisterVC.swift */; };
 		98A8D02D217A762100765F69 /* MSSavingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8782217A743A0075BD76 /* MSSavingVC.swift */; };
 		98A8D02E217A762100765F69 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
 		98A8D02F217A762100765F69 /* MSTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C86021798AE7005286D6 /* MSTopBarView.swift */; };
 		98A8D030217A762100765F69 /* MSButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C8682179E888005286D6 /* MSButtonView.swift */; };
 		98A8D031217A762100765F69 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8770217A740A0075BD76 /* MSLeftMenuCell.swift */; };
-		98A8D032217A762100765F69 /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
 		98A8D033217A762100765F69 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
 		98A8D034217A762100765F69 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
 		98A8D035217A762100765F69 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
@@ -134,11 +131,6 @@
 		98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877D217A74390075BD76 /* MSPasswordVC.xib */; };
 		98BE87AA217A743A0075BD76 /* MSPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877D217A74390075BD76 /* MSPasswordVC.xib */; };
 		98BE87AB217A743A0075BD76 /* MSPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877D217A74390075BD76 /* MSPasswordVC.xib */; };
-		98BE87AD217A743A0075BD76 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE877F217A74390075BD76 /* MSRegisterVC.swift */; };
-		98BE87AE217A743A0075BD76 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE877F217A74390075BD76 /* MSRegisterVC.swift */; };
-		98BE87AF217A743A0075BD76 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8780217A74390075BD76 /* MSRegisterVC.xib */; };
-		98BE87B0217A743A0075BD76 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8780217A74390075BD76 /* MSRegisterVC.xib */; };
-		98BE87B1217A743A0075BD76 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8780217A74390075BD76 /* MSRegisterVC.xib */; };
 		98BE87B3217A743A0075BD76 /* MSSavingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8782217A743A0075BD76 /* MSSavingVC.swift */; };
 		98BE87B4217A743A0075BD76 /* MSSavingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8782217A743A0075BD76 /* MSSavingVC.swift */; };
 		98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8783217A743A0075BD76 /* MSSavingVC.xib */; };
@@ -171,11 +163,6 @@
 		98BE87D6217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */; };
 		98BE87D7217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */; };
 		98BE87D8217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */; };
-		98BE87DA217A743A0075BD76 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8795217A743A0075BD76 /* MSLoginVC.swift */; };
-		98BE87DB217A743A0075BD76 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8795217A743A0075BD76 /* MSLoginVC.swift */; };
-		98BE87DC217A743A0075BD76 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8796217A743A0075BD76 /* MSLoginVC.xib */; };
-		98BE87DD217A743A0075BD76 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8796217A743A0075BD76 /* MSLoginVC.xib */; };
-		98BE87DE217A743A0075BD76 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8796217A743A0075BD76 /* MSLoginVC.xib */; };
 		98BE87E0217A743A0075BD76 /* MSExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8798217A743A0075BD76 /* MSExpenseVC.swift */; };
 		98BE87E1217A743A0075BD76 /* MSExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8798217A743A0075BD76 /* MSExpenseVC.swift */; };
 		98BE87E2217A743A0075BD76 /* MSExpenseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8799217A743A0075BD76 /* MSExpenseVC.xib */; };
@@ -199,11 +186,33 @@
 		98C5C86B2179E888005286D6 /* MSButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C8682179E888005286D6 /* MSButtonView.swift */; };
 		98FE70DE217499F1007164EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
 		98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
-		E6127F47217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
-		E6127F48217989460045123D /* CustomDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6127F44217989460045123D /* CustomDialogVC.swift */; };
-		E6127F49217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
-		E6127F4A217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
-		E6127F4B217989460045123D /* CustomDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6127F45217989460045123D /* CustomDialogVC.xib */; };
+		E63113B5217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
+		E63113B6217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
+		E63113B7217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
+		E63113B8217B24C8009DBA7C /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113B4217B24C8009DBA7C /* MSLoginVC.xib */; };
+		E63113B9217B24C8009DBA7C /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113B4217B24C8009DBA7C /* MSLoginVC.xib */; };
+		E63113BA217B24C8009DBA7C /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113B4217B24C8009DBA7C /* MSLoginVC.xib */; };
+		E63113BD217B2561009DBA7C /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113BB217B2561009DBA7C /* MSRegisterVC.swift */; };
+		E63113BE217B2561009DBA7C /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113BB217B2561009DBA7C /* MSRegisterVC.swift */; };
+		E63113BF217B2561009DBA7C /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113BB217B2561009DBA7C /* MSRegisterVC.swift */; };
+		E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113BC217B2561009DBA7C /* MSRegisterVC.xib */; };
+		E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113BC217B2561009DBA7C /* MSRegisterVC.xib */; };
+		E63113C2217B2561009DBA7C /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113BC217B2561009DBA7C /* MSRegisterVC.xib */; };
+		E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */; };
+		E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */; };
+		E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */; };
+		E63113E2217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */; };
+		E63113E3217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */; };
+		E63113E4217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */; };
+		E63113E8217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */; };
+		E63113E9217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */; };
+		E63113EA217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */; };
+		E63113EB217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */; };
+		E63113EC217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */; };
+		E63113ED217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */; };
+		E63113EF217B2918009DBA7C /* MSBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113EE217B2918009DBA7C /* MSBaseDialog.swift */; };
+		E63113F0217B2918009DBA7C /* MSBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113EE217B2918009DBA7C /* MSBaseDialog.swift */; };
+		E63113F1217B2918009DBA7C /* MSBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113EE217B2918009DBA7C /* MSBaseDialog.swift */; };
 		E636013521773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
 		E636013621773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
 		E64625442178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
@@ -253,8 +262,6 @@
 		98BE877A217A74390075BD76 /* MSDashboardVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSDashboardVC.xib; sourceTree = "<group>"; };
 		98BE877C217A74390075BD76 /* MSPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSPasswordVC.swift; sourceTree = "<group>"; };
 		98BE877D217A74390075BD76 /* MSPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSPasswordVC.xib; sourceTree = "<group>"; };
-		98BE877F217A74390075BD76 /* MSRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
-		98BE8780217A74390075BD76 /* MSRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSRegisterVC.xib; sourceTree = "<group>"; };
 		98BE8782217A743A0075BD76 /* MSSavingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSavingVC.swift; sourceTree = "<group>"; };
 		98BE8783217A743A0075BD76 /* MSSavingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSavingVC.xib; sourceTree = "<group>"; };
 		98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBalanceInfoVC.swift; sourceTree = "<group>"; };
@@ -268,8 +275,6 @@
 		98BE8790217A743A0075BD76 /* MSNewsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSNewsVC.xib; sourceTree = "<group>"; };
 		98BE8792217A743A0075BD76 /* MSForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSForgotPasswordVC.swift; sourceTree = "<group>"; };
 		98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSForgotPasswordVC.xib; sourceTree = "<group>"; };
-		98BE8795217A743A0075BD76 /* MSLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
-		98BE8796217A743A0075BD76 /* MSLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
 		98BE8798217A743A0075BD76 /* MSExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSExpenseVC.swift; sourceTree = "<group>"; };
 		98BE8799217A743A0075BD76 /* MSExpenseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSExpenseVC.xib; sourceTree = "<group>"; };
 		98BE879B217A743A0075BD76 /* MSPersonalizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSPersonalizeVC.swift; sourceTree = "<group>"; };
@@ -288,8 +293,15 @@
 		DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_DEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
-		E6127F44217989460045123D /* CustomDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogVC.swift; sourceTree = "<group>"; };
-		E6127F45217989460045123D /* CustomDialogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomDialogVC.xib; sourceTree = "<group>"; };
+		E63113B3217B24C7009DBA7C /* MSLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
+		E63113B4217B24C8009DBA7C /* MSLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
+		E63113BB217B2561009DBA7C /* MSRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
+		E63113BC217B2561009DBA7C /* MSRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSRegisterVC.xib; sourceTree = "<group>"; };
+		E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSConfirmDialog.xib; sourceTree = "<group>"; };
+		E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSConfirmDialog.swift; sourceTree = "<group>"; };
+		E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSAddBalanceInfoDialog.xib; sourceTree = "<group>"; };
+		E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAddBalanceInfoDialog.swift; sourceTree = "<group>"; };
+		E63113EE217B2918009DBA7C /* MSBaseDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseDialog.swift; sourceTree = "<group>"; };
 		E636013321773CD900E4F898 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E64625422178348F004B3DFD /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -422,10 +434,10 @@
 		9880715421749EAF00B11705 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E63113DA217B28D3009DBA7C /* ViewController */,
 				98C5C86021798AE7005286D6 /* MSTopBarView.swift */,
 				98C5C8682179E888005286D6 /* MSButtonView.swift */,
 				98BE876F217A740A0075BD76 /* LeftMenuCell */,
-				E6127F3B217980900045123D /* ViewController */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -504,8 +516,8 @@
 		98BE877E217A74390075BD76 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				98BE877F217A74390075BD76 /* MSRegisterVC.swift */,
-				98BE8780217A74390075BD76 /* MSRegisterVC.xib */,
+				E63113BB217B2561009DBA7C /* MSRegisterVC.swift */,
+				E63113BC217B2561009DBA7C /* MSRegisterVC.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -568,8 +580,8 @@
 		98BE8794217A743A0075BD76 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				98BE8795217A743A0075BD76 /* MSLoginVC.swift */,
-				98BE8796217A743A0075BD76 /* MSLoginVC.xib */,
+				E63113B3217B24C7009DBA7C /* MSLoginVC.swift */,
+				E63113B4217B24C8009DBA7C /* MSLoginVC.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -657,13 +669,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E6127F3B217980900045123D /* ViewController */ = {
+		E63113DA217B28D3009DBA7C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E6127F44217989460045123D /* CustomDialogVC.swift */,
-				E6127F45217989460045123D /* CustomDialogVC.xib */,
+				E63113DB217B28DC009DBA7C /* Dialog */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E63113DB217B28DC009DBA7C /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				E63113EE217B2918009DBA7C /* MSBaseDialog.swift */,
+				E63113E5217B28FF009DBA7C /* AddBalanceInfo */,
+				E63113DC217B28E7009DBA7C /* ConfirmDialog */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		E63113DC217B28E7009DBA7C /* ConfirmDialog */ = {
+			isa = PBXGroup;
+			children = (
+				E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */,
+				E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */,
+			);
+			path = ConfirmDialog;
+			sourceTree = "<group>";
+		};
+		E63113E5217B28FF009DBA7C /* AddBalanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */,
+				E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */,
+			);
+			path = AddBalanceInfo;
 			sourceTree = "<group>";
 		};
 		E64625412178347A004B3DFD /* Enum */ = {
@@ -778,10 +817,9 @@
 				9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */,
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
 				98BE87D1217A743A0075BD76 /* MSNewsVC.xib in Resources */,
+				E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
 				98BE87E9217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
 				98BE87AA217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
-				98BE87DD217A743A0075BD76 /* MSLoginVC.xib in Resources */,
-				E6127F4A217989460045123D /* CustomDialogVC.xib in Resources */,
 				989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				98BE8776217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
 				98BE87A4217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
@@ -790,9 +828,11 @@
 				9880718A2174EAF700B11705 /* OpenSans in Resources */,
 				98BE87C8217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87BC217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87EF217A743A0075BD76 /* MSPlanVC.xib in Resources */,
-				98BE87B0217A743A0075BD76 /* MSRegisterVC.xib in Resources */,
 				98BE87C2217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				E63113E9217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
+				E63113B9217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,20 +846,21 @@
 				98BE87D2217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				98BE87EA217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
 				98BE87AB217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
-				98BE87DE217A743A0075BD76 /* MSLoginVC.xib in Resources */,
-				E6127F4B217989460045123D /* CustomDialogVC.xib in Resources */,
 				989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
 				98BE8777217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
+				E63113EA217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
 				9880714421749E5400B11705 /* Info_UAT.plist in Resources */,
 				98BE87A5217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
 				98BE87E4217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
+				E63113BA217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
 				98BE87B7217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
 				98BE87C9217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				98BE87F0217A743A0075BD76 /* MSPlanVC.xib in Resources */,
-				98BE87B1217A743A0075BD76 /* MSRegisterVC.xib in Resources */,
 				98BE87C3217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
+				E63113C2217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,8 +871,8 @@
 				98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */,
 				988071892174EAF700B11705 /* OpenSans in Resources */,
 				98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */,
-				E6127F49217989460045123D /* CustomDialogVC.xib in Resources */,
 				98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
+				E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
 				98BE87D0217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				98BE87E2217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
@@ -842,10 +883,11 @@
 				98BE87C7217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87EE217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				989FB7EC21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
-				98BE87DC217A743A0075BD76 /* MSLoginVC.xib in Resources */,
 				98BE87A3217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
-				98BE87AF217A743A0075BD76 /* MSRegisterVC.xib in Resources */,
+				E63113E8217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
+				E63113B8217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,10 +1010,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				988071C72174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
-				98BE87DA217A743A0075BD76 /* MSLoginVC.swift in Sources */,
 				988071B52174ED2E00B11705 /* UIApplication.swift in Sources */,
+				E63113EC217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
+				E63113E3217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */,
 				988071B82174ED2E00B11705 /* Collection.swift in Sources */,
+				E63113B6217B24C8009DBA7C /* MSLoginVC.swift in Sources */,
 				98BE87A7217A743A0075BD76 /* MSPasswordVC.swift in Sources */,
 				988071A62174ED2D00B11705 /* NSObject.swift in Sources */,
 				98BE87E0217A743A0075BD76 /* MSExpenseVC.swift in Sources */,
@@ -981,6 +1025,7 @@
 				98BE87CE217A743A0075BD76 /* MSNewsVC.swift in Sources */,
 				98BE87BF217A743A0075BD76 /* MSMemberVC.swift in Sources */,
 				988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
+				E63113F0217B2918009DBA7C /* MSBaseDialog.swift in Sources */,
 				988071C42174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				98C5C86221798AE7005286D6 /* MSTopBarView.swift in Sources */,
 				988071812174DEE200B11705 /* MSConstant.swift in Sources */,
@@ -992,7 +1037,6 @@
 				98C5C86A2179E888005286D6 /* MSButtonView.swift in Sources */,
 				9880717021749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071A92174ED2D00B11705 /* String.swift in Sources */,
-				E6127F47217989460045123D /* CustomDialogVC.swift in Sources */,
 				98BE87E6217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
 				98BE87B9217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */,
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
@@ -1004,11 +1048,11 @@
 				E636013521773CD900E4F898 /* Date+Extension.swift in Sources */,
 				988071CE217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				E63113BE217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
 				E64625442178348F004B3DFD /* Enum.swift in Sources */,
 				98BE87CB217A743A0075BD76 /* MSFirstVM.swift in Sources */,
 				988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D2217508D600B11705 /* MSUtils.swift in Sources */,
-				98BE87AD217A743A0075BD76 /* MSRegisterVC.swift in Sources */,
 				98BE87B3217A743A0075BD76 /* MSSavingVC.swift in Sources */,
 				988071BE2174ED2E00B11705 /* UIImage.swift in Sources */,
 				98BE87EC217A743A0075BD76 /* MSPlanVC.swift in Sources */,
@@ -1022,10 +1066,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				988071C82174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
-				98BE87DB217A743A0075BD76 /* MSLoginVC.swift in Sources */,
 				988071B62174ED2E00B11705 /* UIApplication.swift in Sources */,
+				E63113ED217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
+				E63113E4217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */,
 				988071B92174ED2E00B11705 /* Collection.swift in Sources */,
+				E63113B7217B24C8009DBA7C /* MSLoginVC.swift in Sources */,
 				98BE87A8217A743A0075BD76 /* MSPasswordVC.swift in Sources */,
 				988071A72174ED2D00B11705 /* NSObject.swift in Sources */,
 				98BE87E1217A743A0075BD76 /* MSExpenseVC.swift in Sources */,
@@ -1035,6 +1081,7 @@
 				98BE87CF217A743A0075BD76 /* MSNewsVC.swift in Sources */,
 				98BE87C0217A743A0075BD76 /* MSMemberVC.swift in Sources */,
 				988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
+				E63113F1217B2918009DBA7C /* MSBaseDialog.swift in Sources */,
 				988071C52174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
 				98C5C86321798AE7005286D6 /* MSTopBarView.swift in Sources */,
 				988071822174DEE200B11705 /* MSConstant.swift in Sources */,
@@ -1046,7 +1093,6 @@
 				98C5C86B2179E888005286D6 /* MSButtonView.swift in Sources */,
 				9880717121749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071AA2174ED2D00B11705 /* String.swift in Sources */,
-				E6127F48217989460045123D /* CustomDialogVC.swift in Sources */,
 				98BE87E7217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
 				98BE87BA217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */,
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
@@ -1058,11 +1104,11 @@
 				E636013621773CD900E4F898 /* Date+Extension.swift in Sources */,
 				988071CF217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
+				E63113BF217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
 				E64625452178348F004B3DFD /* Enum.swift in Sources */,
 				98BE87CC217A743A0075BD76 /* MSFirstVM.swift in Sources */,
 				988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D3217508D600B11705 /* MSUtils.swift in Sources */,
-				98BE87AE217A743A0075BD76 /* MSRegisterVC.swift in Sources */,
 				98BE87B4217A743A0075BD76 /* MSSavingVC.swift in Sources */,
 				988071BF2174ED2E00B11705 /* UIImage.swift in Sources */,
 				98BE87ED217A743A0075BD76 /* MSPlanVC.swift in Sources */,
@@ -1077,8 +1123,11 @@
 			files = (
 				98A8D01A217A762100765F69 /* Enum.swift in Sources */,
 				98A8D01B217A762100765F69 /* MSLeftMenuVC.swift in Sources */,
+				E63113EB217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				98A8D01C217A762100765F69 /* MSBaseVC.swift in Sources */,
+				E63113E2217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */,
 				98A8D01D217A762100765F69 /* MSBaseVCExtension.swift in Sources */,
+				E63113B5217B24C8009DBA7C /* MSLoginVC.swift in Sources */,
 				98A8D01E217A762100765F69 /* MSBaseVM.swift in Sources */,
 				98A8D01F217A762100765F69 /* MSNavigationVM.swift in Sources */,
 				98A8D020217A762100765F69 /* MSBalanceInfoVC.swift in Sources */,
@@ -1087,19 +1136,17 @@
 				98A8D023217A762100765F69 /* MSFirstVC.swift in Sources */,
 				98A8D024217A762100765F69 /* MSFirstVM.swift in Sources */,
 				98A8D025217A762100765F69 /* MSForgotPasswordVC.swift in Sources */,
-				98A8D026217A762100765F69 /* MSLoginVC.swift in Sources */,
 				98A8D027217A762100765F69 /* MSMemberVC.swift in Sources */,
+				E63113EF217B2918009DBA7C /* MSBaseDialog.swift in Sources */,
 				98A8D028217A762100765F69 /* MSNewsVC.swift in Sources */,
 				98A8D029217A762100765F69 /* MSPasswordVC.swift in Sources */,
 				98A8D02A217A762100765F69 /* MSPersonalizeVC.swift in Sources */,
 				98A8D02B217A762100765F69 /* MSPlanVC.swift in Sources */,
-				98A8D02C217A762100765F69 /* MSRegisterVC.swift in Sources */,
 				98A8D02D217A762100765F69 /* MSSavingVC.swift in Sources */,
 				98A8D02E217A762100765F69 /* MSModel.swift in Sources */,
 				98A8D02F217A762100765F69 /* MSTopBarView.swift in Sources */,
 				98A8D030217A762100765F69 /* MSButtonView.swift in Sources */,
 				98A8D031217A762100765F69 /* MSLeftMenuCell.swift in Sources */,
-				98A8D032217A762100765F69 /* CustomDialogVC.swift in Sources */,
 				98A8D033217A762100765F69 /* MSBaseService.swift in Sources */,
 				98A8D034217A762100765F69 /* MSConfig.swift in Sources */,
 				98A8D035217A762100765F69 /* Collection.swift in Sources */,
@@ -1113,6 +1160,7 @@
 				98A8D03D217A762100765F69 /* UITextField.swift in Sources */,
 				98A8D03E217A762100765F69 /* UIView.swift in Sources */,
 				98A8D03F217A762100765F69 /* UIViewController.swift in Sources */,
+				E63113BD217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
 				98A8D040217A762100765F69 /* UIViewControllerExtension.swift in Sources */,
 				98A8D041217A762100765F69 /* UIViewExtensions.swift in Sources */,
 				98A8D042217A762100765F69 /* UIWindowExtension.swift in Sources */,
