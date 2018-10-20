@@ -24,7 +24,7 @@ class MSForgotPasswordVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //đm dân chơi!
         MSUtils.objectCorner(imageLogo, 7.5)
         MSUtils.objectCorner(btnBack, 6)
         MSUtils.objectCorner(btnForward, 6)

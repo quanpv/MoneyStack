@@ -10,11 +10,26 @@ import UIKit
 
 class MSRegisterVC: MSBaseVC {
 
+    //Only for corner radius
+    @IBOutlet weak var imageLogo: UIImageView!
+    @IBOutlet weak var pEmail: UITextField!
+    @IBOutlet weak var pUsername: UITextField!
+    @IBOutlet weak var pDoubletf: UIView!
+    @IBOutlet weak var pBirthday: UIView!
+    @IBOutlet weak var pGender: UIView!
+    @IBOutlet weak var pFullname: UITextField!
+    @IBOutlet weak var pJob: UITextField!
+    @IBOutlet weak var pKind: UIView!
+    @IBOutlet weak var pPassword: UITextField!
+    @IBOutlet weak var pRetype: UITextField!
+    @IBOutlet weak var buttonBack: UIView!
+    @IBOutlet weak var buttonRegister: UIView!
+    //-------------------------------------
+    
     @IBOutlet weak var textfieldEmail: UITextField!
     @IBOutlet weak var textfieldUserName: UITextField!
     @IBOutlet weak var textfieldFullName: UITextField!
     @IBOutlet weak var textfieldJob: UITextField!
-    @IBOutlet weak var textfieldKindOfUser: UITextField!
     @IBOutlet weak var textfieldPassword: UITextField!
     @IBOutlet weak var textfieldRepeatPassword: UITextField!
     
@@ -36,16 +51,35 @@ class MSRegisterVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
+        self.setup()
+        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
         imageQuestionMark.imageView?.image = imageQuestionMark.imageView?.image!.withRenderingMode(.alwaysTemplate)
-//        imageBack.tintColor = UIColor.white
-        imageQuestionMark.tintColor = UIColor(hex: "#00A6FF")
+        imageBack.tintColor = UIColor.white
+        imageQuestionMark.tintColor = UIColor(hex: "#9B111E")
         datePicker.addTarget(self, action: #selector(dateChanged), for: .valueChanged)
+    }
+    
+    func setup(){
+        MSUtils.objectCorner(imageLogo, 6)
+        MSUtils.objectCorner(pEmail, 6)
+        MSUtils.objectCorner(pUsername, 6)
+        MSUtils.objectCorner(pDoubletf, 6)
+        MSUtils.objectCorner(pBirthday, 6)
+        MSUtils.objectCorner(pGender, 6)
+        MSUtils.objectCorner(pFullname, 6)
+        MSUtils.objectCorner(pJob, 6)
+        MSUtils.objectCorner(pKind, 6)
+        MSUtils.objectCorner(pPassword, 6)
+        MSUtils.objectCorner(pRetype, 6)
+        MSUtils.objectCorner(buttonBack, 6)
+        MSUtils.objectCorner(buttonRegister, 6)
+        MSUtils.makeViewBorder(buttonRegister, 1, UIColor.white.cgColor)
     }
     
     @objc func dateChanged(sender: UIDatePicker){
         labelBirthday.text = "\(sender.date.getAllAboutDate().day)/\(sender.date.getAllAboutDate().month)/\(sender.date.getAllAboutDate().year)"
         labelBirthday.textColor = UIColor.black
+        datePicker.removeFromSuperview()
         subview.removeFromSuperview()
     }
     
@@ -73,14 +107,14 @@ class MSRegisterVC: MSBaseVC {
     }
     
     @IBAction func actionPressRegister(_ sender: Any) {
-        let customDialog = CustomDialogVC(nibName: "CustomDialogVC", bundle: nil)
+        let customDialog = MSAddBalanceInfoDialog(nibName: "MSAddBalanceInfoDialog", bundle: nil)
         customDialog.providesPresentationContextTransitionStyle = true
         customDialog.definesPresentationContext = true
         customDialog.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         customDialog.delegate = self
         self.present(customDialog, animated: true, completion: {
-            MSDelegate.moveToMainScreen()
+            
         })
     }
     
@@ -160,17 +194,20 @@ extension MSRegisterVC:UIPickerViewDataSource, UIPickerViewDelegate{
         case .Gender:
             labelGender.text = pickerDataSource[row]
             labelGender.textColor = UIColor.black
+            
         case .KindOfUser:
             labelKind.text = pickerKindDataSource[row]
             labelKind.textColor = UIColor.black
+            
         }
+        pickerView.removeFromSuperview()
         subview.removeFromSuperview()
         kindOfPicker = .None
     }
     
 }
 
-extension MSRegisterVC: CustomDialogDelegate{
+extension MSRegisterVC:MSBaseDialogDelegate{
     func okButtonPressed() {
         print("1 con vịt xoè ra 2 cái cánh")
 

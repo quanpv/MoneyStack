@@ -93,6 +93,7 @@ extension AppDelegate {
                 print("User click logout, move to Login screen")
                 logOut()
                 moveToLoginScreen()
+            
             default: break
             }
         }
@@ -111,5 +112,9 @@ extension AppDelegate {
     func moveToMainScreen() {
         createLeftMenuItem()
         onLeftMenuClicked(index: LeftMenuItem.Dashboard.rawValue)
+    }
+    
+    func moveToRegisterScreen(){
+        window?.rootViewController = MSRegisterVC(nibName: MSRegisterVC.className, bundle: nil)
     }
 }
