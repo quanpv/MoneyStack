@@ -23,7 +23,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSLoginVC" customModule="MoneyStack" customModuleProvider="target">
             <connections>
-                <outlet property="imageBack" destination="vXc-3h-1if" id="1as-Rq-X0k"/>
                 <outlet property="textfieldPassword" destination="YXY-r2-M4v" id="gtV-h5-gWj"/>
                 <outlet property="textfieldUserName" destination="ItU-4h-8VL" id="Uhz-Mt-Q5e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -113,7 +112,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5j3-eB-12o">
                                     <rect key="frame" x="0.0" y="10" width="65" height="65"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-3h-1if">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back_42" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-3h-1if">
                                             <rect key="frame" x="22.5" y="16.5" width="20" height="32.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="vXc-3h-1if" secondAttribute="height" multiplier="5:8" id="Bds-hR-dXW"/>
@@ -147,8 +146,7 @@
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
-                                        <action selector="actionLogin:" destination="-1" eventType="touchUpInside" id="CZx-VL-qRE"/>
-                                        <action selector="actionPressLogin:" destination="-1" eventType="touchUpInside" id="AmK-Ni-hCq"/>
+                                        <action selector="actionPressLogin:" destination="-1" eventType="touchUpInside" id="XS0-W5-IXr"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -236,7 +234,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_back" width="39" height="63"/>
+        <image name="ic_back_42" width="21" height="21"/>
         <image name="ic_checked" width="256" height="256"/>
         <image name="ic_square" width="256" height="256"/>
     </resources>

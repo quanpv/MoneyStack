@@ -13,13 +13,13 @@ class MSLoginVC: MSBaseVC {
     @IBOutlet weak var textfieldUserName: UITextField!
     @IBOutlet weak var textfieldPassword: UITextField!
     
-    @IBOutlet weak var imageBack: UIImageView!
+//    @IBOutlet weak var imageBack: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
-        imageBack.tintColor = UIColor.white
-        
+//        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
+//        imageBack.tintColor = UIColor.white
+//        
     }
 
     override func didReceiveMemoryWarning() {

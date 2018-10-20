@@ -43,8 +43,8 @@ class MSFirstVC: MSBaseVC {
     }
     */
     @IBAction func actionClickStart(_ sender: Any) {
-//        firstVM.processOpenRegister()
-        self.openView(MSDashboardVC(nibName: MSDashboardVC.className, bundle: nil))
+        firstVM.processOpenRegister()
+//        self.openView(MSDashboardVC(nibName: MSDashboardVC.className, bundle: nil))
     }
     
 }

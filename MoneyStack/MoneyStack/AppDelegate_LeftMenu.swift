@@ -15,7 +15,7 @@ extension AppDelegate {
     var mainWindowXClose: CGFloat { return UIScreenConstant.WIDTH * MSLeftMenuVCConstant.SHOWING_WIDTH_RATIO }
 
     func onDidFinishLaunching(_ application: UIApplication, _ launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
-        createLeftMenuItem()
+        //createLeftMenuItem()
     }
     
     /** enum LeftMenuItem: Int {
@@ -33,15 +33,15 @@ extension AppDelegate {
     */
     func createLeftMenuItem() {
         leftMenuItemAndRootView.append(contentsOf: [
-            ["Trang chủ": MSDashboardVC.loadFromNib()],
-            ["Tin tức": MSNewsVC.loadFromNib()],
-            ["Chi tiêu": MSExpenseVC.loadFromNib()],
-            ["Tiền": MSBalanceInfoVC.loadFromNib()],
-            ["Tiết kiệm": MSSavingVC.loadFromNib()],
-            ["Dự định": MSPlanVC.loadFromNib()],
-            ["Thành viên": MSMemberVC.loadFromNib()],
-            ["Cá nhân hoá": MSPersonalizeVC.loadFromNib()],
-            ["Mật khẩu": MSPasswordVC.loadFromNib()],
+            ["Trang chủ": MSDashboardVC(nibName: MSDashboardVC.className, bundle: nil)],
+            ["Tin tức": MSNewsVC(nibName: MSNewsVC.className, bundle: nil)],
+            ["Chi tiêu": MSExpenseVC(nibName: MSExpenseVC.className, bundle: nil)],
+            ["Tiền": MSBalanceInfoVC(nibName: MSBalanceInfoVC.className, bundle: nil)],
+            ["Tiết kiệm": MSSavingVC(nibName: MSSavingVC.className, bundle: nil)],
+            ["Dự định": MSPlanVC(nibName: MSPlanVC.className, bundle: nil)],
+            ["Thành viên": MSMemberVC(nibName: MSMemberVC.className, bundle: nil)],
+            ["Cá nhân hoá": MSPersonalizeVC(nibName: MSPersonalizeVC.className, bundle: nil)],
+            ["Mật khẩu": MSPasswordVC(nibName: MSPasswordVC.className, bundle: nil)],
             ["Đăng xuất": LeftMenuItem.Logout]
         ])
     }
@@ -82,9 +82,10 @@ extension AppDelegate {
     }
     
     func onLeftMenuClicked(index: Int) {
-        let obj = leftMenuItemAndRootView[index].values.first
-        if let vc: MSBaseVC = obj as? MSBaseVC {
-            window?.rootViewController = vc
+        let key: String = (leftMenuItemAndRootView[index].keys.first)!
+        let obj = leftMenuItemAndRootView[index][key]
+        if obj is UIViewController {
+            window?.rootViewController = (obj as! UIViewController)
         }
         if let actionItem = obj as? LeftMenuItem {
             switch actionItem {
@@ -104,6 +105,11 @@ extension AppDelegate {
     }
     
     func moveToLoginScreen() {
-        window?.rootViewController = MSLoginVC.loadFromNib()
+        window?.rootViewController = MSLoginVC(nibName: MSLoginVC.className, bundle: nil)
+    }
+    
+    func moveToMainScreen() {
+        createLeftMenuItem()
+        onLeftMenuClicked(index: LeftMenuItem.Dashboard.rawValue)
     }
 }

@@ -23,6 +23,10 @@ enum TopBarType: Int {
 class MSTopBarView: UIView {
     
     @IBInspectable var type: Int = 0 //None - Refer to TopBarType
+    var topBarType: TopBarType {
+        guard let a = TopBarType(rawValue: self.type) else { return TopBarType.None }
+        return a
+    }
     
     var leftButton: MSButtonView?
     var middleButton: UIButton?

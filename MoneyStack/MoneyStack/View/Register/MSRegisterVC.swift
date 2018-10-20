@@ -36,9 +36,9 @@ class MSRegisterVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
+//        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
         imageQuestionMark.imageView?.image = imageQuestionMark.imageView?.image!.withRenderingMode(.alwaysTemplate)
-        imageBack.tintColor = UIColor.white
+//        imageBack.tintColor = UIColor.white
         imageQuestionMark.tintColor = UIColor(hex: "#00A6FF")
         datePicker.addTarget(self, action: #selector(dateChanged), for: .valueChanged)
     }
@@ -80,7 +80,7 @@ class MSRegisterVC: MSBaseVC {
         customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         customDialog.delegate = self
         self.present(customDialog, animated: true, completion: {
-            
+            MSDelegate.moveToMainScreen()
         })
     }
     
@@ -170,7 +170,7 @@ extension MSRegisterVC:UIPickerViewDataSource, UIPickerViewDelegate{
     
 }
 
-extension MSRegisterVC:CustomDialogDelegate{
+extension MSRegisterVC: CustomDialogDelegate{
     func okButtonPressed() {
         print("1 con vịt xoè ra 2 cái cánh")
 

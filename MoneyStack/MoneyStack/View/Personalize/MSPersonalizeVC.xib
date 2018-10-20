@@ -1,13 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSPersonalizeVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSPersonalizeVC" customModule="MoneyStack" customModuleProvider="target">
             <connections>
+                <outlet property="topBar" destination="5bh-9V-Ylz" id="UVr-jn-cay"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +19,34 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bh-9V-Ylz" customClass="MSTopBarView" customModule="MoneyStack" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="w12-vA-VIf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzR-hi-xXV">
+                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AzR-hi-xXV" firstAttribute="top" secondItem="5bh-9V-Ylz" secondAttribute="bottom" id="Ber-bR-5mM"/>
+                <constraint firstItem="AzR-hi-xXV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MW3-92-mVt"/>
+                <constraint firstItem="5bh-9V-Ylz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cvA-6Y-APv"/>
+                <constraint firstItem="5bh-9V-Ylz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="emI-jj-CLm"/>
+                <constraint firstItem="AzR-hi-xXV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="haq-Ls-VfV"/>
+                <constraint firstItem="5bh-9V-Ylz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jRn-8s-vss"/>
+                <constraint firstItem="AzR-hi-xXV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lwd-1F-eRW"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

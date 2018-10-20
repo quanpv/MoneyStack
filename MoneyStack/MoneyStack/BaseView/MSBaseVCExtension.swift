@@ -21,16 +21,6 @@ extension MSBaseVC {
         return imageView
     }
     
-    func makeTopMenuBar() {
-        menuBarContainer = UIView(frame: CGRect(x: 0, y: 20, width: UIScreenConstant.WIDTH , height: MSBaseVCConstant.HEIGHT_TOP_MENU_BAR))
-        menuBarContainer?.backgroundColor = UIColor(hex: "2E6B29", alpha: 0.8)
-        let menuButton: UIButton = UIButton(frame: CGRect(x: 8, y: 8, width: 34, height: 34))
-        menuButton.setImage(UIImage(named: "ic_menu_64"), for: .normal)
-        menuButton.addTarget(self, action: #selector(callOpenLeftMenu), for: .touchUpInside)
-        menuBarContainer?.addSubview(menuButton)
-        view.addSubview(menuBarContainer!)
-    }
-    
     @objc func callOpenLeftMenu() {
         MSDelegate.openLeftMenu()
     }

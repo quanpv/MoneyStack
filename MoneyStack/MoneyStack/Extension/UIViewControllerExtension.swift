@@ -9,10 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    //https://stackoverflow.com/a/44215068
-    class func loadFromNib<T: UIViewController>() -> T {
-        return T(nibName: String(describing: self), bundle: nil)
-    }
+
 }
 
 extension UINavigationController {

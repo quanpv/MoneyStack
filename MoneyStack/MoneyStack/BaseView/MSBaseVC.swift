@@ -10,24 +10,15 @@ import UIKit
 
 class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     
-    var topBarType: TopBarType = .None
+    private var topBarView: MSTopBarView?
     
     private var viewHolder: MSStackOfView? // Root view will own this object
-    
-    var isStartedScreen: Bool {
-        return false
-    }
-    
-    var navigationVM: MSNavigationVM {
-        return MSNavigationVM(self)
-    }
+    var isStartedScreen: Bool { return false }
+    var navigationVM: MSNavigationVM { return MSNavigationVM(self) }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
-    // For leftMenu
-    var menuBarContainer: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +37,11 @@ class MSBaseVC: UIViewController, MSNavigationVMProtocol {
         } else {
             viewHolder = MSStackOfView(self)
         }
+    }
+    
+    func setTopBar(_ correctTopBar: MSTopBarView) {
+        self.topBarView = correctTopBar
+        self.topBarView?.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,5 +69,36 @@ class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     
     func closeToView(_ view: MSBaseVC, animated: Bool = true) {
         //MARK: - TODO closeToView
+    }
+}
+
+extension MSBaseVC: MSTopBarViewDelegate {
+    
+    func topbarLeftClickEvent(type: TopBarType) {
+        print("topbarLeftClickEvent")
+    }
+    
+    func topbarRightClickEvent(type: TopBarType) {
+        print("topbarRightClickEvent")
+    }
+    
+    func topbarMiddleClickEvent(type: TopBarType) {
+        print("topbarMiddleClickEvent")
+    }
+    
+    func clickTopBar(position: TopBarPosition) {
+        switch position {
+        case .Left:
+            switch topBarView!.topBarType {
+            case .Menu, .Menu_Filter:
+                MSDelegate.openLeftMenu()
+            default:
+                topbarLeftClickEvent(type: topBarView!.topBarType)
+            }
+        case .Right:
+            topbarRightClickEvent(type: topBarView!.topBarType)
+        case .Middle:
+            topbarMiddleClickEvent(type: topBarView!.topBarType)
+        }
     }
 }

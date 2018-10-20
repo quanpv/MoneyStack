@@ -14,7 +14,7 @@ class MSDashboardVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topBar.delegate = self
+        self.setTopBar(topBar)
         // Do any additional setup after loading the view.
     }
 
@@ -33,19 +33,5 @@ class MSDashboardVC: MSBaseVC {
     
     @IBAction func actionCollapse(_ sender: Any) {
         //MARK: - TODO: actionCollapse
-    }
-}
-
-extension MSDashboardVC: MSTopBarViewDelegate {
-    func clickTopBar(position: TopBarPosition) {
-        switch position {
-        case .Left:
-            MSDelegate.openLeftMenu()
-        case .Right:
-            print("Clicked at Topbar's Right Position")
-            //MARK: - TODO: Open [Filter Combobox]
-        case .Middle:
-            break
-        }
     }
 }

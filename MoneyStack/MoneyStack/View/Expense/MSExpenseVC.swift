@@ -21,18 +21,3 @@ class MSExpenseVC: MSBaseVC {
         // Dispose of any resources that can be recreated.
     }
 }
-
-extension MSExpenseVC: MSTopBarViewDelegate {
-    func clickTopBar(position: TopBarPosition) {
-        switch position {
-        case .Left:
-            MSDelegate.openLeftMenu()
-        case .Right:
-            print("Clicked at Topbar's Right Position")
-        //MARK: - TODO: Open [Filter Combobox]
-        case .Middle:
-            break
-        }
-    }
-}
-
