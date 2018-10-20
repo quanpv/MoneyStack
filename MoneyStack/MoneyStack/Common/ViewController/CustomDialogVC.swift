@@ -52,10 +52,10 @@ class CustomDialogVC: UIViewController {
         MSUtils.makeViewBorder(footerView, 1, UIColor.white.cgColor)
         MSUtils.makeViewBorder(bodyView, 1, UIColor.black.cgColor)
         
-        imageX.image = imageX.image!.withRenderingMode(.alwaysTemplate)
-        imageTick.image = imageTick.image!.withRenderingMode(.alwaysTemplate)
-        imageX.tintColor = UIColor.white
-        imageTick.tintColor = UIColor.white
+//        imageX.image = imageX.image!.withRenderingMode(.alwaysTemplate)
+//        imageTick.image = imageTick.image!.withRenderingMode(.alwaysTemplate)
+//        imageX.tintColor = UIColor.white
+//        imageTick.tintColor = UIColor.white
     }
     
     func animateView(){

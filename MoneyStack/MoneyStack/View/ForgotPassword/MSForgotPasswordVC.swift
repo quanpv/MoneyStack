@@ -32,11 +32,11 @@ class MSForgotPasswordVC: MSBaseVC {
         MSUtils.objectCorner(textfieldCode, 6)
         
         
-        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
-        imageForward.image = imageForward.image!.withRenderingMode(.alwaysTemplate)
-        imageBack.tintColor = UIColor.white
-        imageForward.tintColor = UIColor.white
-        imageForward.transform = CGAffineTransform(rotationAngle: .pi)
+//        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
+//        imageForward.image = imageForward.image!.withRenderingMode(.alwaysTemplate)
+//        imageBack.tintColor = UIColor.white
+//        imageForward.tintColor = UIColor.white
+//        imageForward.transform = CGAffineTransform(rotationAngle: .pi)
     }
 
     override func didReceiveMemoryWarning() {
