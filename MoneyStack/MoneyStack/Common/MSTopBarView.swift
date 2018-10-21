@@ -43,7 +43,8 @@ class MSTopBarView: UIView {
     }
     
     let buttonSize: CGSize = CGSize(width: MSBaseVCConstant.HEIGHT_TOP_MENU_BAR, height: MSBaseVCConstant.HEIGHT_TOP_MENU_BAR)
-    let middleIconSize: CGSize = CGSize(width: 30, height: 30)
+    let middleIconSize: CGSize = CGSize(width: 34, height: 34)
+    let buttonIconSize: CGSize = CGSize(width: 34, height: 34)
 
     var delegate: MSTopBarViewDelegate?
     
@@ -97,23 +98,29 @@ class MSTopBarView: UIView {
         }
     }
     
+    func updateColor() {
+        backgroundColor = MSDelegate.config.subColor
+        leftButton?.backgroundColor = MSDelegate.config.mainColor
+        rightButton?.backgroundColor = MSDelegate.config.mainColor
+    }
+    
     func createBackButton(_ position: TopBarPosition) {
-        leftButton = MSButtonView.init(buttonSize, iconSize: CGSize(width: 28, height: 28), iconName: "ic_back_42", target: self, action: #selector(clickLeft), isMain: true, hasCorner: false, hasBorder: false)
+        leftButton = MSButtonView.init(buttonSize, iconSize: buttonIconSize, iconName: "ic_back_42", target: self, action: #selector(clickLeft), isMain: true, hasCorner: false, hasBorder: false)
         addSubview(leftButton!)
     }
     
     func createPlusButton(_ position: TopBarPosition) {
-        rightButton = MSButtonView.init(buttonSize, iconSize: CGSize(width: 28, height: 28), iconName: "ic_plus_42", target: self, action: #selector(clickRight), isMain: true, hasCorner: false, hasBorder: false)
+        rightButton = MSButtonView.init(buttonSize, iconSize: buttonIconSize, iconName: "ic_plus_42", target: self, action: #selector(clickRight), isMain: true, hasCorner: false, hasBorder: false)
         addSubview(rightButton!)
     }
     
     func createMenuButton(_ position: TopBarPosition) {
-        leftButton = MSButtonView.init(buttonSize, iconSize: CGSize(width: 28, height: 28), iconName: "ic_menu_42", target: self, action: #selector(clickLeft), isMain: true, hasCorner: false, hasBorder: false)
+        leftButton = MSButtonView.init(buttonSize, iconSize: buttonIconSize , iconName: "ic_menu_42", target: self, action: #selector(clickLeft), isMain: true, hasCorner: false, hasBorder: false)
         addSubview(leftButton!)
     }
     
     func createFilterButton(_ position: TopBarPosition) {
-        rightButton = MSButtonView.init(buttonSize, iconSize: CGSize(width: 28, height: 28), iconName: "ic_filter_42", target: self, action: #selector(clickRight), isMain: true, hasCorner: false, hasBorder: false)
+        rightButton = MSButtonView.init(buttonSize, iconSize: buttonIconSize, iconName: "ic_filter_42", target: self, action: #selector(clickRight), isMain: true, hasCorner: false, hasBorder: false)
         addSubview(rightButton!)
     }
     

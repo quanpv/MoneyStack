@@ -9,27 +9,33 @@
 import UIKit
 
 extension MSBaseVC {
-    
-    var backGroundImage: UIImageView {
-        let imageView = UIImageView(frame: UIScreenConstant.BOUNDS)
-        imageView.image = UIImage(named: "Default_Background")
-        imageView.contentMode = .scaleAspectFill
-        let darkerView = UIView(frame: imageView.frame)
-        darkerView.backgroundColor = isStartedScreen ? UIColor(hex: "#004445") : UIColor.black
-        darkerView.alpha = isStartedScreen ? 0.7 : 0.4
-        imageView.addSubview(darkerView)
-        return imageView
-    }
-    
+
     @objc func callOpenLeftMenu() {
         MSDelegate.openLeftMenu()
     }
     
     func onViewDidLoad() {
         if !isStartedScreen {
-            view.insertSubview(backGroundImage, at: 0)
+            autoBackground()
         }
         setupViewHolder()
+    }
+    
+    private func autoBackground() {
+        backGroundImage = UIImageView(frame: UIScreenConstant.BOUNDS)
+        backGroundImage.image = UIImage(named: "Default_Background")
+        backGroundImage.contentMode = .scaleAspectFill
+        darkerView = UIView(frame: backGroundImage.frame)
+        darkerView.backgroundColor = MSDelegate.config.mainColor
+        darkerView.alpha = darkViewAlpha
+        backGroundImage.addSubview(darkerView)
+        view.insertSubview(backGroundImage, at: 0)
+    }
+    func updateBackGround(index: Int) {
+        //MARK: - TODO: updateAutoBackGround
+        if isStartedScreen {
+            return
+        }
     }
 }
 

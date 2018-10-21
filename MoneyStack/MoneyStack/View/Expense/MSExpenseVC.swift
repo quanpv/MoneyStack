@@ -10,10 +10,11 @@ import UIKit
 
 class MSExpenseVC: MSBaseVC {
     @IBOutlet weak var topBar: MSTopBarView!
-    
+    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        topBar.delegate = self
+        self.setTopBar(topBar,topBarHeight)
     }
 
     override func didReceiveMemoryWarning() {

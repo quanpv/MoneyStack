@@ -10,6 +10,18 @@ import UIKit
 
 extension UserDefaults {
     
+    static func saveCurrenThemeIndex(_ index: Int) {
+        UserDefaults.standard.set(index, forKey: "CURRENT_THEME_INDEX")
+    }
+    
+    static func getCurrenThemeIndex() -> Int {
+        guard let index: Int = UserDefaults.standard.object(forKey: "CURRENT_THEME_INDEX") as? Int else {
+            saveCurrenThemeIndex(0)
+            return 0
+        }
+        return index
+    }
+    
     static func saveMainColor(_ colorHex: String) {
         UserDefaults.standard.set(colorHex, forKey: "MAIN_COLOR")
     }

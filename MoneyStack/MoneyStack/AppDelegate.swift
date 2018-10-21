@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var windowLeftMenu: UIWindow?
     
     var leftMenuItemAndRootView: [[String:Any]] = [] // Used for LeftMenu Item and Contain RootView
+    var darkerView: UIButton = UIButton()
     
     var config: MSConfig = MSConfig()
 

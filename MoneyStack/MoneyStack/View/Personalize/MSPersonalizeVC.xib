@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSPersonalizeVC" customModule="MoneyStack" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="YOJ-en-R48" id="Nhj-1b-aUF"/>
                 <outlet property="topBar" destination="5bh-9V-Ylz" id="UVr-jn-cay"/>
+                <outlet property="topBarHeight" destination="w12-vA-VIf" id="itb-iY-S11"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,20 +23,42 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bh-9V-Ylz" customClass="MSTopBarView" customModule="MoneyStack" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="45" id="w12-vA-VIf"/>
+                        <constraint firstAttribute="height" constant="50" id="w12-vA-VIf"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="type">
-                            <integer key="value" value="2"/>
+                            <integer key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzR-hi-xXV">
-                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YOJ-en-R48">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R2m-Dk-N38">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Ljn-mE-VwD"/>
+                                <outlet property="delegate" destination="-1" id="w2y-aa-RfZ"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YOJ-en-R48" firstAttribute="leading" secondItem="AzR-hi-xXV" secondAttribute="leading" id="1Tq-Ki-dNC"/>
+                        <constraint firstAttribute="bottom" secondItem="YOJ-en-R48" secondAttribute="bottom" id="6pb-QL-ZF9"/>
+                        <constraint firstItem="YOJ-en-R48" firstAttribute="top" secondItem="AzR-hi-xXV" secondAttribute="top" id="i9w-ay-Fgh"/>
+                        <constraint firstAttribute="trailing" secondItem="YOJ-en-R48" secondAttribute="trailing" id="pye-aH-2Ss"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,6 +72,7 @@
                 <constraint firstItem="AzR-hi-xXV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lwd-1F-eRW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
 </document>

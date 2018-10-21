@@ -51,7 +51,8 @@ class MSAddBalanceInfoDialog: UIViewController {
         imageTick.image = imageTick.image!.withRenderingMode(.alwaysTemplate)
         imageTick.tintColor = UIColor.white
         
-        
+        buttonCancel.backgroundColor = MSDelegate.config.mainColor
+        dialogFooter.backgroundColor = MSDelegate.config.subColor
     }
     
     private func animateView(){

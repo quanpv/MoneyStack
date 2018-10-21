@@ -14,6 +14,7 @@ extension AppDelegate {
     var leftMenuXClose: CGFloat { return -UIScreenConstant.WIDTH }
     var mainWindowXClose: CGFloat { return UIScreenConstant.WIDTH * MSLeftMenuVCConstant.SHOWING_WIDTH_RATIO }
 
+    
     func onDidFinishLaunching(_ application: UIApplication, _ launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         //createLeftMenuItem()
     }
@@ -44,9 +45,12 @@ extension AppDelegate {
             ["Mật khẩu": MSPasswordVC(nibName: MSPasswordVC.className, bundle: nil)],
             ["Đăng xuất": LeftMenuItem.Logout]
         ])
+        darkerView = UIButton(frame: UIScreenConstant.BOUNDS)
+        darkerView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        darkerView.addTarget(self, action: #selector(closeLeftMenu), for: .touchUpInside)
     }
     
-    func closeLeftMenu() {
+    @objc func closeLeftMenu() {
         let window2Frame = CGRect(x: leftMenuXClose, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
         let windowFrame = CGRect(x: 0, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
         
@@ -55,12 +59,14 @@ extension AppDelegate {
             self.window?.frame = windowFrame
         }) { (finish) in
             self.window?.makeKey()
+            self.darkerView.removeFromSuperview()
         }
     }
     
     func showLeftMenu() {
         let window2Frame = CGRect(x: leftMenuXOpen, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
         let windowFrame = CGRect(x: mainWindowXClose, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
+        window?.addSubview(darkerView)
         UIView.animate(withDuration: 0.2, animations: {
             self.windowLeftMenu?.frame = window2Frame
             self.window?.frame = windowFrame

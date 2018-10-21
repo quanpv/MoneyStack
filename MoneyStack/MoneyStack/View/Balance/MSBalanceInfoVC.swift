@@ -11,10 +11,11 @@ import UIKit
 class MSBalanceInfoVC: MSBaseVC {
 
     @IBOutlet weak var topBar: MSTopBarView!
-    
+    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTopBar(topBar)
+        self.setTopBar(topBar,topBarHeight)
         // Do any additional setup after loading the view.
     }
 

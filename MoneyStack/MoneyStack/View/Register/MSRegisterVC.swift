@@ -22,7 +22,6 @@ class MSRegisterVC: MSBaseVC {
     @IBOutlet weak var pKind: UIView!
     @IBOutlet weak var pPassword: UITextField!
     @IBOutlet weak var pRetype: UITextField!
-    @IBOutlet weak var buttonBack: UIView!
     @IBOutlet weak var buttonRegister: UIView!
     //-------------------------------------
     
@@ -52,10 +51,6 @@ class MSRegisterVC: MSBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setup()
-        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
-        imageQuestionMark.imageView?.image = imageQuestionMark.imageView?.image!.withRenderingMode(.alwaysTemplate)
-        imageBack.tintColor = UIColor.white
-        imageQuestionMark.tintColor = UIColor(hex: "#9B111E")
         datePicker.addTarget(self, action: #selector(dateChanged), for: .valueChanged)
     }
     
@@ -71,9 +66,9 @@ class MSRegisterVC: MSBaseVC {
         MSUtils.objectCorner(pKind, 6)
         MSUtils.objectCorner(pPassword, 6)
         MSUtils.objectCorner(pRetype, 6)
-        MSUtils.objectCorner(buttonBack, 6)
-        MSUtils.objectCorner(buttonRegister, 6)
-        MSUtils.makeViewBorder(buttonRegister, 1, UIColor.white.cgColor)
+//        MSUtils.objectCorner(buttonBack, 6)
+//        MSUtils.objectCorner(buttonRegister, 6)
+//        MSUtils.makeViewBorder(buttonRegister, 1, UIColor.white.cgColor)
     }
     
     @objc func dateChanged(sender: UIDatePicker){
@@ -104,6 +99,7 @@ class MSRegisterVC: MSBaseVC {
     
     //MARK: - Action Handler
     @IBAction func actionPressBack(_ sender: Any) {
+        self.navigationVM.closeCurrent()
     }
     
     @IBAction func actionPressRegister(_ sender: Any) {
@@ -114,7 +110,7 @@ class MSRegisterVC: MSBaseVC {
         customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         customDialog.delegate = self
         self.present(customDialog, animated: true, completion: {
-            
+            MSDelegate.moveToMainScreen()
         })
     }
     
