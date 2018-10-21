@@ -72,7 +72,7 @@ class MSRegisterVC: MSBaseVC {
 //        customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
 //        customDialog.delegate = self
 //        self.present(customDialog, animated: true, completion: {
-//            MSDelegate.moveToMainScreen()
+            MSDelegate.moveToMainScreen()
 //        })
     }
     

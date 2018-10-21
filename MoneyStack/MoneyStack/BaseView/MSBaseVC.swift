@@ -125,11 +125,17 @@ extension MSBaseVC: MSTopBarViewDelegate {
 }
 
 extension MSBaseVC: UIScrollViewDelegate {
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if scrollView.contentOffset.y > (heightOfTopBar?.constant)! {
-//            if heightOfTopBar?.constant != 0 { heightOfTopBar?.constant = 0 }
-//        } else {
-//            if heightOfTopBar?.constant != MSBaseVCConstant.HEIGHT_TOP_MENU_BAR { heightOfTopBar?.constant = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR }
-//        }
-//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > (heightOfTopBar?.constant)! {
+            if heightOfTopBar?.constant != 0 {
+                heightOfTopBar?.constant = 0
+                self.topBarView?.isHidden = true
+            }
+        } else {
+            if heightOfTopBar?.constant != MSBaseVCConstant.HEIGHT_TOP_MENU_BAR {
+                heightOfTopBar?.constant = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR
+                self.topBarView?.isHidden = false
+            }
+        }
+    }
 }
