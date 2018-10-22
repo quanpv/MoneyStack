@@ -9,37 +9,34 @@
 import UIKit
 
 class MSRegisterVC: MSBaseVC {
-
-    //Only for corner radius
-    @IBOutlet weak var imageLogo: UIImageView!
-    @IBOutlet weak var pEmail: UITextField!
-    @IBOutlet weak var pUsername: UITextField!
-    @IBOutlet weak var pDoubletf: UIView!
-    @IBOutlet weak var pBirthday: UIView!
-    @IBOutlet weak var pGender: UIView!
-    @IBOutlet weak var pFullname: UITextField!
-    @IBOutlet weak var pJob: UITextField!
-    @IBOutlet weak var pKind: UIView!
-    @IBOutlet weak var pPassword: UITextField!
-    @IBOutlet weak var pRetype: UITextField!
-    @IBOutlet weak var buttonRegister: UIView!
-    //-------------------------------------
     
+    @IBOutlet weak var imageLogo: UIImageView!
     @IBOutlet weak var textfieldEmail: UITextField!
     @IBOutlet weak var textfieldUserName: UITextField!
+    @IBOutlet weak var textfieldBirthday: UITextField!{
+        willSet{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            if dateFormatter.date(from: newValue.text!) != nil{
+                print("ok")
+            }else{
+                print("đmm")
+            }
+        }
+    }
+    
     @IBOutlet weak var textfieldFullName: UITextField!
     @IBOutlet weak var textfieldJob: UITextField!
     @IBOutlet weak var textfieldPassword: UITextField!
     @IBOutlet weak var textfieldRepeatPassword: UITextField!
     
-    @IBOutlet weak var labelBirthday: UILabel!
+
     @IBOutlet weak var labelKind: UILabel!
     @IBOutlet weak var labelGender: UILabel!
     
     @IBOutlet weak var imageQuestionMark: UIButton!
-    @IBOutlet weak var imageBack: UIImageView!
     
-    private var pickerDataSource:[String] = ["Nam", "Nữ", "Gay", "Lesbian "]
+    private var pickerDataSource:[String] = ["Nam", "Nữ"]
     private var pickerKindDataSource:[String] = ["Cá Nhân", "Gia Đình", "Nhóm"]
     
     let subview = UIView()
@@ -50,32 +47,7 @@ class MSRegisterVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setup()
-        datePicker.addTarget(self, action: #selector(dateChanged), for: .valueChanged)
-    }
-    
-    func setup(){
-        MSUtils.objectCorner(imageLogo, 6)
-        MSUtils.objectCorner(pEmail, 6)
-        MSUtils.objectCorner(pUsername, 6)
-        MSUtils.objectCorner(pDoubletf, 6)
-        MSUtils.objectCorner(pBirthday, 6)
-        MSUtils.objectCorner(pGender, 6)
-        MSUtils.objectCorner(pFullname, 6)
-        MSUtils.objectCorner(pJob, 6)
-        MSUtils.objectCorner(pKind, 6)
-        MSUtils.objectCorner(pPassword, 6)
-        MSUtils.objectCorner(pRetype, 6)
-//        MSUtils.objectCorner(buttonBack, 6)
-//        MSUtils.objectCorner(buttonRegister, 6)
-//        MSUtils.makeViewBorder(buttonRegister, 1, UIColor.white.cgColor)
-    }
-    
-    @objc func dateChanged(sender: UIDatePicker){
-        labelBirthday.text = "\(sender.date.getAllAboutDate().day)/\(sender.date.getAllAboutDate().month)/\(sender.date.getAllAboutDate().year)"
-        labelBirthday.textColor = UIColor.black
-        datePicker.removeFromSuperview()
-        subview.removeFromSuperview()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,8 +57,8 @@ class MSRegisterVC: MSBaseVC {
     
     func createSubview(_ viewChild: UIView){
         let subviewWidth = UIScreen.main.bounds.width
-        subview.frame = CGRect(x: 0, y: UIScreen.main.bounds.height - 150, width: subviewWidth, height: 150)
-        viewChild.frame = CGRect(x: 0, y: 0, width: subviewWidth, height: 150)
+        subview.frame = CGRect(x: 0, y: UIScreen.main.bounds.height - 200, width: subviewWidth, height: 200)
+        viewChild.frame = CGRect(x: 0, y: 0, width: subviewWidth, height: 200)
         subview.backgroundColor = UIColor.white
         subview.layer.shadowColor = UIColor.black.cgColor
         subview.layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -103,15 +75,15 @@ class MSRegisterVC: MSBaseVC {
     }
     
     @IBAction func actionPressRegister(_ sender: Any) {
-        let customDialog = MSAddBalanceInfoDialog(nibName: "MSAddBalanceInfoDialog", bundle: nil)
-        customDialog.providesPresentationContextTransitionStyle = true
-        customDialog.definesPresentationContext = true
-        customDialog.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-        customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        customDialog.delegate = self
-        self.present(customDialog, animated: true, completion: {
-            MSDelegate.moveToMainScreen()
-        })
+//        let customDialog = MSAddBalanceInfoDialog(nibName: "MSAddBalanceInfoDialog", bundle: nil)
+//        customDialog.providesPresentationContextTransitionStyle = true
+//        customDialog.definesPresentationContext = true
+//        customDialog.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+//        customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+//        customDialog.delegate = self
+//        self.present(customDialog, animated: true, completion: {
+//            MSDelegate.moveToMainScreen()
+//        })
     }
     
     @IBAction func actionPressQuestionMark(_ sender: Any) {
@@ -123,26 +95,6 @@ class MSRegisterVC: MSBaseVC {
         pickerview.delegate = self
         pickerview.showsSelectionIndicator = true
         createSubview(pickerview)
-    }
-    
-    @IBAction func actionPressBirthday(_ sender: Any) {
-        createSubview(datePicker)
-        datePicker.datePickerMode = .date
-        let gregorian: NSCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
-        let currentDate: NSDate = NSDate()
-        let components: NSDateComponents = NSDateComponents()
-        
-        components.year = -18
-        let minDate: NSDate = gregorian.date(byAdding: components as DateComponents, to: currentDate as Date, options: NSCalendar.Options(rawValue: 0))! as NSDate
-        
-        components.year = -150
-        let maxDate: NSDate = gregorian.date(byAdding: components as DateComponents, to: currentDate as Date, options: NSCalendar.Options(rawValue: 0))! as NSDate
-        
-        self.datePicker.minimumDate = minDate as Date
-        self.datePicker.maximumDate = maxDate as Date
-        
-        datePicker.maximumDate = maxDate as Date
-        datePicker.minimumDate = minDate as Date
     }
     
     @IBAction func actionPressKindOfUser(_ sender: Any) {
@@ -203,13 +155,15 @@ extension MSRegisterVC:UIPickerViewDataSource, UIPickerViewDelegate{
     
 }
 
-extension MSRegisterVC:MSBaseDialogDelegate{
-    func okButtonPressed() {
-        print("1 con vịt xoè ra 2 cái cánh")
+//extension MSRegisterVC:MSBaseDialogDelegate{
+//    func okButtonPressed() {
+//        print("1 con vịt xoè ra 2 cái cánh")
+//
+//    }
+//
+//    func cancelButtonPressed() {
+//        print("Nó kêu rằng quác quác quác - quạc quạc quạc")
+//    }
+//}
 
-    }
 
-    func cancelButtonPressed() {
-        print("Nó kêu rằng quác quác quác - quạc quạc quạc")
-    }
-}

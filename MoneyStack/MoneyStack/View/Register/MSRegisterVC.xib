@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,21 +18,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSRegisterVC" customModule="MoneyStack" customModuleProvider="target">
             <connections>
-                <outlet property="imageLogo" destination="FQ3-af-Nkp" id="9XI-qN-2JG"/>
+                <outlet property="imageLogo" destination="FQ3-af-Nkp" id="rsG-Fw-pSr"/>
                 <outlet property="imageQuestionMark" destination="8ns-A8-yYb" id="kN3-yE-pFG"/>
-                <outlet property="labelBirthday" destination="D4a-kG-8JY" id="uVe-3R-ynj"/>
                 <outlet property="labelGender" destination="aHD-cU-adu" id="CrG-RD-vr4"/>
                 <outlet property="labelKind" destination="aJE-Oc-5vz" id="aTj-4S-PMk"/>
-                <outlet property="pBirthday" destination="CdR-Pm-ZfL" id="6b9-k5-YrI"/>
-                <outlet property="pDoubletf" destination="wF2-C4-CPw" id="UUK-X0-RkP"/>
-                <outlet property="pEmail" destination="q8G-8J-i3J" id="4tT-Wr-6TP"/>
-                <outlet property="pFullname" destination="Z4k-89-qdB" id="iqy-dv-RKQ"/>
-                <outlet property="pGender" destination="mzp-oc-9bn" id="75f-HI-bv7"/>
-                <outlet property="pJob" destination="uRL-kd-tbI" id="a0p-Cg-RKM"/>
-                <outlet property="pKind" destination="PaQ-MC-b6A" id="mVo-ob-ufF"/>
-                <outlet property="pPassword" destination="iVb-NC-4ec" id="Izb-dS-QiD"/>
-                <outlet property="pRetype" destination="SRI-j0-Srt" id="ovG-bZ-T33"/>
-                <outlet property="pUsername" destination="Vxd-37-uad" id="qGh-h9-2fS"/>
+                <outlet property="textfieldBirthday" destination="cDH-3U-yyu" id="gqb-0M-rxC"/>
                 <outlet property="textfieldEmail" destination="q8G-8J-i3J" id="LKu-4R-Hmt"/>
                 <outlet property="textfieldFullName" destination="Z4k-89-qdB" id="MSV-jA-OUp"/>
                 <outlet property="textfieldJob" destination="uRL-kd-tbI" id="HZY-Nl-q2Z"/>
@@ -53,6 +43,11 @@
                         <constraint firstAttribute="height" constant="75" id="4x2-is-Jhj"/>
                         <constraint firstAttribute="width" constant="75" id="GET-xR-puh"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiR-dD-b1A" userLabel="Textfield View">
                     <rect key="frame" x="10" y="155" width="355" height="374"/>
@@ -66,6 +61,11 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tên đăng nhập" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vxd-37-uad" userLabel="tfUsername">
                             <rect key="frame" x="0.0" y="47" width="355" height="45"/>
@@ -76,41 +76,32 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wF2-C4-CPw" userLabel="Double textfield">
                             <rect key="frame" x="0.0" y="94" width="355" height="45"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdR-Pm-ZfL" userLabel="tfBirthday">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ngày sinh" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDH-3U-yyu">
                                     <rect key="frame" x="0.0" y="0.0" width="187.5" height="45"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày sinh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4a-kG-8JY">
-                                            <rect key="frame" x="48" y="9.5" width="92" height="27.5"/>
-                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
-                                            <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pc-Q0-DGi">
-                                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="45"/>
-                                            <connections>
-                                                <action selector="actionPressBirthday:" destination="-1" eventType="touchUpInside" id="86f-Pg-Rfg"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="D4a-kG-8JY" firstAttribute="centerX" secondItem="CdR-Pm-ZfL" secondAttribute="centerX" id="NS1-8L-gvJ"/>
-                                        <constraint firstAttribute="trailing" secondItem="2Pc-Q0-DGi" secondAttribute="trailing" id="iBZ-TH-FOY"/>
-                                        <constraint firstItem="D4a-kG-8JY" firstAttribute="centerY" secondItem="CdR-Pm-ZfL" secondAttribute="centerY" id="jRT-6W-oQ7"/>
-                                        <constraint firstAttribute="bottom" secondItem="2Pc-Q0-DGi" secondAttribute="bottom" id="t7k-et-ZNn"/>
-                                        <constraint firstItem="2Pc-Q0-DGi" firstAttribute="top" secondItem="CdR-Pm-ZfL" secondAttribute="top" id="uR8-aQ-2HC"/>
-                                        <constraint firstItem="2Pc-Q0-DGi" firstAttribute="leading" secondItem="CdR-Pm-ZfL" secondAttribute="leading" id="wJT-9Z-eP3"/>
-                                    </constraints>
-                                </view>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="postal-code"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzp-oc-9bn" userLabel="tfGender">
                                     <rect key="frame" x="189" y="0.0" width="165.5" height="45"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới tính" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHD-cU-adu">
-                                            <rect key="frame" x="44" y="9.5" width="79" height="27.5"/>
+                                            <rect key="frame" x="43.5" y="9.5" width="79" height="27.5"/>
                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                             <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -125,6 +116,11 @@
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrL-8B-NRJ">
                                             <rect key="frame" x="0.0" y="0.0" width="165.5" height="45"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="actionPressGenderPicker:" destination="-1" eventType="touchUpInside" id="lLg-DM-IPy"/>
                                             </connections>
@@ -141,18 +137,23 @@
                                         <constraint firstItem="LrL-8B-NRJ" firstAttribute="top" secondItem="mzp-oc-9bn" secondAttribute="top" id="rKa-QJ-tCf"/>
                                         <constraint firstItem="fP2-NO-9cT" firstAttribute="centerY" secondItem="mzp-oc-9bn" secondAttribute="centerY" id="ymI-VH-Pxx"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="cDH-3U-yyu" firstAttribute="height" secondItem="wF2-C4-CPw" secondAttribute="height" id="16J-kd-PIV"/>
                                 <constraint firstItem="mzp-oc-9bn" firstAttribute="top" secondItem="wF2-C4-CPw" secondAttribute="top" id="6Ds-4B-q36"/>
-                                <constraint firstItem="mzp-oc-9bn" firstAttribute="leading" secondItem="CdR-Pm-ZfL" secondAttribute="trailing" constant="2" id="7yr-Yl-Lw9"/>
-                                <constraint firstItem="CdR-Pm-ZfL" firstAttribute="width" secondItem="wF2-C4-CPw" secondAttribute="width" multiplier="1:2" constant="10" id="Mta-jm-gzC"/>
+                                <constraint firstItem="cDH-3U-yyu" firstAttribute="top" secondItem="wF2-C4-CPw" secondAttribute="top" id="PRz-vz-uJx"/>
                                 <constraint firstAttribute="height" constant="45" id="SLu-hp-IL8"/>
                                 <constraint firstItem="mzp-oc-9bn" firstAttribute="width" secondItem="wF2-C4-CPw" secondAttribute="width" multiplier="1:2" constant="-12" id="T8A-DU-Qq4"/>
-                                <constraint firstItem="CdR-Pm-ZfL" firstAttribute="height" secondItem="wF2-C4-CPw" secondAttribute="height" id="UwR-62-5D6"/>
-                                <constraint firstItem="CdR-Pm-ZfL" firstAttribute="leading" secondItem="wF2-C4-CPw" secondAttribute="leading" id="dEg-4u-QGF"/>
-                                <constraint firstItem="CdR-Pm-ZfL" firstAttribute="top" secondItem="wF2-C4-CPw" secondAttribute="top" id="fyf-Se-lvC"/>
+                                <constraint firstItem="cDH-3U-yyu" firstAttribute="width" secondItem="wF2-C4-CPw" secondAttribute="width" multiplier="1:2" constant="10" id="gdg-eH-vqm"/>
+                                <constraint firstAttribute="trailing" secondItem="mzp-oc-9bn" secondAttribute="trailing" id="oAu-Nc-elg"/>
+                                <constraint firstItem="cDH-3U-yyu" firstAttribute="leading" secondItem="wF2-C4-CPw" secondAttribute="leading" id="s9U-Zw-gz1"/>
                                 <constraint firstItem="mzp-oc-9bn" firstAttribute="height" secondItem="wF2-C4-CPw" secondAttribute="height" id="sL0-ra-tfc"/>
                             </constraints>
                         </view>
@@ -165,6 +166,11 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nghề nghiệp của bạn?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRL-kd-tbI" userLabel="tfJob">
                             <rect key="frame" x="0.0" y="188" width="355" height="45"/>
@@ -175,6 +181,11 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaQ-MC-b6A" userLabel="tfKind">
                             <rect key="frame" x="0.0" y="235" width="355" height="45"/>
@@ -194,6 +205,11 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrh-3e-gkg">
                                     <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="actionPressKindOfUser:" destination="-1" eventType="touchUpInside" id="Q8i-F9-6jL"/>
                                     </connections>
@@ -233,6 +249,11 @@
                                 <constraint firstItem="yDi-wM-5gB" firstAttribute="bottom" secondItem="8ns-A8-yYb" secondAttribute="bottom" id="rgf-Ns-cMW"/>
                                 <constraint firstAttribute="height" constant="45" id="rti-cz-hw6"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-NC-4ec" userLabel="tfPassword">
                             <rect key="frame" x="0.0" y="282" width="355" height="45"/>
@@ -243,6 +264,11 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhắc lại mật khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRI-j0-Srt" userLabel="tfRetype">
                             <rect key="frame" x="0.0" y="329" width="355" height="45"/>
@@ -253,6 +279,11 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

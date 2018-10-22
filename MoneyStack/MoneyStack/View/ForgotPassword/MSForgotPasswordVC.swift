@@ -17,26 +17,9 @@ class MSForgotPasswordVC: MSBaseVC {
     @IBOutlet weak var imageForward: UIImageView!
     @IBOutlet weak var imageLogo: UIImageView!
     
-    //For corner radius only
-    @IBOutlet weak var btnBack: UIView!
-    @IBOutlet weak var btnForward: UIView!
-    //--------------------------------------------
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //đm dân chơi!
-        MSUtils.objectCorner(imageLogo, 7.5)
-        MSUtils.objectCorner(btnBack, 6)
-        MSUtils.objectCorner(btnForward, 6)
-        MSUtils.objectCorner(textfieldUsername, 6)
-        MSUtils.objectCorner(textfieldCode, 6)
-        
-        
-//        imageBack.image = imageBack.image!.withRenderingMode(.alwaysTemplate)
-//        imageForward.image = imageForward.image!.withRenderingMode(.alwaysTemplate)
-//        imageBack.tintColor = UIColor.white
-//        imageForward.tintColor = UIColor.white
-//        imageForward.transform = CGAffineTransform(rotationAngle: .pi)
+
     }
 
     override func didReceiveMemoryWarning() {
