@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		401FDFE872B4DACD0CB67F94 /* Pods_MoneyStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */; };
 		485395C77EE137AEBBD6DF1D /* Pods_MoneyStack_UAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */; };
+		5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
+		5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
+		5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
+		5BF13498217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */; };
+		5BF13499217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */; };
+		5BF1349A217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */; };
+		5BF1349B217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */; };
+		5BF1349C217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */; };
+		5BF1349D217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */; };
+		5BF1349E217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
+		5BF1349F217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
+		5BF134A0217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
 		98244C9B217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
 		98244C9C217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
 		98244C9D217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
@@ -252,6 +264,10 @@
 
 /* Begin PBXFileReference section */
 		4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_UAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
+		5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
+		5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
+		5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVC.swift; sourceTree = "<group>"; };
 		69FEA4E866B17198A19B89FC /* Pods-MoneyStack DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.debug.xcconfig"; sourceTree = "<group>"; };
 		795AAA9AA14128DC13506621 /* Pods-MoneyStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack.debug.xcconfig"; sourceTree = "<group>"; };
 		96758BE11DE1BF87FB196226 /* Pods-MoneyStack UAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.release.xcconfig"; sourceTree = "<group>"; };
@@ -375,6 +391,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BF1348F217D6B0B00D35DDB /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */,
+				5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */,
+				5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */,
+			);
+			path = FirstBalanceInfo;
+			sourceTree = "<group>";
+		};
 		64E873FE6346BFE1011656A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +454,7 @@
 		9880714821749EAF00B11705 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				5BF1348F217D6B0B00D35DDB /* Label */,
 				989FB7EF21753170002E15CE /* LeftMenu */,
 				9880714921749EAF00B11705 /* MSBaseVC.swift */,
 				988071E021751BBF00B11705 /* MSBaseVCExtension.swift */,
@@ -517,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				98BE878A217A743A0075BD76 /* First */,
+				5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */,
 				98BE8778217A74390075BD76 /* Dashboard */,
 				98BE878E217A743A0075BD76 /* News */,
 				98BE8797217A743A0075BD76 /* Expense */,
@@ -907,6 +943,7 @@
 				E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87EF217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87C2217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				5BF1349C217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
 				98244C9F217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
 				E63113E9217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
 				E63113B9217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
@@ -932,6 +969,7 @@
 				98BE87A5217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
 				98244CCA217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */,
 				98BE87E4217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
+				5BF1349D217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
 				E63113BA217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
 				98BE87B7217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
@@ -968,6 +1006,7 @@
 				98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87A3217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
+				5BF1349B217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
 				98244C9E217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
 				E63113E8217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
 				E63113B8217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
@@ -1116,6 +1155,7 @@
 				98C5C86221798AE7005286D6 /* MSTopBarView.swift in Sources */,
 				9877CB04217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				988071812174DEE200B11705 /* MSConstant.swift in Sources */,
+				5BF1349F217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B22174ED2E00B11705 /* UIColor.swift in Sources */,
 				98BE87D4217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
 				9880712921749DD000B11705 /* AppDelegate.swift in Sources */,
@@ -1130,6 +1170,7 @@
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C12174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714B21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				5BF13499217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071AF2174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D6217508ED00B11705 /* MSModel.swift in Sources */,
 				98244C9C217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
@@ -1138,6 +1179,7 @@
 				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
 				98244CBD217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
 				E63113BE217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
 				E64625442178348F004B3DFD /* Enum.swift in Sources */,
 				98BE87CB217A743A0075BD76 /* MSFirstVM.swift in Sources */,
 				988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */,
@@ -1179,6 +1221,7 @@
 				98C5C86321798AE7005286D6 /* MSTopBarView.swift in Sources */,
 				9877CB05217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				988071822174DEE200B11705 /* MSConstant.swift in Sources */,
+				5BF134A0217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B32174ED2E00B11705 /* UIColor.swift in Sources */,
 				98BE87D5217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
 				9880713621749DFE00B11705 /* AppDelegate.swift in Sources */,
@@ -1193,6 +1236,7 @@
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C22174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714C21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				5BF1349A217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071B02174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D7217508ED00B11705 /* MSModel.swift in Sources */,
 				98244C9D217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
@@ -1201,6 +1245,7 @@
 				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
 				98244CBE217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
 				E63113BF217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
 				E64625452178348F004B3DFD /* Enum.swift in Sources */,
 				98BE87CC217A743A0075BD76 /* MSFirstVM.swift in Sources */,
 				988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */,
@@ -1242,6 +1287,7 @@
 				98A8D02A217A762100765F69 /* MSPersonalizeVC.swift in Sources */,
 				9877CB03217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				98A8D02B217A762100765F69 /* MSPlanVC.swift in Sources */,
+				5BF1349E217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				98A8D02D217A762100765F69 /* MSSavingVC.swift in Sources */,
 				98A8D02E217A762100765F69 /* MSModel.swift in Sources */,
 				98A8D02F217A762100765F69 /* MSTopBarView.swift in Sources */,
@@ -1256,6 +1302,7 @@
 				98A8D038217A762100765F69 /* UIApplication.swift in Sources */,
 				98A8D039217A762100765F69 /* UIColor.swift in Sources */,
 				98A8D03A217A762100765F69 /* UIImage.swift in Sources */,
+				5BF13498217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				98A8D03B217A762100765F69 /* UIImageView.swift in Sources */,
 				98A8D03C217A762100765F69 /* UITableViewExtension.swift in Sources */,
 				98244C9B217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
@@ -1264,6 +1311,7 @@
 				98A8D03F217A762100765F69 /* UIViewController.swift in Sources */,
 				98244CBC217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
 				E63113BD217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
 				98A8D040217A762100765F69 /* UIViewControllerExtension.swift in Sources */,
 				98A8D041217A762100765F69 /* UIViewExtensions.swift in Sources */,
 				98A8D042217A762100765F69 /* UIWindowExtension.swift in Sources */,
