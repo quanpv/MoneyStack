@@ -13,17 +13,7 @@ class MSRegisterVC: MSBaseVC {
     @IBOutlet weak var imageLogo: UIImageView!
     @IBOutlet weak var textfieldEmail: UITextField!
     @IBOutlet weak var textfieldUserName: UITextField!
-    @IBOutlet weak var textfieldBirthday: UITextField!{
-        willSet{
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd/MM/yyyy"
-            if dateFormatter.date(from: newValue.text!) != nil{
-                print("ok")
-            }else{
-                print("đmm")
-            }
-        }
-    }
+    @IBOutlet weak var textfieldBirthday: UITextField!
     
     @IBOutlet weak var textfieldFullName: UITextField!
     @IBOutlet weak var textfieldJob: UITextField!
@@ -108,7 +98,7 @@ class MSRegisterVC: MSBaseVC {
     @IBAction func checkValidate(_ sender: UITextField) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
-        var checkString = sender.text
+        let checkString = sender.text
         if dateFormatter.date(from: checkString!) != nil {
             
         }else{

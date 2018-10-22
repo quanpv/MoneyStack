@@ -104,7 +104,7 @@
                                     <rect key="frame" x="189" y="0.0" width="165.5" height="45"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới tính" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHD-cU-adu">
-                                            <rect key="frame" x="44" y="9.5" width="79" height="27.5"/>
+                                            <rect key="frame" x="43.5" y="9.5" width="79" height="27.5"/>
                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                             <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
