@@ -228,6 +228,12 @@
 		98C5C86B2179E888005286D6 /* MSButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C8682179E888005286D6 /* MSButtonView.swift */; };
 		98FE70DE217499F1007164EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
 		98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
+		E608D052217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E608D050217DB5500053C422 /* MSEditBalanceInfoDialog.swift */; };
+		E608D053217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E608D050217DB5500053C422 /* MSEditBalanceInfoDialog.swift */; };
+		E608D054217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E608D050217DB5500053C422 /* MSEditBalanceInfoDialog.swift */; };
+		E608D055217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */; };
+		E608D056217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */; };
+		E608D057217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */; };
 		E63113B5217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
 		E63113B6217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
 		E63113B7217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
@@ -349,6 +355,8 @@
 		DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_DEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
+		E608D050217DB5500053C422 /* MSEditBalanceInfoDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSEditBalanceInfoDialog.swift; sourceTree = "<group>"; };
+		E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSEditBalanceInfoDialog.xib; sourceTree = "<group>"; };
 		E63113B3217B24C7009DBA7C /* MSLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
 		E63113B4217B24C8009DBA7C /* MSLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
 		E63113BB217B2561009DBA7C /* MSRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
@@ -779,6 +787,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E608D04F217DB5100053C422 /* EditBalanceInfoDialog */ = {
+			isa = PBXGroup;
+			children = (
+				E608D050217DB5500053C422 /* MSEditBalanceInfoDialog.swift */,
+				E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */,
+			);
+			path = EditBalanceInfoDialog;
+			sourceTree = "<group>";
+		};
 		E63113DA217B28D3009DBA7C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,6 +807,7 @@
 		E63113DB217B28DC009DBA7C /* Dialog */ = {
 			isa = PBXGroup;
 			children = (
+				E608D04F217DB5100053C422 /* EditBalanceInfoDialog */,
 				E63113EE217B2918009DBA7C /* MSBaseDialog.swift */,
 				E63113E5217B28FF009DBA7C /* AddBalanceInfo */,
 				E63113DC217B28E7009DBA7C /* ConfirmDialog */,
@@ -928,6 +946,7 @@
 				98BE87D7217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
 				9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */,
 				98244CB9217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
+				E608D056217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
 				98BE87D1217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
@@ -956,6 +975,7 @@
 			files = (
 				98BE87D8217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
 				9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */,
+				E608D057217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
 				98244CA0217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
 				98244CBA217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
 				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
@@ -991,6 +1011,7 @@
 				98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */,
 				988071892174EAF700B11705 /* OpenSans in Resources */,
 				98244CB8217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
+				E608D055217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
 				98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
 				E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
@@ -1155,6 +1176,7 @@
 				98C5C86221798AE7005286D6 /* MSTopBarView.swift in Sources */,
 				9877CB04217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				988071812174DEE200B11705 /* MSConstant.swift in Sources */,
+				E608D053217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */,
 				5BF1349F217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B22174ED2E00B11705 /* UIColor.swift in Sources */,
 				98BE87D4217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
@@ -1221,6 +1243,7 @@
 				98C5C86321798AE7005286D6 /* MSTopBarView.swift in Sources */,
 				9877CB05217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				988071822174DEE200B11705 /* MSConstant.swift in Sources */,
+				E608D054217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */,
 				5BF134A0217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B32174ED2E00B11705 /* UIColor.swift in Sources */,
 				98BE87D5217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
@@ -1287,6 +1310,7 @@
 				98A8D02A217A762100765F69 /* MSPersonalizeVC.swift in Sources */,
 				9877CB03217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				98A8D02B217A762100765F69 /* MSPlanVC.swift in Sources */,
+				E608D052217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */,
 				5BF1349E217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				98A8D02D217A762100765F69 /* MSSavingVC.swift in Sources */,
 				98A8D02E217A762100765F69 /* MSModel.swift in Sources */,

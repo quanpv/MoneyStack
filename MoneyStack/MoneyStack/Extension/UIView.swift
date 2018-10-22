@@ -196,7 +196,7 @@ extension UILabel {
     
     
 }
-
+@IBDesignable
 extension UIView {
     var height: CGFloat {
         return self.bounds.size.height
@@ -204,5 +204,6 @@ extension UIView {
     var width: CGFloat {
         return self.bounds.size.width
     }
+    
 }
 
