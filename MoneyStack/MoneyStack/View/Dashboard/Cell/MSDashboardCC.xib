@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MSDashboardCC" id="gTV-IL-0wX" customClass="MSDashboardCC" customModule="MoneyStack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK3-G9-ENr" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.000.000.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gc-h7-ohg">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="45"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5c-Pn-DCb" customClass="MSFullSizeIconButton" customModule="MoneyStack" customModuleProvider="target">
+                                <rect key="frame" x="330" y="0.0" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="cXu-Ad-Pf8"/>
+                                    <constraint firstAttribute="width" secondItem="G5c-Pn-DCb" secondAttribute="height" multiplier="1:1" id="iC9-tk-0GB"/>
+                                </constraints>
+                                <state key="normal" image="ic_close_red_45"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iconHeight">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9gc-h7-ohg" firstAttribute="leading" secondItem="IK3-G9-ENr" secondAttribute="leading" id="mT5-Sd-obb"/>
+                            <constraint firstAttribute="bottom" secondItem="9gc-h7-ohg" secondAttribute="bottom" id="mge-sw-5Iu"/>
+                            <constraint firstAttribute="trailing" secondItem="G5c-Pn-DCb" secondAttribute="trailing" id="o5K-XD-YM6"/>
+                            <constraint firstItem="9gc-h7-ohg" firstAttribute="top" secondItem="IK3-G9-ENr" secondAttribute="top" id="pim-zv-3t2"/>
+                            <constraint firstItem="G5c-Pn-DCb" firstAttribute="leading" secondItem="9gc-h7-ohg" secondAttribute="trailing" id="qGG-Ck-AIL"/>
+                            <constraint firstItem="G5c-Pn-DCb" firstAttribute="centerY" secondItem="IK3-G9-ENr" secondAttribute="centerY" id="wsb-9t-X4R"/>
+                        </constraints>
+                    </view>
+                    <view autoresizesSubviews="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJi-OH-4Lz" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                        <rect key="frame" x="127" y="47" width="248" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đi chợ mua rau" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-qx-sEM">
+                                <rect key="frame" x="0.0" y="0.0" width="209" height="45"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_next_black_45" translatesAutoresizingMaskIntoConstraints="NO" id="yp7-gv-PdW">
+                                <rect key="frame" x="217" y="11.5" width="23" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="K0d-mo-ZHy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItX-4I-9Jp">
+                                <rect key="frame" x="0.0" y="0.0" width="248" height="45"/>
+                                <connections>
+                                    <action selector="clickDetail:" destination="gTV-IL-0wX" eventType="touchUpInside" id="FZU-H6-S9e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7LV-qx-sEM" secondAttribute="bottom" id="Anz-jh-Z5r"/>
+                            <constraint firstAttribute="trailing" secondItem="yp7-gv-PdW" secondAttribute="trailing" constant="8" id="L47-a7-VJ9"/>
+                            <constraint firstAttribute="bottom" secondItem="ItX-4I-9Jp" secondAttribute="bottom" id="SSQ-eb-7MR"/>
+                            <constraint firstItem="yp7-gv-PdW" firstAttribute="centerY" secondItem="fJi-OH-4Lz" secondAttribute="centerY" id="TWb-CG-47Q"/>
+                            <constraint firstItem="7LV-qx-sEM" firstAttribute="leading" secondItem="fJi-OH-4Lz" secondAttribute="leading" id="TZE-86-6Qx"/>
+                            <constraint firstItem="yp7-gv-PdW" firstAttribute="leading" secondItem="7LV-qx-sEM" secondAttribute="trailing" constant="8" id="W12-nL-574"/>
+                            <constraint firstAttribute="trailing" secondItem="ItX-4I-9Jp" secondAttribute="trailing" id="gr5-LZ-hJt"/>
+                            <constraint firstItem="ItX-4I-9Jp" firstAttribute="top" secondItem="fJi-OH-4Lz" secondAttribute="top" id="lMk-ua-ivm"/>
+                            <constraint firstItem="ItX-4I-9Jp" firstAttribute="leading" secondItem="fJi-OH-4Lz" secondAttribute="leading" id="qhp-oh-FjD"/>
+                            <constraint firstItem="7LV-qx-sEM" firstAttribute="top" secondItem="fJi-OH-4Lz" secondAttribute="top" id="wdn-VD-GW4"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06/09/1969" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYC-SP-EVP" customClass="MSCornerLabel" customModule="MoneyStack" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="47" width="125" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="SiW-lb-Hub"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IK3-G9-ENr" secondAttribute="trailing" id="0g0-SY-58z"/>
+                <constraint firstItem="oYC-SP-EVP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8hF-eE-Vhi"/>
+                <constraint firstAttribute="bottom" secondItem="oYC-SP-EVP" secondAttribute="bottom" id="Bj6-RZ-Hst"/>
+                <constraint firstItem="oYC-SP-EVP" firstAttribute="top" secondItem="IK3-G9-ENr" secondAttribute="bottom" constant="2" id="Gfj-k9-She"/>
+                <constraint firstAttribute="bottom" secondItem="fJi-OH-4Lz" secondAttribute="bottom" id="IZA-65-non"/>
+                <constraint firstItem="IK3-G9-ENr" firstAttribute="height" secondItem="fJi-OH-4Lz" secondAttribute="height" id="RgX-5b-h46"/>
+                <constraint firstItem="fJi-OH-4Lz" firstAttribute="leading" secondItem="oYC-SP-EVP" secondAttribute="trailing" constant="2" id="ZnE-fP-Ky9"/>
+                <constraint firstAttribute="trailing" secondItem="fJi-OH-4Lz" secondAttribute="trailing" id="cpk-Vq-kou"/>
+                <constraint firstItem="IK3-G9-ENr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="noV-pX-wvI"/>
+                <constraint firstItem="IK3-G9-ENr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ogO-Do-yWR"/>
+                <constraint firstItem="fJi-OH-4Lz" firstAttribute="top" secondItem="IK3-G9-ENr" secondAttribute="bottom" constant="2" id="wG9-vH-7FG"/>
+            </constraints>
+            <connections>
+                <outlet property="labelContent" destination="7LV-qx-sEM" id="yrk-cU-gOd"/>
+                <outlet property="labelDate" destination="oYC-SP-EVP" id="TcH-NW-JHh"/>
+                <outlet property="labelMoney" destination="9gc-h7-ohg" id="pZB-gX-QpK"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_close_red_45" width="22" height="22"/>
+        <image name="ic_next_black_45" width="22" height="22"/>
+    </resources>
+</document>

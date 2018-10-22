@@ -9,35 +9,33 @@
 import UIKit
 
 extension MSBaseVC {
-    
-    var backGroundImage: UIImageView {
-        let imageView = UIImageView(frame: UIScreenConstant.BOUNDS)
-        imageView.image = UIImage(named: "Default_Background")
-        imageView.contentMode = .scaleAspectFill
-        let darkerView = UIView(frame: imageView.frame)
-        darkerView.backgroundColor = isStartedScreen ? UIColor(hex: "#004445") : UIColor.black
-        darkerView.alpha = isStartedScreen ? 0.7 : 0.4
-        imageView.addSubview(darkerView)
-        return imageView
-    }
-    
-    func makeTopMenuBar() {
-        menuBarContainer = UIView(frame: CGRect(x: 0, y: 20, width: UIScreenConstant.WIDTH , height: MSBaseVCConstant.HEIGHT_TOP_MENU_BAR))
-        menuBarContainer?.backgroundColor = UIColor(hex: "2E6B29", alpha: 0.8)
-        let menuButton: UIButton = UIButton(frame: CGRect(x: 8, y: 8, width: 34, height: 34))
-        menuButton.setImage(UIImage(named: "ic_menu_64"), for: .normal)
-        menuButton.addTarget(self, action: #selector(callOpenLeftMenu), for: .touchUpInside)
-        menuBarContainer?.addSubview(menuButton)
-        view.addSubview(menuBarContainer!)
-    }
-    
+
     @objc func callOpenLeftMenu() {
         MSDelegate.openLeftMenu()
     }
     
     func onViewDidLoad() {
-        view.insertSubview(backGroundImage, at: 0)
+        if !isStartedScreen {
+            autoBackground()
+        }
         setupViewHolder()
+    }
+    
+    private func autoBackground() {
+        backGroundImage = UIImageView(frame: UIScreenConstant.BOUNDS)
+        backGroundImage.image = UIImage(named: "Default_Background")
+        backGroundImage.contentMode = .scaleAspectFill
+        darkerView = UIView(frame: backGroundImage.frame)
+        darkerView.backgroundColor = MSDelegate.config.mainColor
+        darkerView.alpha = darkViewAlpha
+        backGroundImage.addSubview(darkerView)
+        view.insertSubview(backGroundImage, at: 0)
+    }
+    func updateBackGround(index: Int) {
+        //MARK: - TODO: updateAutoBackGround
+        if isStartedScreen {
+            return
+        }
     }
 }
 
@@ -75,3 +73,4 @@ class MSStackOfView {
         return stackOfViews.last!
     }
 }
+

@@ -9,154 +9,279 @@
 /* Begin PBXBuildFile section */
 		401FDFE872B4DACD0CB67F94 /* Pods_MoneyStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */; };
 		485395C77EE137AEBBD6DF1D /* Pods_MoneyStack_UAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */; };
-		5B67096821787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */; };
-		5B67096921787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */; };
-		5B67096A21787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */; };
-		5B67096B21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */; };
-		5B67096C21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */; };
-		5B67096D21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */; };
-		5B67096F21799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */; };
-		5B67097021799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */; };
-		5B67097121799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */; };
-		5B6709742179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */; };
-		5B6709752179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */; };
-		5B6709762179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */; };
+		5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
+		5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
+		5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
+		5BF13498217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */; };
+		5BF13499217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */; };
+		5BF1349A217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */; };
+		5BF1349B217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */; };
+		5BF1349C217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */; };
+		5BF1349D217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */; };
+		5BF1349E217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
+		5BF1349F217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
+		5BF134A0217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
+		98244C9B217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
+		98244C9C217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
+		98244C9D217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
+		98244C9E217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244C9A217BF1D500E2E4A0 /* MSPersonalizeCC.xib */; };
+		98244C9F217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244C9A217BF1D500E2E4A0 /* MSPersonalizeCC.xib */; };
+		98244CA0217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244C9A217BF1D500E2E4A0 /* MSPersonalizeCC.xib */; };
+		98244CA7217C84B000E2E4A0 /* MSDesignableThemeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CA6217C84B000E2E4A0 /* MSDesignableThemeButton.swift */; };
+		98244CA8217C84B000E2E4A0 /* MSDesignableThemeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CA6217C84B000E2E4A0 /* MSDesignableThemeButton.swift */; };
+		98244CA9217C84B000E2E4A0 /* MSDesignableThemeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CA6217C84B000E2E4A0 /* MSDesignableThemeButton.swift */; };
+		98244CB5217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CB3217CC9A400E2E4A0 /* MSDashboardCC.swift */; };
+		98244CB6217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CB3217CC9A400E2E4A0 /* MSDashboardCC.swift */; };
+		98244CB7217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CB3217CC9A400E2E4A0 /* MSDashboardCC.swift */; };
+		98244CB8217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244CB4217CC9A400E2E4A0 /* MSDashboardCC.xib */; };
+		98244CB9217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244CB4217CC9A400E2E4A0 /* MSDashboardCC.xib */; };
+		98244CBA217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244CB4217CC9A400E2E4A0 /* MSDashboardCC.xib */; };
+		98244CBC217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CBB217CCE1100E2E4A0 /* MSFullSizeIconButton.swift */; };
+		98244CBD217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CBB217CCE1100E2E4A0 /* MSFullSizeIconButton.swift */; };
+		98244CBE217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CBB217CCE1100E2E4A0 /* MSFullSizeIconButton.swift */; };
+		98244CC0217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CBF217CCFEB00E2E4A0 /* MSCornerView.swift */; };
+		98244CC1217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CBF217CCFEB00E2E4A0 /* MSCornerView.swift */; };
+		98244CC2217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CBF217CCFEB00E2E4A0 /* MSCornerView.swift */; };
+		98244CC5217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CC3217CD97200E2E4A0 /* MSDashboardFirstCC.swift */; };
+		98244CC6217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CC3217CD97200E2E4A0 /* MSDashboardFirstCC.swift */; };
+		98244CC7217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244CC3217CD97200E2E4A0 /* MSDashboardFirstCC.swift */; };
+		98244CC8217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244CC4217CD97200E2E4A0 /* MSDashboardFirstCC.xib */; };
+		98244CC9217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244CC4217CD97200E2E4A0 /* MSDashboardFirstCC.xib */; };
+		98244CCA217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98244CC4217CD97200E2E4A0 /* MSDashboardFirstCC.xib */; };
+		9877CB03217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877CB01217CE76B004F8396 /* MSLeftMenuVC.swift */; };
+		9877CB04217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877CB01217CE76B004F8396 /* MSLeftMenuVC.swift */; };
+		9877CB05217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877CB01217CE76B004F8396 /* MSLeftMenuVC.swift */; };
+		9877CB06217CE76B004F8396 /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9877CB02217CE76B004F8396 /* MSLeftMenuVC.xib */; };
+		9877CB07217CE76B004F8396 /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9877CB02217CE76B004F8396 /* MSLeftMenuVC.xib */; };
+		9877CB08217CE76B004F8396 /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9877CB02217CE76B004F8396 /* MSLeftMenuVC.xib */; };
 		9880712921749DD000B11705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
 		9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
 		9880712D21749DD000B11705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
 		9880713621749DFE00B11705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
 		9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
 		9880713A21749DFE00B11705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
-		9880714221749E5400B11705 /* Info_UAT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714021749E5400B11705 /* Info_UAT.plist */; };
 		9880714421749E5400B11705 /* Info_UAT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714021749E5400B11705 /* Info_UAT.plist */; };
-		9880714521749E5400B11705 /* Info_DEV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714121749E5400B11705 /* Info_DEV.plist */; };
-		9880714621749E5400B11705 /* Info_DEV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9880714121749E5400B11705 /* Info_DEV.plist */; };
-		9880714A21749EAF00B11705 /* MSBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880714921749EAF00B11705 /* MSBaseVC.swift */; };
 		9880714B21749EAF00B11705 /* MSBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880714921749EAF00B11705 /* MSBaseVC.swift */; };
 		9880714C21749EAF00B11705 /* MSBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880714921749EAF00B11705 /* MSBaseVC.swift */; };
-		9880715721749EAF00B11705 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
 		9880715821749EAF00B11705 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
 		9880715921749EAF00B11705 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
-		9880716B21749EAF00B11705 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
 		9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
 		9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
-		9880716F21749EAF00B11705 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
 		9880717021749EAF00B11705 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
 		9880717121749EAF00B11705 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
-		988071752174B9A700B11705 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071732174B9A700B11705 /* MSFirstVC.xib */; };
-		988071762174B9A700B11705 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071732174B9A700B11705 /* MSFirstVC.xib */; };
-		988071772174B9A700B11705 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071732174B9A700B11705 /* MSFirstVC.xib */; };
-		988071782174B9A700B11705 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071742174B9A700B11705 /* MSFirstVC.swift */; };
-		988071792174B9A700B11705 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071742174B9A700B11705 /* MSFirstVC.swift */; };
-		9880717A2174B9A700B11705 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071742174B9A700B11705 /* MSFirstVC.swift */; };
-		988071802174DEE200B11705 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880717F2174DEE200B11705 /* MSConstant.swift */; };
 		988071812174DEE200B11705 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880717F2174DEE200B11705 /* MSConstant.swift */; };
 		988071822174DEE200B11705 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880717F2174DEE200B11705 /* MSConstant.swift */; };
 		988071892174EAF700B11705 /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = 988071882174EAF700B11705 /* OpenSans */; };
 		9880718A2174EAF700B11705 /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = 988071882174EAF700B11705 /* OpenSans */; };
 		9880718B2174EAF700B11705 /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = 988071882174EAF700B11705 /* OpenSans */; };
-		9880718E2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */; };
-		9880718F2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */; };
-		988071902174EC0900B11705 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */; };
-		988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */; };
-		988071922174EC0900B11705 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */; };
-		988071932174EC0900B11705 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */; };
-		988071A22174ED2D00B11705 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071942174ED2D00B11705 /* UIWindowExtension.swift */; };
 		988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071942174ED2D00B11705 /* UIWindowExtension.swift */; };
 		988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071942174ED2D00B11705 /* UIWindowExtension.swift */; };
-		988071A52174ED2D00B11705 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071952174ED2D00B11705 /* NSObject.swift */; };
 		988071A62174ED2D00B11705 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071952174ED2D00B11705 /* NSObject.swift */; };
 		988071A72174ED2D00B11705 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071952174ED2D00B11705 /* NSObject.swift */; };
-		988071A82174ED2D00B11705 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071962174ED2D00B11705 /* String.swift */; };
 		988071A92174ED2D00B11705 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071962174ED2D00B11705 /* String.swift */; };
 		988071AA2174ED2D00B11705 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071962174ED2D00B11705 /* String.swift */; };
-		988071AB2174ED2D00B11705 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071972174ED2D00B11705 /* UIViewController.swift */; };
 		988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071972174ED2D00B11705 /* UIViewController.swift */; };
 		988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071972174ED2D00B11705 /* UIViewController.swift */; };
-		988071AE2174ED2D00B11705 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071982174ED2D00B11705 /* UIView.swift */; };
 		988071AF2174ED2D00B11705 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071982174ED2D00B11705 /* UIView.swift */; };
 		988071B02174ED2D00B11705 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071982174ED2D00B11705 /* UIView.swift */; };
-		988071B12174ED2D00B11705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071992174ED2D00B11705 /* UIColor.swift */; };
 		988071B22174ED2E00B11705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071992174ED2D00B11705 /* UIColor.swift */; };
 		988071B32174ED2E00B11705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071992174ED2D00B11705 /* UIColor.swift */; };
-		988071B42174ED2E00B11705 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719A2174ED2D00B11705 /* UIApplication.swift */; };
 		988071B52174ED2E00B11705 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719A2174ED2D00B11705 /* UIApplication.swift */; };
 		988071B62174ED2E00B11705 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719A2174ED2D00B11705 /* UIApplication.swift */; };
-		988071B72174ED2E00B11705 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
 		988071B82174ED2E00B11705 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
 		988071B92174ED2E00B11705 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
-		988071BA2174ED2E00B11705 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719C2174ED2D00B11705 /* UITableViewExtension.swift */; };
 		988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719C2174ED2D00B11705 /* UITableViewExtension.swift */; };
 		988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719C2174ED2D00B11705 /* UITableViewExtension.swift */; };
-		988071BD2174ED2E00B11705 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719D2174ED2D00B11705 /* UIImage.swift */; };
 		988071BE2174ED2E00B11705 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719D2174ED2D00B11705 /* UIImage.swift */; };
 		988071BF2174ED2E00B11705 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719D2174ED2D00B11705 /* UIImage.swift */; };
-		988071C02174ED2E00B11705 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719E2174ED2D00B11705 /* UITextField.swift */; };
 		988071C12174ED2E00B11705 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719E2174ED2D00B11705 /* UITextField.swift */; };
 		988071C22174ED2E00B11705 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719E2174ED2D00B11705 /* UITextField.swift */; };
-		988071C32174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */; };
 		988071C42174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */; };
 		988071C52174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */; };
-		988071C62174ED2E00B11705 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A02174ED2D00B11705 /* UIViewExtensions.swift */; };
 		988071C72174ED2E00B11705 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A02174ED2D00B11705 /* UIViewExtensions.swift */; };
 		988071C82174ED2E00B11705 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A02174ED2D00B11705 /* UIViewExtensions.swift */; };
-		988071C92174ED2E00B11705 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A12174ED2D00B11705 /* UIImageView.swift */; };
 		988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A12174ED2D00B11705 /* UIImageView.swift */; };
 		988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A12174ED2D00B11705 /* UIImageView.swift */; };
-		988071CD217508C500B11705 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
 		988071CE217508C500B11705 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
 		988071CF217508C500B11705 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
-		988071D1217508D600B11705 /* MSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D0217508D600B11705 /* MSUtils.swift */; };
 		988071D2217508D600B11705 /* MSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D0217508D600B11705 /* MSUtils.swift */; };
 		988071D3217508D600B11705 /* MSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D0217508D600B11705 /* MSUtils.swift */; };
-		988071D5217508ED00B11705 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
 		988071D6217508ED00B11705 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
 		988071D7217508ED00B11705 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
-		988071D9217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
-		988071DA217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
-		988071DB217508FD00B11705 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D8217508FD00B11705 /* MSFirstVM.swift */; };
-		988071DD2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */; };
 		988071DE2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */; };
 		988071DF2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */; };
-		988071E121751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
 		988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
 		988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
-		988071E7217522E000B11705 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E5217522E000B11705 /* MSRegisterVC.swift */; };
-		988071E8217522E000B11705 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E5217522E000B11705 /* MSRegisterVC.swift */; };
-		988071E9217522E000B11705 /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E5217522E000B11705 /* MSRegisterVC.swift */; };
-		988071EA217522E000B11705 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071E6217522E000B11705 /* MSRegisterVC.xib */; };
-		988071EB217522E000B11705 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071E6217522E000B11705 /* MSRegisterVC.xib */; };
-		988071EC217522E000B11705 /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988071E6217522E000B11705 /* MSRegisterVC.xib */; };
-		989FB7E921752CC4002E15CE /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */; };
-		989FB7EA21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */; };
-		989FB7EB21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */; };
-		989FB7EC21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */; };
-		989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */; };
-		989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */; };
-		98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
+		98A8D01A217A762100765F69 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
+		98A8D01C217A762100765F69 /* MSBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880714921749EAF00B11705 /* MSBaseVC.swift */; };
+		98A8D01D217A762100765F69 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
+		98A8D01E217A762100765F69 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
+		98A8D01F217A762100765F69 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
+		98A8D020217A762100765F69 /* MSBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */; };
+		98A8D021217A762100765F69 /* MSDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8779217A74390075BD76 /* MSDashboardVC.swift */; };
+		98A8D022217A762100765F69 /* MSExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8798217A743A0075BD76 /* MSExpenseVC.swift */; };
+		98A8D023217A762100765F69 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878B217A743A0075BD76 /* MSFirstVC.swift */; };
+		98A8D024217A762100765F69 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878D217A743A0075BD76 /* MSFirstVM.swift */; };
+		98A8D025217A762100765F69 /* MSForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8792217A743A0075BD76 /* MSForgotPasswordVC.swift */; };
+		98A8D027217A762100765F69 /* MSMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8788217A743A0075BD76 /* MSMemberVC.swift */; };
+		98A8D028217A762100765F69 /* MSNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878F217A743A0075BD76 /* MSNewsVC.swift */; };
+		98A8D029217A762100765F69 /* MSPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE877C217A74390075BD76 /* MSPasswordVC.swift */; };
+		98A8D02A217A762100765F69 /* MSPersonalizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879B217A743A0075BD76 /* MSPersonalizeVC.swift */; };
+		98A8D02B217A762100765F69 /* MSPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879E217A743A0075BD76 /* MSPlanVC.swift */; };
+		98A8D02D217A762100765F69 /* MSSavingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8782217A743A0075BD76 /* MSSavingVC.swift */; };
+		98A8D02E217A762100765F69 /* MSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D4217508ED00B11705 /* MSModel.swift */; };
+		98A8D02F217A762100765F69 /* MSTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C86021798AE7005286D6 /* MSTopBarView.swift */; };
+		98A8D030217A762100765F69 /* MSButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C8682179E888005286D6 /* MSButtonView.swift */; };
+		98A8D031217A762100765F69 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8770217A740A0075BD76 /* MSLeftMenuCell.swift */; };
+		98A8D033217A762100765F69 /* MSBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071CC217508C500B11705 /* MSBaseService.swift */; };
+		98A8D034217A762100765F69 /* MSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716E21749EAF00B11705 /* MSConfig.swift */; };
+		98A8D035217A762100765F69 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719B2174ED2D00B11705 /* Collection.swift */; };
+		98A8D036217A762100765F69 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071952174ED2D00B11705 /* NSObject.swift */; };
+		98A8D037217A762100765F69 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071962174ED2D00B11705 /* String.swift */; };
+		98A8D038217A762100765F69 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719A2174ED2D00B11705 /* UIApplication.swift */; };
+		98A8D039217A762100765F69 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071992174ED2D00B11705 /* UIColor.swift */; };
+		98A8D03A217A762100765F69 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719D2174ED2D00B11705 /* UIImage.swift */; };
+		98A8D03B217A762100765F69 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A12174ED2D00B11705 /* UIImageView.swift */; };
+		98A8D03C217A762100765F69 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719C2174ED2D00B11705 /* UITableViewExtension.swift */; };
+		98A8D03D217A762100765F69 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719E2174ED2D00B11705 /* UITextField.swift */; };
+		98A8D03E217A762100765F69 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071982174ED2D00B11705 /* UIView.swift */; };
+		98A8D03F217A762100765F69 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071972174ED2D00B11705 /* UIViewController.swift */; };
+		98A8D040217A762100765F69 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880719F2174ED2D00B11705 /* UIViewControllerExtension.swift */; };
+		98A8D041217A762100765F69 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071A02174ED2D00B11705 /* UIViewExtensions.swift */; };
+		98A8D042217A762100765F69 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071942174ED2D00B11705 /* UIWindowExtension.swift */; };
+		98A8D043217A762100765F69 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
+		98A8D044217A762100765F69 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C86421798F76005286D6 /* UserDefaultExtension.swift */; };
+		98A8D045217A762100765F69 /* MSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071D0217508D600B11705 /* MSUtils.swift */; };
+		98A8D046217A762100765F69 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880717F2174DEE200B11705 /* MSConstant.swift */; };
+		98A8D047217A762100765F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE70D6217499ED007164EC /* AppDelegate.swift */; };
+		98A8D048217A762100765F69 /* AppDelegate_LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */; };
+		98A8D04A217B5FCA00765F69 /* MSThemeIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A8D049217B5FCA00765F69 /* MSThemeIV.swift */; };
+		98A8D04B217B5FCA00765F69 /* MSThemeIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A8D049217B5FCA00765F69 /* MSThemeIV.swift */; };
+		98A8D04C217B5FCA00765F69 /* MSThemeIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A8D049217B5FCA00765F69 /* MSThemeIV.swift */; };
+		98BE8773217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8770217A740A0075BD76 /* MSLeftMenuCell.swift */; };
+		98BE8774217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8770217A740A0075BD76 /* MSLeftMenuCell.swift */; };
+		98BE8775217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8771217A740A0075BD76 /* MSLeftMenuCell.xib */; };
+		98BE8776217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8771217A740A0075BD76 /* MSLeftMenuCell.xib */; };
+		98BE8777217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8771217A740A0075BD76 /* MSLeftMenuCell.xib */; };
+		98BE87A1217A743A0075BD76 /* MSDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8779217A74390075BD76 /* MSDashboardVC.swift */; };
+		98BE87A2217A743A0075BD76 /* MSDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8779217A74390075BD76 /* MSDashboardVC.swift */; };
+		98BE87A3217A743A0075BD76 /* MSDashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877A217A74390075BD76 /* MSDashboardVC.xib */; };
+		98BE87A4217A743A0075BD76 /* MSDashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877A217A74390075BD76 /* MSDashboardVC.xib */; };
+		98BE87A5217A743A0075BD76 /* MSDashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877A217A74390075BD76 /* MSDashboardVC.xib */; };
+		98BE87A7217A743A0075BD76 /* MSPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE877C217A74390075BD76 /* MSPasswordVC.swift */; };
+		98BE87A8217A743A0075BD76 /* MSPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE877C217A74390075BD76 /* MSPasswordVC.swift */; };
+		98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877D217A74390075BD76 /* MSPasswordVC.xib */; };
+		98BE87AA217A743A0075BD76 /* MSPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877D217A74390075BD76 /* MSPasswordVC.xib */; };
+		98BE87AB217A743A0075BD76 /* MSPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE877D217A74390075BD76 /* MSPasswordVC.xib */; };
+		98BE87B3217A743A0075BD76 /* MSSavingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8782217A743A0075BD76 /* MSSavingVC.swift */; };
+		98BE87B4217A743A0075BD76 /* MSSavingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8782217A743A0075BD76 /* MSSavingVC.swift */; };
+		98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8783217A743A0075BD76 /* MSSavingVC.xib */; };
+		98BE87B6217A743A0075BD76 /* MSSavingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8783217A743A0075BD76 /* MSSavingVC.xib */; };
+		98BE87B7217A743A0075BD76 /* MSSavingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8783217A743A0075BD76 /* MSSavingVC.xib */; };
+		98BE87B9217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */; };
+		98BE87BA217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */; };
+		98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */; };
+		98BE87BC217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */; };
+		98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */; };
+		98BE87BF217A743A0075BD76 /* MSMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8788217A743A0075BD76 /* MSMemberVC.swift */; };
+		98BE87C0217A743A0075BD76 /* MSMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8788217A743A0075BD76 /* MSMemberVC.swift */; };
+		98BE87C1217A743A0075BD76 /* MSMemberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8789217A743A0075BD76 /* MSMemberVC.xib */; };
+		98BE87C2217A743A0075BD76 /* MSMemberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8789217A743A0075BD76 /* MSMemberVC.xib */; };
+		98BE87C3217A743A0075BD76 /* MSMemberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8789217A743A0075BD76 /* MSMemberVC.xib */; };
+		98BE87C5217A743A0075BD76 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878B217A743A0075BD76 /* MSFirstVC.swift */; };
+		98BE87C6217A743A0075BD76 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878B217A743A0075BD76 /* MSFirstVC.swift */; };
+		98BE87C7217A743A0075BD76 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE878C217A743A0075BD76 /* MSFirstVC.xib */; };
+		98BE87C8217A743A0075BD76 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE878C217A743A0075BD76 /* MSFirstVC.xib */; };
+		98BE87C9217A743A0075BD76 /* MSFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE878C217A743A0075BD76 /* MSFirstVC.xib */; };
+		98BE87CB217A743A0075BD76 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878D217A743A0075BD76 /* MSFirstVM.swift */; };
+		98BE87CC217A743A0075BD76 /* MSFirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878D217A743A0075BD76 /* MSFirstVM.swift */; };
+		98BE87CE217A743A0075BD76 /* MSNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878F217A743A0075BD76 /* MSNewsVC.swift */; };
+		98BE87CF217A743A0075BD76 /* MSNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878F217A743A0075BD76 /* MSNewsVC.swift */; };
+		98BE87D0217A743A0075BD76 /* MSNewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8790217A743A0075BD76 /* MSNewsVC.xib */; };
+		98BE87D1217A743A0075BD76 /* MSNewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8790217A743A0075BD76 /* MSNewsVC.xib */; };
+		98BE87D2217A743A0075BD76 /* MSNewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8790217A743A0075BD76 /* MSNewsVC.xib */; };
+		98BE87D4217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8792217A743A0075BD76 /* MSForgotPasswordVC.swift */; };
+		98BE87D5217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8792217A743A0075BD76 /* MSForgotPasswordVC.swift */; };
+		98BE87D6217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */; };
+		98BE87D7217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */; };
+		98BE87D8217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */; };
+		98BE87E0217A743A0075BD76 /* MSExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8798217A743A0075BD76 /* MSExpenseVC.swift */; };
+		98BE87E1217A743A0075BD76 /* MSExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8798217A743A0075BD76 /* MSExpenseVC.swift */; };
+		98BE87E2217A743A0075BD76 /* MSExpenseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8799217A743A0075BD76 /* MSExpenseVC.xib */; };
+		98BE87E3217A743A0075BD76 /* MSExpenseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8799217A743A0075BD76 /* MSExpenseVC.xib */; };
+		98BE87E4217A743A0075BD76 /* MSExpenseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8799217A743A0075BD76 /* MSExpenseVC.xib */; };
+		98BE87E6217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879B217A743A0075BD76 /* MSPersonalizeVC.swift */; };
+		98BE87E7217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879B217A743A0075BD76 /* MSPersonalizeVC.swift */; };
+		98BE87E8217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE879C217A743A0075BD76 /* MSPersonalizeVC.xib */; };
+		98BE87E9217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE879C217A743A0075BD76 /* MSPersonalizeVC.xib */; };
+		98BE87EA217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE879C217A743A0075BD76 /* MSPersonalizeVC.xib */; };
+		98BE87EC217A743A0075BD76 /* MSPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879E217A743A0075BD76 /* MSPlanVC.swift */; };
+		98BE87ED217A743A0075BD76 /* MSPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE879E217A743A0075BD76 /* MSPlanVC.swift */; };
+		98BE87EE217A743A0075BD76 /* MSPlanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE879F217A743A0075BD76 /* MSPlanVC.xib */; };
+		98BE87EF217A743A0075BD76 /* MSPlanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE879F217A743A0075BD76 /* MSPlanVC.xib */; };
+		98BE87F0217A743A0075BD76 /* MSPlanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE879F217A743A0075BD76 /* MSPlanVC.xib */; };
+		98C5C86221798AE7005286D6 /* MSTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C86021798AE7005286D6 /* MSTopBarView.swift */; };
+		98C5C86321798AE7005286D6 /* MSTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C86021798AE7005286D6 /* MSTopBarView.swift */; };
+		98C5C86621798F76005286D6 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C86421798F76005286D6 /* UserDefaultExtension.swift */; };
+		98C5C86721798F76005286D6 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C86421798F76005286D6 /* UserDefaultExtension.swift */; };
+		98C5C86A2179E888005286D6 /* MSButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C8682179E888005286D6 /* MSButtonView.swift */; };
+		98C5C86B2179E888005286D6 /* MSButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5C8682179E888005286D6 /* MSButtonView.swift */; };
 		98FE70DE217499F1007164EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DD217499F1007164EC /* Assets.xcassets */; };
 		98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE70DF217499F1007164EC /* LaunchScreen.storyboard */; };
-		E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
-		E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
-		E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636012B2176E24E00E4F898 /* MSLoginVC.swift */; };
-		E63601302176E24E00E4F898 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E636012C2176E24E00E4F898 /* MSLoginVC.xib */; };
-		E63601312176E24E00E4F898 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E636012C2176E24E00E4F898 /* MSLoginVC.xib */; };
-		E63601322176E24E00E4F898 /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E636012C2176E24E00E4F898 /* MSLoginVC.xib */; };
-		E636013421773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
+		E63113B5217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
+		E63113B6217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
+		E63113B7217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
+		E63113B8217B24C8009DBA7C /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113B4217B24C8009DBA7C /* MSLoginVC.xib */; };
+		E63113B9217B24C8009DBA7C /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113B4217B24C8009DBA7C /* MSLoginVC.xib */; };
+		E63113BA217B24C8009DBA7C /* MSLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113B4217B24C8009DBA7C /* MSLoginVC.xib */; };
+		E63113BD217B2561009DBA7C /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113BB217B2561009DBA7C /* MSRegisterVC.swift */; };
+		E63113BE217B2561009DBA7C /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113BB217B2561009DBA7C /* MSRegisterVC.swift */; };
+		E63113BF217B2561009DBA7C /* MSRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113BB217B2561009DBA7C /* MSRegisterVC.swift */; };
+		E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113BC217B2561009DBA7C /* MSRegisterVC.xib */; };
+		E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113BC217B2561009DBA7C /* MSRegisterVC.xib */; };
+		E63113C2217B2561009DBA7C /* MSRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113BC217B2561009DBA7C /* MSRegisterVC.xib */; };
+		E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */; };
+		E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */; };
+		E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */; };
+		E63113E2217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */; };
+		E63113E3217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */; };
+		E63113E4217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */; };
+		E63113E8217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */; };
+		E63113E9217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */; };
+		E63113EA217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */; };
+		E63113EB217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */; };
+		E63113EC217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */; };
+		E63113ED217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */; };
+		E63113EF217B2918009DBA7C /* MSBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113EE217B2918009DBA7C /* MSBaseDialog.swift */; };
+		E63113F0217B2918009DBA7C /* MSBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113EE217B2918009DBA7C /* MSBaseDialog.swift */; };
+		E63113F1217B2918009DBA7C /* MSBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113EE217B2918009DBA7C /* MSBaseDialog.swift */; };
 		E636013521773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
 		E636013621773CD900E4F898 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636013321773CD900E4F898 /* Date+Extension.swift */; };
+		E64625442178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
+		E64625452178348F004B3DFD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64625422178348F004B3DFD /* Enum.swift */; };
 		EA1E0F695BC8805418073BA7 /* Pods_MoneyStack_DEV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_UAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVC.swift; sourceTree = "<group>"; };
-		5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
-		5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
-		5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
+		5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
+		5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
+		5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
+		5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVC.swift; sourceTree = "<group>"; };
 		69FEA4E866B17198A19B89FC /* Pods-MoneyStack DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.debug.xcconfig"; sourceTree = "<group>"; };
 		795AAA9AA14128DC13506621 /* Pods-MoneyStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack.debug.xcconfig"; sourceTree = "<group>"; };
 		96758BE11DE1BF87FB196226 /* Pods-MoneyStack UAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.release.xcconfig"; sourceTree = "<group>"; };
+		98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPersonalizeCC.swift; sourceTree = "<group>"; };
+		98244C9A217BF1D500E2E4A0 /* MSPersonalizeCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSPersonalizeCC.xib; sourceTree = "<group>"; };
+		98244CA6217C84B000E2E4A0 /* MSDesignableThemeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSDesignableThemeButton.swift; sourceTree = "<group>"; };
+		98244CB3217CC9A400E2E4A0 /* MSDashboardCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSDashboardCC.swift; sourceTree = "<group>"; };
+		98244CB4217CC9A400E2E4A0 /* MSDashboardCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSDashboardCC.xib; sourceTree = "<group>"; };
+		98244CBB217CCE1100E2E4A0 /* MSFullSizeIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFullSizeIconButton.swift; sourceTree = "<group>"; };
+		98244CBF217CCFEB00E2E4A0 /* MSCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCornerView.swift; sourceTree = "<group>"; };
+		98244CC3217CD97200E2E4A0 /* MSDashboardFirstCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSDashboardFirstCC.swift; sourceTree = "<group>"; };
+		98244CC4217CD97200E2E4A0 /* MSDashboardFirstCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSDashboardFirstCC.xib; sourceTree = "<group>"; };
+		9877CB01217CE76B004F8396 /* MSLeftMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLeftMenuVC.swift; sourceTree = "<group>"; };
+		9877CB02217CE76B004F8396 /* MSLeftMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLeftMenuVC.xib; sourceTree = "<group>"; };
 		9880713121749DD000B11705 /* MoneyStack UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoneyStack UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9880713E21749DFE00B11705 /* MoneyStack DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoneyStack DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9880714021749E5400B11705 /* Info_UAT.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_UAT.plist; sourceTree = "<group>"; };
@@ -165,12 +290,8 @@
 		9880715621749EAF00B11705 /* MSBaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseVM.swift; sourceTree = "<group>"; };
 		9880716A21749EAF00B11705 /* MSNavigationVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSNavigationVM.swift; sourceTree = "<group>"; };
 		9880716E21749EAF00B11705 /* MSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConfig.swift; sourceTree = "<group>"; };
-		988071732174B9A700B11705 /* MSFirstVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstVC.xib; sourceTree = "<group>"; };
-		988071742174B9A700B11705 /* MSFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstVC.swift; sourceTree = "<group>"; };
 		9880717F2174DEE200B11705 /* MSConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConstant.swift; sourceTree = "<group>"; };
 		988071882174EAF700B11705 /* OpenSans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenSans; sourceTree = "<group>"; };
-		9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLeftMenuCell.swift; sourceTree = "<group>"; };
-		9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLeftMenuCell.xib; sourceTree = "<group>"; };
 		988071942174ED2D00B11705 /* UIWindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		988071952174ED2D00B11705 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		988071962174ED2D00B11705 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -188,13 +309,37 @@
 		988071CC217508C500B11705 /* MSBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseService.swift; sourceTree = "<group>"; };
 		988071D0217508D600B11705 /* MSUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSUtils.swift; sourceTree = "<group>"; };
 		988071D4217508ED00B11705 /* MSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSModel.swift; sourceTree = "<group>"; };
-		988071D8217508FD00B11705 /* MSFirstVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFirstVM.swift; sourceTree = "<group>"; };
 		988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate_LeftMenu.swift; sourceTree = "<group>"; };
 		988071E021751BBF00B11705 /* MSBaseVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSBaseVCExtension.swift; sourceTree = "<group>"; };
-		988071E5217522E000B11705 /* MSRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
-		988071E6217522E000B11705 /* MSRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSRegisterVC.xib; sourceTree = "<group>"; };
-		989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLeftMenuVC.swift; sourceTree = "<group>"; };
-		989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLeftMenuVC.xib; sourceTree = "<group>"; };
+		98A8D049217B5FCA00765F69 /* MSThemeIV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSThemeIV.swift; sourceTree = "<group>"; };
+		98BE8770217A740A0075BD76 /* MSLeftMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLeftMenuCell.swift; sourceTree = "<group>"; };
+		98BE8771217A740A0075BD76 /* MSLeftMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLeftMenuCell.xib; sourceTree = "<group>"; };
+		98BE8779217A74390075BD76 /* MSDashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSDashboardVC.swift; sourceTree = "<group>"; };
+		98BE877A217A74390075BD76 /* MSDashboardVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSDashboardVC.xib; sourceTree = "<group>"; };
+		98BE877C217A74390075BD76 /* MSPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSPasswordVC.swift; sourceTree = "<group>"; };
+		98BE877D217A74390075BD76 /* MSPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSPasswordVC.xib; sourceTree = "<group>"; };
+		98BE8782217A743A0075BD76 /* MSSavingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSavingVC.swift; sourceTree = "<group>"; };
+		98BE8783217A743A0075BD76 /* MSSavingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSavingVC.xib; sourceTree = "<group>"; };
+		98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBalanceInfoVC.swift; sourceTree = "<group>"; };
+		98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSBalanceInfoVC.xib; sourceTree = "<group>"; };
+		98BE8788217A743A0075BD76 /* MSMemberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMemberVC.swift; sourceTree = "<group>"; };
+		98BE8789217A743A0075BD76 /* MSMemberVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSMemberVC.xib; sourceTree = "<group>"; };
+		98BE878B217A743A0075BD76 /* MSFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstVC.swift; sourceTree = "<group>"; };
+		98BE878C217A743A0075BD76 /* MSFirstVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstVC.xib; sourceTree = "<group>"; };
+		98BE878D217A743A0075BD76 /* MSFirstVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstVM.swift; sourceTree = "<group>"; };
+		98BE878F217A743A0075BD76 /* MSNewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSNewsVC.swift; sourceTree = "<group>"; };
+		98BE8790217A743A0075BD76 /* MSNewsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSNewsVC.xib; sourceTree = "<group>"; };
+		98BE8792217A743A0075BD76 /* MSForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSForgotPasswordVC.swift; sourceTree = "<group>"; };
+		98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSForgotPasswordVC.xib; sourceTree = "<group>"; };
+		98BE8798217A743A0075BD76 /* MSExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSExpenseVC.swift; sourceTree = "<group>"; };
+		98BE8799217A743A0075BD76 /* MSExpenseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSExpenseVC.xib; sourceTree = "<group>"; };
+		98BE879B217A743A0075BD76 /* MSPersonalizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSPersonalizeVC.swift; sourceTree = "<group>"; };
+		98BE879C217A743A0075BD76 /* MSPersonalizeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSPersonalizeVC.xib; sourceTree = "<group>"; };
+		98BE879E217A743A0075BD76 /* MSPlanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSPlanVC.swift; sourceTree = "<group>"; };
+		98BE879F217A743A0075BD76 /* MSPlanVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSPlanVC.xib; sourceTree = "<group>"; };
+		98C5C86021798AE7005286D6 /* MSTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTopBarView.swift; sourceTree = "<group>"; };
+		98C5C86421798F76005286D6 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
+		98C5C8682179E888005286D6 /* MSButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButtonView.swift; sourceTree = "<group>"; };
 		98FE70D3217499ED007164EC /* MoneyStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FE70D6217499ED007164EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98FE70DD217499F1007164EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -204,9 +349,17 @@
 		DB369D079E3EABAC1375B626 /* Pods-MoneyStack UAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AB7949763998574FB962C8 /* Pods_MoneyStack_DEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_DEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
-		E636012B2176E24E00E4F898 /* MSLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
-		E636012C2176E24E00E4F898 /* MSLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
+		E63113B3217B24C7009DBA7C /* MSLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
+		E63113B4217B24C8009DBA7C /* MSLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
+		E63113BB217B2561009DBA7C /* MSRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
+		E63113BC217B2561009DBA7C /* MSRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSRegisterVC.xib; sourceTree = "<group>"; };
+		E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSConfirmDialog.xib; sourceTree = "<group>"; };
+		E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSConfirmDialog.swift; sourceTree = "<group>"; };
+		E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSAddBalanceInfoDialog.xib; sourceTree = "<group>"; };
+		E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAddBalanceInfoDialog.swift; sourceTree = "<group>"; };
+		E63113EE217B2918009DBA7C /* MSBaseDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseDialog.swift; sourceTree = "<group>"; };
 		E636013321773CD900E4F898 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		E64625422178348F004B3DFD /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -238,22 +391,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B67096521787E1C00CFF579 /* FirstBalanceInfo */ = {
+		5BF1348F217D6B0B00D35DDB /* Label */ = {
 			isa = PBXGroup;
 			children = (
-				5B67096621787EC200CFF579 /* MSFirstBalanceInfoVC.swift */,
-				5B67096721787EC200CFF579 /* MSFirstBalanceInfoVC.xib */,
-				5B67096E21799A3700CFF579 /* MSFirstBalanceInfoVM.swift */,
-			);
-			path = FirstBalanceInfo;
-			sourceTree = "<group>";
-		};
-		5B6709722179C78700CFF579 /* Label */ = {
-			isa = PBXGroup;
-			children = (
-				5B6709732179C7BD00CFF579 /* MSBaseLabelView.swift */,
+				5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */,
+				5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */,
+				5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */,
+			);
+			path = FirstBalanceInfo;
 			sourceTree = "<group>";
 		};
 		64E873FE6346BFE1011656A1 /* Pods */ = {
@@ -269,10 +422,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		98244C98217BF19F00E2E4A0 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */,
+				98244C9A217BF1D500E2E4A0 /* MSPersonalizeCC.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		98244CA1217C83D400E2E4A0 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				98244CA6217C84B000E2E4A0 /* MSDesignableThemeButton.swift */,
+				98244CBB217CCE1100E2E4A0 /* MSFullSizeIconButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		98244CAA217CC63600E2E4A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98244CB3217CC9A400E2E4A0 /* MSDashboardCC.swift */,
+				98244CB4217CC9A400E2E4A0 /* MSDashboardCC.xib */,
+				98244CC3217CD97200E2E4A0 /* MSDashboardFirstCC.swift */,
+				98244CC4217CD97200E2E4A0 /* MSDashboardFirstCC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9880714821749EAF00B11705 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				5B6709722179C78700CFF579 /* Label */,
+				5BF1348F217D6B0B00D35DDB /* Label */,
 				989FB7EF21753170002E15CE /* LeftMenu */,
 				9880714921749EAF00B11705 /* MSBaseVC.swift */,
 				988071E021751BBF00B11705 /* MSBaseVCExtension.swift */,
@@ -332,6 +514,7 @@
 				988071A02174ED2D00B11705 /* UIViewExtensions.swift */,
 				988071942174ED2D00B11705 /* UIWindowExtension.swift */,
 				E636013321773CD900E4F898 /* Date+Extension.swift */,
+				98C5C86421798F76005286D6 /* UserDefaultExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -355,8 +538,12 @@
 		9880715421749EAF00B11705 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9880718C2174EC0900B11705 /* MSLeftMenuCell.swift */,
-				9880718D2174EC0900B11705 /* MSLeftMenuCell.xib */,
+				98244CA1217C83D400E2E4A0 /* UIButton */,
+				E63113DA217B28D3009DBA7C /* ViewController */,
+				98C5C86021798AE7005286D6 /* MSTopBarView.swift */,
+				98C5C8682179E888005286D6 /* MSButtonView.swift */,
+				98A8D049217B5FCA00765F69 /* MSThemeIV.swift */,
+				98244CBF217CCFEB00E2E4A0 /* MSCornerView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -364,22 +551,22 @@
 		9880715521749EAF00B11705 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5B67096521787E1C00CFF579 /* FirstBalanceInfo */,
-				E636012A2176E20200E4F898 /* Login */,
-				988071E4217522AB00B11705 /* Register */,
-				988071722174B97A00B11705 /* First */,
+				98BE878A217A743A0075BD76 /* First */,
+				5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */,
+				98BE8778217A74390075BD76 /* Dashboard */,
+				98BE878E217A743A0075BD76 /* News */,
+				98BE8797217A743A0075BD76 /* Expense */,
+				98BE8784217A743A0075BD76 /* Balance */,
+				98BE8781217A743A0075BD76 /* Saving */,
+				98BE879D217A743A0075BD76 /* Plan */,
+				98BE8787217A743A0075BD76 /* Member */,
+				98BE879A217A743A0075BD76 /* Personalize */,
+				98BE877B217A74390075BD76 /* Password */,
+				98BE8794217A743A0075BD76 /* Login */,
+				98BE8791217A743A0075BD76 /* ForgotPassword */,
+				98BE877E217A74390075BD76 /* Register */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		988071722174B97A00B11705 /* First */ = {
-			isa = PBXGroup;
-			children = (
-				988071742174B9A700B11705 /* MSFirstVC.swift */,
-				988071732174B9A700B11705 /* MSFirstVC.xib */,
-				988071D8217508FD00B11705 /* MSFirstVM.swift */,
-			);
-			path = First;
 			sourceTree = "<group>";
 		};
 		988071872174EAD600B11705 /* Font */ = {
@@ -390,22 +577,150 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		988071E4217522AB00B11705 /* Register */ = {
+		989FB7EF21753170002E15CE /* LeftMenu */ = {
 			isa = PBXGroup;
 			children = (
-				988071E5217522E000B11705 /* MSRegisterVC.swift */,
-				988071E6217522E000B11705 /* MSRegisterVC.xib */,
+				98BE876F217A740A0075BD76 /* LeftMenuCell */,
+				9877CB01217CE76B004F8396 /* MSLeftMenuVC.swift */,
+				9877CB02217CE76B004F8396 /* MSLeftMenuVC.xib */,
+			);
+			path = LeftMenu;
+			sourceTree = "<group>";
+		};
+		98BE876E217A73D80075BD76 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		98BE876F217A740A0075BD76 /* LeftMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				98BE8770217A740A0075BD76 /* MSLeftMenuCell.swift */,
+				98BE8771217A740A0075BD76 /* MSLeftMenuCell.xib */,
+			);
+			path = LeftMenuCell;
+			sourceTree = "<group>";
+		};
+		98BE8778217A74390075BD76 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				98244CAA217CC63600E2E4A0 /* Cell */,
+				98BE8779217A74390075BD76 /* MSDashboardVC.swift */,
+				98BE877A217A74390075BD76 /* MSDashboardVC.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		98BE877B217A74390075BD76 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				98BE877C217A74390075BD76 /* MSPasswordVC.swift */,
+				98BE877D217A74390075BD76 /* MSPasswordVC.xib */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		98BE877E217A74390075BD76 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E63113BB217B2561009DBA7C /* MSRegisterVC.swift */,
+				E63113BC217B2561009DBA7C /* MSRegisterVC.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
 		};
-		989FB7EF21753170002E15CE /* LeftMenu */ = {
+		98BE8781217A743A0075BD76 /* Saving */ = {
 			isa = PBXGroup;
 			children = (
-				989FB7E721752CC4002E15CE /* MSLeftMenuVC.swift */,
-				989FB7E821752CC4002E15CE /* MSLeftMenuVC.xib */,
+				98BE8782217A743A0075BD76 /* MSSavingVC.swift */,
+				98BE8783217A743A0075BD76 /* MSSavingVC.xib */,
 			);
-			path = LeftMenu;
+			path = Saving;
+			sourceTree = "<group>";
+		};
+		98BE8784217A743A0075BD76 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */,
+				98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		98BE8787217A743A0075BD76 /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				98BE8788217A743A0075BD76 /* MSMemberVC.swift */,
+				98BE8789217A743A0075BD76 /* MSMemberVC.xib */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		98BE878A217A743A0075BD76 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				98BE878B217A743A0075BD76 /* MSFirstVC.swift */,
+				98BE878C217A743A0075BD76 /* MSFirstVC.xib */,
+				98BE878D217A743A0075BD76 /* MSFirstVM.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		98BE878E217A743A0075BD76 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				98BE878F217A743A0075BD76 /* MSNewsVC.swift */,
+				98BE8790217A743A0075BD76 /* MSNewsVC.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		98BE8791217A743A0075BD76 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				98BE8792217A743A0075BD76 /* MSForgotPasswordVC.swift */,
+				98BE8793217A743A0075BD76 /* MSForgotPasswordVC.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		98BE8794217A743A0075BD76 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E63113B3217B24C7009DBA7C /* MSLoginVC.swift */,
+				E63113B4217B24C8009DBA7C /* MSLoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		98BE8797217A743A0075BD76 /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				98BE8798217A743A0075BD76 /* MSExpenseVC.swift */,
+				98BE8799217A743A0075BD76 /* MSExpenseVC.xib */,
+			);
+			path = Expense;
+			sourceTree = "<group>";
+		};
+		98BE879A217A743A0075BD76 /* Personalize */ = {
+			isa = PBXGroup;
+			children = (
+				98244C98217BF19F00E2E4A0 /* CollectionCell */,
+				98BE879B217A743A0075BD76 /* MSPersonalizeVC.swift */,
+				98BE879C217A743A0075BD76 /* MSPersonalizeVC.xib */,
+			);
+			path = Personalize;
+			sourceTree = "<group>";
+		};
+		98BE879D217A743A0075BD76 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				98BE879E217A743A0075BD76 /* MSPlanVC.swift */,
+				98BE879F217A743A0075BD76 /* MSPlanVC.xib */,
+			);
+			path = Plan;
 			sourceTree = "<group>";
 		};
 		98FE70CA217499ED007164EC = {
@@ -415,6 +730,7 @@
 				98FE70D4217499ED007164EC /* Products */,
 				64E873FE6346BFE1011656A1 /* Pods */,
 				A289E3BB5A811F6929675BE5 /* Frameworks */,
+				98BE876E217A73D80075BD76 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -441,6 +757,7 @@
 				9880714F21749EAF00B11705 /* Vendor */,
 				9880714E21749EAF00B11705 /* Utils */,
 				9880714D21749EAF00B11705 /* Constant */,
+				E64625412178347A004B3DFD /* Enum */,
 				98FE70D6217499ED007164EC /* AppDelegate.swift */,
 				988071DC2175194500B11705 /* AppDelegate_LeftMenu.swift */,
 				98FE70DD217499F1007164EC /* Assets.xcassets */,
@@ -462,13 +779,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E636012A2176E20200E4F898 /* Login */ = {
+		E63113DA217B28D3009DBA7C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E636012B2176E24E00E4F898 /* MSLoginVC.swift */,
-				E636012C2176E24E00E4F898 /* MSLoginVC.xib */,
+				E63113DB217B28DC009DBA7C /* Dialog */,
 			);
-			path = Login;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E63113DB217B28DC009DBA7C /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				E63113EE217B2918009DBA7C /* MSBaseDialog.swift */,
+				E63113E5217B28FF009DBA7C /* AddBalanceInfo */,
+				E63113DC217B28E7009DBA7C /* ConfirmDialog */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		E63113DC217B28E7009DBA7C /* ConfirmDialog */ = {
+			isa = PBXGroup;
+			children = (
+				E63113DE217B28F8009DBA7C /* MSConfirmDialog.swift */,
+				E63113DD217B28F8009DBA7C /* MSConfirmDialog.xib */,
+			);
+			path = ConfirmDialog;
+			sourceTree = "<group>";
+		};
+		E63113E5217B28FF009DBA7C /* AddBalanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E63113E7217B290F009DBA7C /* MSAddBalanceInfoDialog.swift */,
+				E63113E6217B290F009DBA7C /* MSAddBalanceInfoDialog.xib */,
+			);
+			path = AddBalanceInfo;
+			sourceTree = "<group>";
+		};
+		E64625412178347A004B3DFD /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				E64625422178348F004B3DFD /* Enum.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,16 +923,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B67096C21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */,
+				9877CB07217CE76B004F8396 /* MSLeftMenuVC.xib in Resources */,
+				98244CC9217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */,
+				98BE87D7217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
 				9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */,
+				98244CB9217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
-				989FB7ED21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
-				9880714621749E5400B11705 /* Info_DEV.plist in Resources */,
-				E63601312176E24E00E4F898 /* MSLoginVC.xib in Resources */,
-				988071922174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				98BE87D1217A743A0075BD76 /* MSNewsVC.xib in Resources */,
+				E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
+				98BE87E9217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
+				98BE87AA217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
+				98BE8776217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
+				98BE87A4217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
+				98BE87E3217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
+				98BE87B6217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718A2174EAF700B11705 /* OpenSans in Resources */,
-				988071EB217522E000B11705 /* MSRegisterVC.xib in Resources */,
-				988071762174B9A700B11705 /* MSFirstVC.xib in Resources */,
+				98BE87C8217A743A0075BD76 /* MSFirstVC.xib in Resources */,
+				98BE87BC217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
+				98BE87EF217A743A0075BD76 /* MSPlanVC.xib in Resources */,
+				98BE87C2217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				5BF1349C217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
+				98244C9F217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
+				E63113E9217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
+				E63113B9217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,16 +954,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B67096D21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */,
+				98BE87D8217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
 				9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */,
+				98244CA0217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
+				98244CBA217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
 				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
-				989FB7EE21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
+				98BE87D2217A743A0075BD76 /* MSNewsVC.xib in Resources */,
+				98BE87EA217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
+				98BE87AB217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
+				98BE8777217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
+				E63113EA217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
+				9877CB08217CE76B004F8396 /* MSLeftMenuVC.xib in Resources */,
 				9880714421749E5400B11705 /* Info_UAT.plist in Resources */,
-				E63601322176E24E00E4F898 /* MSLoginVC.xib in Resources */,
-				988071932174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				98BE87A5217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
+				98244CCA217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */,
+				98BE87E4217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
+				5BF1349D217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
+				E63113BA217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
+				98BE87B7217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
-				988071EC217522E000B11705 /* MSRegisterVC.xib in Resources */,
-				988071772174B9A700B11705 /* MSFirstVC.xib in Resources */,
+				98BE87C9217A743A0075BD76 /* MSFirstVC.xib in Resources */,
+				98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				98BE87F0217A743A0075BD76 /* MSPlanVC.xib in Resources */,
+				98BE87C3217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
+				E63113C2217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,17 +986,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9877CB06217CE76B004F8396 /* MSLeftMenuVC.xib in Resources */,
+				98244CC8217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */,
 				98FE70E1217499F1007164EC /* LaunchScreen.storyboard in Resources */,
 				988071892174EAF700B11705 /* OpenSans in Resources */,
-				E63601302176E24E00E4F898 /* MSLoginVC.xib in Resources */,
-				988071912174EC0900B11705 /* MSLeftMenuCell.xib in Resources */,
+				98244CB8217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
+				98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */,
+				98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
+				E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
-				9880714521749E5400B11705 /* Info_DEV.plist in Resources */,
-				5B67096B21787EC200CFF579 /* MSFirstBalanceInfoVC.xib in Resources */,
-				9880714221749E5400B11705 /* Info_UAT.plist in Resources */,
-				988071752174B9A700B11705 /* MSFirstVC.xib in Resources */,
-				989FB7EC21752CC4002E15CE /* MSLeftMenuVC.xib in Resources */,
-				988071EA217522E000B11705 /* MSRegisterVC.xib in Resources */,
+				98BE87D0217A743A0075BD76 /* MSNewsVC.xib in Resources */,
+				98BE87E2217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
+				98BE87E8217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
+				98BE8775217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
+				98BE87C1217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				98BE87D6217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
+				98BE87C7217A743A0075BD76 /* MSFirstVC.xib in Resources */,
+				98BE87EE217A743A0075BD76 /* MSPlanVC.xib in Resources */,
+				98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
+				98BE87A3217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
+				5BF1349B217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
+				98244C9E217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
+				E63113E8217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
+				E63113B8217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,40 +1132,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				988071C72174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
+				98244CC1217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */,
 				988071B52174ED2E00B11705 /* UIApplication.swift in Sources */,
+				E63113EC217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
+				E63113E3217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */,
+				98244CA8217C84B000E2E4A0 /* MSDesignableThemeButton.swift in Sources */,
 				988071B82174ED2E00B11705 /* Collection.swift in Sources */,
-				5B67097021799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */,
+				E63113B6217B24C8009DBA7C /* MSLoginVC.swift in Sources */,
+				98BE87A7217A743A0075BD76 /* MSPasswordVC.swift in Sources */,
+				98244CB6217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */,
 				988071A62174ED2D00B11705 /* NSObject.swift in Sources */,
+				98BE87E0217A743A0075BD76 /* MSExpenseVC.swift in Sources */,
 				988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
+				98BE8773217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */,
 				988071DE2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
+				98BE87CE217A743A0075BD76 /* MSNewsVC.swift in Sources */,
+				98BE87BF217A743A0075BD76 /* MSMemberVC.swift in Sources */,
 				988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
+				E63113F0217B2918009DBA7C /* MSBaseDialog.swift in Sources */,
 				988071C42174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
+				98C5C86221798AE7005286D6 /* MSTopBarView.swift in Sources */,
+				9877CB04217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				988071812174DEE200B11705 /* MSConstant.swift in Sources */,
-				5B6709752179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */,
+				5BF1349F217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B22174ED2E00B11705 /* UIColor.swift in Sources */,
+				98BE87D4217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
 				9880712921749DD000B11705 /* AppDelegate.swift in Sources */,
+				98BE87C5217A743A0075BD76 /* MSFirstVC.swift in Sources */,
+				98C5C86621798F76005286D6 /* UserDefaultExtension.swift in Sources */,
+				98C5C86A2179E888005286D6 /* MSButtonView.swift in Sources */,
 				9880717021749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071A92174ED2D00B11705 /* String.swift in Sources */,
+				98BE87E6217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
+				98BE87B9217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */,
+				98244CC6217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
-				988071E8217522E000B11705 /* MSRegisterVC.swift in Sources */,
-				989FB7EA21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
 				988071C12174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714B21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				5BF13499217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071AF2174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D6217508ED00B11705 /* MSModel.swift in Sources */,
+				98244C9C217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
 				E636013521773CD900E4F898 /* Date+Extension.swift in Sources */,
-				9880718F2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CE217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
-				5B67096921787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */,
-				E636012E2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
+				98244CBD217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
+				E63113BE217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
+				E64625442178348F004B3DFD /* Enum.swift in Sources */,
+				98BE87CB217A743A0075BD76 /* MSFirstVM.swift in Sources */,
 				988071CA2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D2217508D600B11705 /* MSUtils.swift in Sources */,
+				98BE87B3217A743A0075BD76 /* MSSavingVC.swift in Sources */,
 				988071BE2174ED2E00B11705 /* UIImage.swift in Sources */,
+				98BE87EC217A743A0075BD76 /* MSPlanVC.swift in Sources */,
 				9880715821749EAF00B11705 /* MSBaseVM.swift in Sources */,
-				988071792174B9A700B11705 /* MSFirstVC.swift in Sources */,
-				988071DA217508FD00B11705 /* MSFirstVM.swift in Sources */,
+				98A8D04B217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
+				98BE87A1217A743A0075BD76 /* MSDashboardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,40 +1198,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				988071C82174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
+				98244CC2217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */,
 				988071B62174ED2E00B11705 /* UIApplication.swift in Sources */,
+				E63113ED217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
+				E63113E4217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */,
+				98244CA9217C84B000E2E4A0 /* MSDesignableThemeButton.swift in Sources */,
 				988071B92174ED2E00B11705 /* Collection.swift in Sources */,
-				5B67097121799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */,
+				E63113B7217B24C8009DBA7C /* MSLoginVC.swift in Sources */,
+				98BE87A8217A743A0075BD76 /* MSPasswordVC.swift in Sources */,
+				98244CB7217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */,
 				988071A72174ED2D00B11705 /* NSObject.swift in Sources */,
+				98BE87E1217A743A0075BD76 /* MSExpenseVC.swift in Sources */,
 				988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
+				98BE8774217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */,
 				988071DF2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
+				98BE87CF217A743A0075BD76 /* MSNewsVC.swift in Sources */,
+				98BE87C0217A743A0075BD76 /* MSMemberVC.swift in Sources */,
 				988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
+				E63113F1217B2918009DBA7C /* MSBaseDialog.swift in Sources */,
 				988071C52174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
+				98C5C86321798AE7005286D6 /* MSTopBarView.swift in Sources */,
+				9877CB05217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
 				988071822174DEE200B11705 /* MSConstant.swift in Sources */,
-				5B6709762179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */,
+				5BF134A0217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B32174ED2E00B11705 /* UIColor.swift in Sources */,
+				98BE87D5217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
 				9880713621749DFE00B11705 /* AppDelegate.swift in Sources */,
+				98BE87C6217A743A0075BD76 /* MSFirstVC.swift in Sources */,
+				98C5C86721798F76005286D6 /* UserDefaultExtension.swift in Sources */,
+				98C5C86B2179E888005286D6 /* MSButtonView.swift in Sources */,
 				9880717121749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071AA2174ED2D00B11705 /* String.swift in Sources */,
+				98BE87E7217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
+				98BE87BA217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */,
+				98244CC7217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
-				988071E9217522E000B11705 /* MSRegisterVC.swift in Sources */,
-				989FB7EB21752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
 				988071C22174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714C21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				5BF1349A217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071B02174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D7217508ED00B11705 /* MSModel.swift in Sources */,
+				98244C9D217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
 				E636013621773CD900E4F898 /* Date+Extension.swift in Sources */,
-				988071902174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
 				988071CF217508C500B11705 /* MSBaseService.swift in Sources */,
 				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
-				5B67096A21787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */,
-				E636012F2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
+				98244CBE217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
+				E63113BF217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
+				E64625452178348F004B3DFD /* Enum.swift in Sources */,
+				98BE87CC217A743A0075BD76 /* MSFirstVM.swift in Sources */,
 				988071CB2174ED2E00B11705 /* UIImageView.swift in Sources */,
 				988071D3217508D600B11705 /* MSUtils.swift in Sources */,
+				98BE87B4217A743A0075BD76 /* MSSavingVC.swift in Sources */,
 				988071BF2174ED2E00B11705 /* UIImage.swift in Sources */,
+				98BE87ED217A743A0075BD76 /* MSPlanVC.swift in Sources */,
 				9880715921749EAF00B11705 /* MSBaseVM.swift in Sources */,
-				9880717A2174B9A700B11705 /* MSFirstVC.swift in Sources */,
-				988071DB217508FD00B11705 /* MSFirstVM.swift in Sources */,
+				98A8D04C217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
+				98BE87A2217A743A0075BD76 /* MSDashboardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,41 +1263,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988071C62174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
-				988071B42174ED2E00B11705 /* UIApplication.swift in Sources */,
-				9880716B21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
-				988071B72174ED2E00B11705 /* Collection.swift in Sources */,
-				5B67096F21799A3700CFF579 /* MSFirstBalanceInfoVM.swift in Sources */,
-				988071A52174ED2D00B11705 /* NSObject.swift in Sources */,
-				988071A22174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
-				988071DD2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
-				988071E121751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
-				988071C32174ED2E00B11705 /* UIViewControllerExtension.swift in Sources */,
-				988071802174DEE200B11705 /* MSConstant.swift in Sources */,
-				5B6709742179C7BD00CFF579 /* MSBaseLabelView.swift in Sources */,
-				988071B12174ED2D00B11705 /* UIColor.swift in Sources */,
-				98FE70D7217499ED007164EC /* AppDelegate.swift in Sources */,
-				9880716F21749EAF00B11705 /* MSConfig.swift in Sources */,
-				988071A82174ED2D00B11705 /* String.swift in Sources */,
-				988071AB2174ED2D00B11705 /* UIViewController.swift in Sources */,
-				988071E7217522E000B11705 /* MSRegisterVC.swift in Sources */,
-				989FB7E921752CC4002E15CE /* MSLeftMenuVC.swift in Sources */,
-				988071C02174ED2E00B11705 /* UITextField.swift in Sources */,
-				9880714A21749EAF00B11705 /* MSBaseVC.swift in Sources */,
-				988071AE2174ED2D00B11705 /* UIView.swift in Sources */,
-				988071D5217508ED00B11705 /* MSModel.swift in Sources */,
-				E636013421773CD900E4F898 /* Date+Extension.swift in Sources */,
-				9880718E2174EC0900B11705 /* MSLeftMenuCell.swift in Sources */,
-				988071CD217508C500B11705 /* MSBaseService.swift in Sources */,
-				988071BA2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
-				5B67096821787EC200CFF579 /* MSFirstBalanceInfoVC.swift in Sources */,
-				E636012D2176E24E00E4F898 /* MSLoginVC.swift in Sources */,
-				988071C92174ED2E00B11705 /* UIImageView.swift in Sources */,
-				988071D1217508D600B11705 /* MSUtils.swift in Sources */,
-				988071BD2174ED2E00B11705 /* UIImage.swift in Sources */,
-				9880715721749EAF00B11705 /* MSBaseVM.swift in Sources */,
-				988071782174B9A700B11705 /* MSFirstVC.swift in Sources */,
-				988071D9217508FD00B11705 /* MSFirstVM.swift in Sources */,
+				98A8D01A217A762100765F69 /* Enum.swift in Sources */,
+				98244CC0217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */,
+				E63113EB217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
+				98A8D01C217A762100765F69 /* MSBaseVC.swift in Sources */,
+				E63113E2217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */,
+				98244CA7217C84B000E2E4A0 /* MSDesignableThemeButton.swift in Sources */,
+				98A8D01D217A762100765F69 /* MSBaseVCExtension.swift in Sources */,
+				E63113B5217B24C8009DBA7C /* MSLoginVC.swift in Sources */,
+				98A8D01E217A762100765F69 /* MSBaseVM.swift in Sources */,
+				98244CB5217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */,
+				98A8D01F217A762100765F69 /* MSNavigationVM.swift in Sources */,
+				98A8D020217A762100765F69 /* MSBalanceInfoVC.swift in Sources */,
+				98A8D021217A762100765F69 /* MSDashboardVC.swift in Sources */,
+				98A8D022217A762100765F69 /* MSExpenseVC.swift in Sources */,
+				98A8D023217A762100765F69 /* MSFirstVC.swift in Sources */,
+				98A8D024217A762100765F69 /* MSFirstVM.swift in Sources */,
+				98A8D025217A762100765F69 /* MSForgotPasswordVC.swift in Sources */,
+				98A8D027217A762100765F69 /* MSMemberVC.swift in Sources */,
+				E63113EF217B2918009DBA7C /* MSBaseDialog.swift in Sources */,
+				98A8D028217A762100765F69 /* MSNewsVC.swift in Sources */,
+				98A8D029217A762100765F69 /* MSPasswordVC.swift in Sources */,
+				98A8D02A217A762100765F69 /* MSPersonalizeVC.swift in Sources */,
+				9877CB03217CE76B004F8396 /* MSLeftMenuVC.swift in Sources */,
+				98A8D02B217A762100765F69 /* MSPlanVC.swift in Sources */,
+				5BF1349E217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
+				98A8D02D217A762100765F69 /* MSSavingVC.swift in Sources */,
+				98A8D02E217A762100765F69 /* MSModel.swift in Sources */,
+				98A8D02F217A762100765F69 /* MSTopBarView.swift in Sources */,
+				98A8D030217A762100765F69 /* MSButtonView.swift in Sources */,
+				98A8D031217A762100765F69 /* MSLeftMenuCell.swift in Sources */,
+				98A8D033217A762100765F69 /* MSBaseService.swift in Sources */,
+				98A8D034217A762100765F69 /* MSConfig.swift in Sources */,
+				98A8D035217A762100765F69 /* Collection.swift in Sources */,
+				98A8D036217A762100765F69 /* NSObject.swift in Sources */,
+				98244CC5217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
+				98A8D037217A762100765F69 /* String.swift in Sources */,
+				98A8D038217A762100765F69 /* UIApplication.swift in Sources */,
+				98A8D039217A762100765F69 /* UIColor.swift in Sources */,
+				98A8D03A217A762100765F69 /* UIImage.swift in Sources */,
+				5BF13498217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
+				98A8D03B217A762100765F69 /* UIImageView.swift in Sources */,
+				98A8D03C217A762100765F69 /* UITableViewExtension.swift in Sources */,
+				98244C9B217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
+				98A8D03D217A762100765F69 /* UITextField.swift in Sources */,
+				98A8D03E217A762100765F69 /* UIView.swift in Sources */,
+				98A8D03F217A762100765F69 /* UIViewController.swift in Sources */,
+				98244CBC217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
+				E63113BD217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
+				98A8D040217A762100765F69 /* UIViewControllerExtension.swift in Sources */,
+				98A8D041217A762100765F69 /* UIViewExtensions.swift in Sources */,
+				98A8D042217A762100765F69 /* UIWindowExtension.swift in Sources */,
+				98A8D043217A762100765F69 /* Date+Extension.swift in Sources */,
+				98A8D044217A762100765F69 /* UserDefaultExtension.swift in Sources */,
+				98A8D045217A762100765F69 /* MSUtils.swift in Sources */,
+				98A8D046217A762100765F69 /* MSConstant.swift in Sources */,
+				98A8D047217A762100765F69 /* AppDelegate.swift in Sources */,
+				98A8D04A217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
+				98A8D048217A762100765F69 /* AppDelegate_LeftMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

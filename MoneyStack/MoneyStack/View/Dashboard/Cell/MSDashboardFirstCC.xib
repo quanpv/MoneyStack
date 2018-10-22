@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MSDashboardFirstCC" id="gTV-IL-0wX" customClass="MSDashboardFirstCC" customModule="MoneyStack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" clipsSubviews="YES" alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EA8-lr-Lje" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.000.000.000.000.000.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFg-SM-DMU">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="45"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_question_45_red" translatesAutoresizingMaskIntoConstraints="NO" id="7mX-WE-YzW" customClass="MSThemeIV" customModule="MoneyStack" customModuleProvider="target">
+                                <rect key="frame" x="340" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7mX-WE-YzW" secondAttribute="height" multiplier="1:1" id="UGr-m8-ltJ"/>
+                                    <constraint firstAttribute="width" constant="25" id="fDx-SV-1KT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggD-Ds-Pre">
+                                <rect key="frame" x="330" y="0.0" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="02D-Hs-BsY"/>
+                                    <constraint firstAttribute="width" secondItem="ggD-Ds-Pre" secondAttribute="height" multiplier="1:1" id="lHD-8A-5vg"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kFg-SM-DMU" secondAttribute="bottom" id="BsZ-FX-9kl"/>
+                            <constraint firstItem="7mX-WE-YzW" firstAttribute="centerX" secondItem="ggD-Ds-Pre" secondAttribute="centerX" id="FES-KO-7vk"/>
+                            <constraint firstItem="kFg-SM-DMU" firstAttribute="leading" secondItem="EA8-lr-Lje" secondAttribute="leading" id="PcB-JA-W1Q"/>
+                            <constraint firstItem="kFg-SM-DMU" firstAttribute="top" secondItem="EA8-lr-Lje" secondAttribute="top" id="dJ5-d5-jrA"/>
+                            <constraint firstItem="ggD-Ds-Pre" firstAttribute="centerY" secondItem="EA8-lr-Lje" secondAttribute="centerY" id="ot4-8A-2r1"/>
+                            <constraint firstItem="7mX-WE-YzW" firstAttribute="centerY" secondItem="ggD-Ds-Pre" secondAttribute="centerY" id="sen-oK-enC"/>
+                            <constraint firstAttribute="trailing" secondItem="ggD-Ds-Pre" secondAttribute="trailing" id="uSz-f1-Itb"/>
+                            <constraint firstItem="ggD-Ds-Pre" firstAttribute="leading" secondItem="kFg-SM-DMU" secondAttribute="trailing" id="yhd-YA-aGf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EA8-lr-Lje" secondAttribute="trailing" id="3bN-ZV-8lx"/>
+                <constraint firstItem="EA8-lr-Lje" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BLl-X5-72t"/>
+                <constraint firstItem="EA8-lr-Lje" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T5i-GI-34z"/>
+                <constraint firstAttribute="bottom" secondItem="EA8-lr-Lje" secondAttribute="bottom" id="aeI-Vp-25O"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonTooltip" destination="ggD-Ds-Pre" id="xEu-jl-n6b"/>
+                <outlet property="labelCurrentMoney" destination="kFg-SM-DMU" id="Mcd-x7-CBP"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_question_45_red" width="22" height="22"/>
+    </resources>
+</document>

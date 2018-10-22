@@ -10,6 +10,7 @@ import UIKit
 
 class MSFirstVC: MSBaseVC {
     @IBOutlet weak var buttonStart: UIButton!
+    @IBOutlet weak var buttonStartWidth: NSLayoutConstraint!
     
     var firstVM: MSFirstVM {
         return MSFirstVM(self)
@@ -22,8 +23,9 @@ class MSFirstVC: MSBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        buttonStart.setImage(UIImage(named: "ic_dollar_1")?.withRenderingMode(.alwaysTemplate), for: UIControlState.normal)
-        buttonStart.tintColor = UIColor.white
+        buttonStartWidth.constant = UIScreenConstant.WIDTH == 414 ? 200 : 150
+        buttonStart.layer.cornerRadius = (UIScreenConstant.WIDTH == 414 ? 200 : 150) / 10
+        buttonStart.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,15 +33,6 @@ class MSFirstVC: MSBaseVC {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func actionClickStart(_ sender: Any) {
         firstVM.processOpenRegister()
     }

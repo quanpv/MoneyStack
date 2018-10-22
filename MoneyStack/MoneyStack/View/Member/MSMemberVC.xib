@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSMemberVC" customModule="MoneyStack" customModuleProvider="target">
+            <connections>
+                <outlet property="topBar" destination="095-B2-um2" id="Rct-Ao-Szw"/>
+                <outlet property="topBarHeight" destination="oun-PD-D4q" id="lJ1-df-Pm4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="095-B2-um2" customClass="MSTopBarView" customModule="MoneyStack" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="oun-PD-D4q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-bi-PA7">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bP2-bi-PA7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5yP-MB-SB4"/>
+                <constraint firstItem="bP2-bi-PA7" firstAttribute="top" secondItem="095-B2-um2" secondAttribute="bottom" id="IbE-Ou-IbB"/>
+                <constraint firstItem="095-B2-um2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="N05-hO-GGb"/>
+                <constraint firstItem="095-B2-um2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bJg-GR-MCc"/>
+                <constraint firstItem="bP2-bi-PA7" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="du0-Q1-j2E"/>
+                <constraint firstItem="095-B2-um2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iz4-ns-zZj"/>
+                <constraint firstItem="bP2-bi-PA7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rN1-DG-zcr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

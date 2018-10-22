@@ -10,31 +10,34 @@ import UIKit
 
 class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     
+    var topBarView: MSTopBarView?
+    var heightOfTopBar: NSLayoutConstraint?
+    
+    var backGroundImage: UIImageView = UIImageView()
+    var darkerView = UIView()
+    let darkViewAlpha: CGFloat = 0.5
+
     private var viewHolder: MSStackOfView? // Root view will own this object
-    
-    var isStartedScreen: Bool {
-        return false
-    }
-    
-    var navigationVM: MSNavigationVM {
-        return MSNavigationVM(self)
-    }
+    var isStartedScreen: Bool { return false }
+    var navigationVM: MSNavigationVM { return MSNavigationVM(self) }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
-    // For leftMenu
-    var menuBarContainer: UIView?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         onViewDidLoad()
+        setupNotificationObserver()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     //MARK: - Setup viewHolder *IMPORTANT*
@@ -44,6 +47,21 @@ class MSBaseVC: UIViewController, MSNavigationVMProtocol {
         } else {
             viewHolder = MSStackOfView(self)
         }
+    }
+    
+    func setupNotificationObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleChangeTheme(notification:)), name: NotificationChangeTheme, object: nil)
+    }
+    
+    @objc func handleChangeTheme(notification: Notification) {
+        topBarView?.updateColor()
+        darkerView.backgroundColor = MSDelegate.config.mainColor.withAlphaComponent(darkViewAlpha)
+    }
+    
+    func setTopBar(_ correctTopBar: MSTopBarView, _ height: NSLayoutConstraint) {
+        self.topBarView = correctTopBar
+        self.topBarView?.delegate = self
+        self.heightOfTopBar = height
     }
     
     override func didReceiveMemoryWarning() {
@@ -71,5 +89,47 @@ class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     
     func closeToView(_ view: MSBaseVC, animated: Bool = true) {
         //MARK: - TODO closeToView
+    }
+    
+    //MARK: - Handler for TopBar Click Event
+    func topbarLeftClickEvent(type: TopBarType) {
+        print("topbarLeftClickEvent")
+    }
+    
+    func topbarRightClickEvent(type: TopBarType) {
+        print("topbarRightClickEvent")
+    }
+    
+    func topbarMiddleClickEvent(type: TopBarType) {
+        print("topbarMiddleClickEvent")
+    }
+}
+
+extension MSBaseVC: MSTopBarViewDelegate {
+    
+    func clickTopBar(position: TopBarPosition) {
+        switch position {
+        case .Left:
+            switch topBarView!.topBarType {
+            case .Menu, .Menu_Filter:
+                MSDelegate.openLeftMenu()
+            default:
+                topbarLeftClickEvent(type: topBarView!.topBarType)
+            }
+        case .Right:
+            topbarRightClickEvent(type: topBarView!.topBarType)
+        case .Middle:
+            topbarMiddleClickEvent(type: topBarView!.topBarType)
+        }
+    }
+}
+
+extension MSBaseVC: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > (heightOfTopBar?.constant)! {
+            if heightOfTopBar?.constant != 0 { heightOfTopBar?.constant = 0 }
+        } else {
+            if heightOfTopBar?.constant != MSBaseVCConstant.HEIGHT_TOP_MENU_BAR { heightOfTopBar?.constant = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR }
+        }
     }
 }
