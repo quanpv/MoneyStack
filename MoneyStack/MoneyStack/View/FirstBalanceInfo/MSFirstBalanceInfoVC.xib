@@ -31,16 +31,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-le-YRV">
-                    <rect key="frame" x="10" y="209" width="355" height="269"/>
+                    <rect key="frame" x="10" y="221.5" width="355" height="244"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="g3u-YX-WBB">
-                            <rect key="frame" x="0.0" y="0.0" width="355" height="209"/>
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="189"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu nhập hàng tháng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sI-f1-u87">
-                                    <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="qmc-v4-u1U"/>
+                                        <constraint firstAttribute="height" constant="45" id="qmc-v4-u1U"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans-Extrabold" family="Open Sans" pointSize="22"/>
                                     <nil key="highlightedColor"/>
@@ -54,9 +54,9 @@
                                     </userDefinedRuntimeAttributes>
                                 </label>
                                 <textField opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20,000,000 VNĐ" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUp-MC-lHO">
-                                    <rect key="frame" x="0.0" y="53" width="355" height="50"/>
+                                    <rect key="frame" x="0.0" y="48" width="355" height="45"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="CqH-zI-cB6"/>
+                                        <constraint firstAttribute="height" constant="45" id="CqH-zI-cB6"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="22"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -67,10 +67,10 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiền mặt đang có" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2S-dn-W6h">
-                                    <rect key="frame" x="0.0" y="106" width="355" height="50"/>
+                                    <rect key="frame" x="0.0" y="96" width="355" height="45"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="OKy-tU-CfR"/>
+                                        <constraint firstAttribute="height" constant="45" id="OKy-tU-CfR"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans-Extrabold" family="Open Sans" pointSize="22"/>
                                     <nil key="highlightedColor"/>
@@ -81,10 +81,10 @@
                                     </userDefinedRuntimeAttributes>
                                 </label>
                                 <textField opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="10,000,000 VNĐ" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsV-Gq-o39">
-                                    <rect key="frame" x="0.0" y="159" width="355" height="50"/>
+                                    <rect key="frame" x="0.0" y="144" width="355" height="45"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="Sej-ss-SLO"/>
+                                        <constraint firstAttribute="height" constant="45" id="Sej-ss-SLO"/>
                                     </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="22"/>
@@ -109,13 +109,13 @@
                             </constraints>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q76-WG-tuj">
-                            <rect key="frame" x="0.0" y="219" width="355" height="50"/>
+                            <rect key="frame" x="0.0" y="199" width="355" height="45"/>
                             <subviews>
                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAA-W8-nEU">
-                                    <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
                                     <color key="backgroundColor" red="0.60784313725490191" green="0.066666666666666666" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" image="ic_save"/>
+                                    <state key="normal" image="ic_check_42"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                             <real key="value" value="5"/>
@@ -136,7 +136,7 @@
                             <constraints>
                                 <constraint firstItem="JAA-W8-nEU" firstAttribute="top" secondItem="q76-WG-tuj" secondAttribute="top" id="0hv-gB-y4D"/>
                                 <constraint firstAttribute="trailing" secondItem="JAA-W8-nEU" secondAttribute="trailing" id="Cch-Ya-4wX"/>
-                                <constraint firstAttribute="height" constant="50" id="D7n-ZF-umW"/>
+                                <constraint firstAttribute="height" constant="45" id="D7n-ZF-umW"/>
                                 <constraint firstAttribute="bottom" secondItem="JAA-W8-nEU" secondAttribute="bottom" id="Dvv-jz-bTE"/>
                                 <constraint firstItem="JAA-W8-nEU" firstAttribute="leading" secondItem="q76-WG-tuj" secondAttribute="leading" id="OGk-8j-rAT"/>
                             </constraints>
@@ -152,7 +152,7 @@
                     </constraints>
                 </stackView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_button" translatesAutoresizingMaskIntoConstraints="NO" id="SKp-F1-SeG">
-                    <rect key="frame" x="150.5" y="75" width="75" height="75"/>
+                    <rect key="frame" x="150.5" y="87.5" width="75" height="75"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="75" id="Y2r-2m-Ojt"/>
                         <constraint firstAttribute="width" constant="75" id="rPa-Vb-Y2Z"/>
@@ -177,7 +177,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_save" width="38" height="38"/>
+        <image name="ic_check_42" width="21" height="21"/>
         <image name="logo_button" width="64" height="64"/>
     </resources>
 </document>
