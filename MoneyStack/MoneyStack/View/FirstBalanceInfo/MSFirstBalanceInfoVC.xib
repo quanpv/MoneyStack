@@ -151,11 +151,25 @@
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="yRb-mQ-zLP"/>
                     </constraints>
                 </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_button" translatesAutoresizingMaskIntoConstraints="NO" id="SKp-F1-SeG">
+                    <rect key="frame" x="150.5" y="75" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Y2r-2m-Ojt"/>
+                        <constraint firstAttribute="width" constant="75" id="rPa-Vb-Y2Z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
             </subviews>
             <constraints>
                 <constraint firstItem="oAN-le-YRV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4HZ-uF-TyO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oAN-le-YRV" secondAttribute="trailing" constant="10" id="LMH-vQ-LfD"/>
                 <constraint firstItem="oAN-le-YRV" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="MaM-ar-Jan"/>
+                <constraint firstItem="SKp-F1-SeG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lBk-gO-QQ5"/>
+                <constraint firstItem="oAN-le-YRV" firstAttribute="top" secondItem="SKp-F1-SeG" secondAttribute="bottom" constant="59" id="uNG-aj-xoR"/>
                 <constraint firstItem="oAN-le-YRV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="udN-Pt-UQB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -164,5 +178,6 @@
     </objects>
     <resources>
         <image name="ic_save" width="38" height="38"/>
+        <image name="logo_button" width="64" height="64"/>
     </resources>
 </document>
