@@ -105,6 +105,16 @@ class MSRegisterVC: MSBaseVC {
         createSubview(pickerview)
     }
     
+    @IBAction func checkValidate(_ sender: UITextField) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        var checkString = sender.text
+        if dateFormatter.date(from: checkString!) != nil {
+            
+        }else{
+            //Invalid
+        }
+    }
 }
 
 //MARK: - Extension PickerView
