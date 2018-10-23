@@ -14,7 +14,7 @@ protocol FirstVMProtocol {
 
 class MSFirstVM: MSNavigationVM {
     func processOpenRegister() {
-        let view = MSRegisterVC(nibName: MSRegisterVC.className, bundle: nil)
+        let view = MSViewBalanceInfoVC(nibName: MSViewBalanceInfoVC.className, bundle: nil)
         self.ownerView?.openView(view)
     }
 }

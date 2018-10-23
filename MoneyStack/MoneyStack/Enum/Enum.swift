@@ -23,6 +23,13 @@ enum TopBarPosition: Int {
     Middle, Right
 }
 
+enum ViewBalanceUI: Int {
+    case Monthly_Income,
+    Kind_Of_Money,
+    Outside_Cash,
+    Patrimony
+}
+
 enum LeftMenuItem: Int {
     case Dashboard,
     News,
@@ -35,3 +42,5 @@ enum LeftMenuItem: Int {
     Password,
     Logout
 }
+
+

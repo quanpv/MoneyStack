@@ -234,6 +234,36 @@
 		E608D055217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */; };
 		E608D056217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */; };
 		E608D057217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */; };
+		E614D5EB217EBBC8006BA616 /* MSViewBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5E9217EBBC8006BA616 /* MSViewBalanceInfoVC.swift */; };
+		E614D5EC217EBBC8006BA616 /* MSViewBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5E9217EBBC8006BA616 /* MSViewBalanceInfoVC.swift */; };
+		E614D5ED217EBBC8006BA616 /* MSViewBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5E9217EBBC8006BA616 /* MSViewBalanceInfoVC.swift */; };
+		E614D5EE217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5EA217EBBC8006BA616 /* MSViewBalanceInfoVC.xib */; };
+		E614D5EF217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5EA217EBBC8006BA616 /* MSViewBalanceInfoVC.xib */; };
+		E614D5F0217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5EA217EBBC8006BA616 /* MSViewBalanceInfoVC.xib */; };
+		E614D5F5217EBDEB006BA616 /* MSMonthlyIncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5F3217EBDEB006BA616 /* MSMonthlyIncomeCell.swift */; };
+		E614D5F6217EBDEB006BA616 /* MSMonthlyIncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5F3217EBDEB006BA616 /* MSMonthlyIncomeCell.swift */; };
+		E614D5F7217EBDEB006BA616 /* MSMonthlyIncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5F3217EBDEB006BA616 /* MSMonthlyIncomeCell.swift */; };
+		E614D5F8217EBDEB006BA616 /* MSMonthlyIncomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5F4217EBDEB006BA616 /* MSMonthlyIncomeCell.xib */; };
+		E614D5F9217EBDEB006BA616 /* MSMonthlyIncomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5F4217EBDEB006BA616 /* MSMonthlyIncomeCell.xib */; };
+		E614D5FA217EBDEB006BA616 /* MSMonthlyIncomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5F4217EBDEB006BA616 /* MSMonthlyIncomeCell.xib */; };
+		E614D5FE217EC3C8006BA616 /* MSKindOfMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5FC217EC3C8006BA616 /* MSKindOfMoneyCell.swift */; };
+		E614D5FF217EC3C8006BA616 /* MSKindOfMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5FC217EC3C8006BA616 /* MSKindOfMoneyCell.swift */; };
+		E614D600217EC3C8006BA616 /* MSKindOfMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D5FC217EC3C8006BA616 /* MSKindOfMoneyCell.swift */; };
+		E614D601217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5FD217EC3C8006BA616 /* MSKindOfMoneyCell.xib */; };
+		E614D602217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5FD217EC3C8006BA616 /* MSKindOfMoneyCell.xib */; };
+		E614D603217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D5FD217EC3C8006BA616 /* MSKindOfMoneyCell.xib */; };
+		E614D607217ED0AE006BA616 /* MSOutsideCashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D605217ED0AE006BA616 /* MSOutsideCashCell.swift */; };
+		E614D608217ED0AE006BA616 /* MSOutsideCashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D605217ED0AE006BA616 /* MSOutsideCashCell.swift */; };
+		E614D609217ED0AE006BA616 /* MSOutsideCashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D605217ED0AE006BA616 /* MSOutsideCashCell.swift */; };
+		E614D60A217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D606217ED0AE006BA616 /* MSOutsideCashCell.xib */; };
+		E614D60B217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D606217ED0AE006BA616 /* MSOutsideCashCell.xib */; };
+		E614D60C217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D606217ED0AE006BA616 /* MSOutsideCashCell.xib */; };
+		E614D610217ED59A006BA616 /* MSPatrimonyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D60E217ED59A006BA616 /* MSPatrimonyCell.swift */; };
+		E614D611217ED59A006BA616 /* MSPatrimonyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D60E217ED59A006BA616 /* MSPatrimonyCell.swift */; };
+		E614D612217ED59A006BA616 /* MSPatrimonyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D60E217ED59A006BA616 /* MSPatrimonyCell.swift */; };
+		E614D613217ED59A006BA616 /* MSPatrimonyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D60F217ED59A006BA616 /* MSPatrimonyCell.xib */; };
+		E614D614217ED59A006BA616 /* MSPatrimonyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D60F217ED59A006BA616 /* MSPatrimonyCell.xib */; };
+		E614D615217ED59A006BA616 /* MSPatrimonyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614D60F217ED59A006BA616 /* MSPatrimonyCell.xib */; };
 		E63113B5217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
 		E63113B6217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
 		E63113B7217B24C8009DBA7C /* MSLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63113B3217B24C7009DBA7C /* MSLoginVC.swift */; };
@@ -357,6 +387,16 @@
 		E28DA13AF7B5BD74974D254A /* Pods-MoneyStack DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.release.xcconfig"; sourceTree = "<group>"; };
 		E608D050217DB5500053C422 /* MSEditBalanceInfoDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSEditBalanceInfoDialog.swift; sourceTree = "<group>"; };
 		E608D051217DB5500053C422 /* MSEditBalanceInfoDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSEditBalanceInfoDialog.xib; sourceTree = "<group>"; };
+		E614D5E9217EBBC8006BA616 /* MSViewBalanceInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSViewBalanceInfoVC.swift; sourceTree = "<group>"; };
+		E614D5EA217EBBC8006BA616 /* MSViewBalanceInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSViewBalanceInfoVC.xib; sourceTree = "<group>"; };
+		E614D5F3217EBDEB006BA616 /* MSMonthlyIncomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMonthlyIncomeCell.swift; sourceTree = "<group>"; };
+		E614D5F4217EBDEB006BA616 /* MSMonthlyIncomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMonthlyIncomeCell.xib; sourceTree = "<group>"; };
+		E614D5FC217EC3C8006BA616 /* MSKindOfMoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSKindOfMoneyCell.swift; sourceTree = "<group>"; };
+		E614D5FD217EC3C8006BA616 /* MSKindOfMoneyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSKindOfMoneyCell.xib; sourceTree = "<group>"; };
+		E614D605217ED0AE006BA616 /* MSOutsideCashCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSOutsideCashCell.swift; sourceTree = "<group>"; };
+		E614D606217ED0AE006BA616 /* MSOutsideCashCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSOutsideCashCell.xib; sourceTree = "<group>"; };
+		E614D60E217ED59A006BA616 /* MSPatrimonyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPatrimonyCell.swift; sourceTree = "<group>"; };
+		E614D60F217ED59A006BA616 /* MSPatrimonyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSPatrimonyCell.xib; sourceTree = "<group>"; };
 		E63113B3217B24C7009DBA7C /* MSLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLoginVC.swift; sourceTree = "<group>"; };
 		E63113B4217B24C8009DBA7C /* MSLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLoginVC.xib; sourceTree = "<group>"; };
 		E63113BB217B2561009DBA7C /* MSRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterVC.swift; sourceTree = "<group>"; };
@@ -559,6 +599,7 @@
 		9880715521749EAF00B11705 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E614D5E8217EBB20006BA616 /* ViewBalanceInfo */,
 				98BE878A217A743A0075BD76 /* First */,
 				5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */,
 				98BE8778217A74390075BD76 /* Dashboard */,
@@ -796,6 +837,63 @@
 			path = EditBalanceInfoDialog;
 			sourceTree = "<group>";
 		};
+		E614D5E8217EBB20006BA616 /* ViewBalanceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E614D5F1217EBCFA006BA616 /* Cell */,
+				E614D5E9217EBBC8006BA616 /* MSViewBalanceInfoVC.swift */,
+				E614D5EA217EBBC8006BA616 /* MSViewBalanceInfoVC.xib */,
+			);
+			path = ViewBalanceInfo;
+			sourceTree = "<group>";
+		};
+		E614D5F1217EBCFA006BA616 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E614D60D217ED4DA006BA616 /* Patrimony */,
+				E614D604217ED06E006BA616 /* Own+Loan */,
+				E614D5FB217EC2D3006BA616 /* KindOfMoney */,
+				E614D5F2217EBD07006BA616 /* MonthlyIncome */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E614D5F2217EBD07006BA616 /* MonthlyIncome */ = {
+			isa = PBXGroup;
+			children = (
+				E614D5F3217EBDEB006BA616 /* MSMonthlyIncomeCell.swift */,
+				E614D5F4217EBDEB006BA616 /* MSMonthlyIncomeCell.xib */,
+			);
+			path = MonthlyIncome;
+			sourceTree = "<group>";
+		};
+		E614D5FB217EC2D3006BA616 /* KindOfMoney */ = {
+			isa = PBXGroup;
+			children = (
+				E614D5FC217EC3C8006BA616 /* MSKindOfMoneyCell.swift */,
+				E614D5FD217EC3C8006BA616 /* MSKindOfMoneyCell.xib */,
+			);
+			path = KindOfMoney;
+			sourceTree = "<group>";
+		};
+		E614D604217ED06E006BA616 /* Own+Loan */ = {
+			isa = PBXGroup;
+			children = (
+				E614D605217ED0AE006BA616 /* MSOutsideCashCell.swift */,
+				E614D606217ED0AE006BA616 /* MSOutsideCashCell.xib */,
+			);
+			path = "Own+Loan";
+			sourceTree = "<group>";
+		};
+		E614D60D217ED4DA006BA616 /* Patrimony */ = {
+			isa = PBXGroup;
+			children = (
+				E614D60E217ED59A006BA616 /* MSPatrimonyCell.swift */,
+				E614D60F217ED59A006BA616 /* MSPatrimonyCell.xib */,
+			);
+			path = Patrimony;
+			sourceTree = "<group>";
+		};
 		E63113DA217B28D3009DBA7C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -951,21 +1049,26 @@
 				98BE87D1217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
 				98BE87E9217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
+				E614D5EF217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */,
 				98BE87AA217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
 				98BE8776217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
+				E614D60B217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */,
 				98BE87A4217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
 				98BE87E3217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
 				98BE87B6217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718A2174EAF700B11705 /* OpenSans in Resources */,
+				E614D602217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */,
 				98BE87C8217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87BC217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87EF217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87C2217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				E614D614217ED59A006BA616 /* MSPatrimonyCell.xib in Resources */,
 				5BF1349C217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
 				98244C9F217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
 				E63113E9217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
 				E63113B9217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
+				E614D5F9217EBDEB006BA616 /* MSMonthlyIncomeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,6 +1081,7 @@
 				E608D057217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
 				98244CA0217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
 				98244CBA217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
+				E614D615217ED59A006BA616 /* MSPatrimonyCell.xib in Resources */,
 				9880713A21749DFE00B11705 /* Assets.xcassets in Resources */,
 				98BE87D2217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				98BE87EA217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
@@ -987,14 +1091,18 @@
 				9877CB08217CE76B004F8396 /* MSLeftMenuVC.xib in Resources */,
 				9880714421749E5400B11705 /* Info_UAT.plist in Resources */,
 				98BE87A5217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
+				E614D5FA217EBDEB006BA616 /* MSMonthlyIncomeCell.xib in Resources */,
 				98244CCA217CD97200E2E4A0 /* MSDashboardFirstCC.xib in Resources */,
+				E614D5F0217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */,
 				98BE87E4217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
 				5BF1349D217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
 				E63113BA217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
+				E614D60C217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */,
 				98BE87B7217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
 				98BE87C9217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				E614D603217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */,
 				98BE87F0217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87C3217A743A0075BD76 /* MSMemberVC.xib in Resources */,
 				E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
@@ -1016,21 +1124,26 @@
 				98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
 				E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
+				E614D5EE217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */,
 				98BE87D0217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				98BE87E2217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
+				E614D60A217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */,
 				98BE87E8217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
 				98BE8775217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
 				98BE87C1217A743A0075BD76 /* MSMemberVC.xib in Resources */,
 				98BE87D6217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
+				E614D601217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */,
 				98BE87C7217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87EE217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87A3217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
+				E614D613217ED59A006BA616 /* MSPatrimonyCell.xib in Resources */,
 				5BF1349B217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib in Resources */,
 				98244C9E217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
 				E63113E8217B290F009DBA7C /* MSAddBalanceInfoDialog.xib in Resources */,
 				E63113B8217B24C8009DBA7C /* MSLoginVC.xib in Resources */,
+				E614D5F8217EBDEB006BA616 /* MSMonthlyIncomeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,6 +1267,8 @@
 			files = (
 				988071C72174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
 				98244CC1217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */,
+				E614D5EC217EBBC8006BA616 /* MSViewBalanceInfoVC.swift in Sources */,
+				E614D5FF217EC3C8006BA616 /* MSKindOfMoneyCell.swift in Sources */,
 				988071B52174ED2E00B11705 /* UIApplication.swift in Sources */,
 				E63113EC217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				9880716C21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
@@ -1165,6 +1280,7 @@
 				98244CB6217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */,
 				988071A62174ED2D00B11705 /* NSObject.swift in Sources */,
 				98BE87E0217A743A0075BD76 /* MSExpenseVC.swift in Sources */,
+				E614D5F6217EBDEB006BA616 /* MSMonthlyIncomeCell.swift in Sources */,
 				988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
 				98BE8773217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */,
 				988071DE2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
@@ -1195,6 +1311,7 @@
 				5BF13499217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071AF2174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D6217508ED00B11705 /* MSModel.swift in Sources */,
+				E614D608217ED0AE006BA616 /* MSOutsideCashCell.swift in Sources */,
 				98244C9C217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
 				E636013521773CD900E4F898 /* Date+Extension.swift in Sources */,
 				988071CE217508C500B11705 /* MSBaseService.swift in Sources */,
@@ -1211,6 +1328,7 @@
 				98BE87EC217A743A0075BD76 /* MSPlanVC.swift in Sources */,
 				9880715821749EAF00B11705 /* MSBaseVM.swift in Sources */,
 				98A8D04B217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
+				E614D611217ED59A006BA616 /* MSPatrimonyCell.swift in Sources */,
 				98BE87A1217A743A0075BD76 /* MSDashboardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1221,6 +1339,8 @@
 			files = (
 				988071C82174ED2E00B11705 /* UIViewExtensions.swift in Sources */,
 				98244CC2217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */,
+				E614D5ED217EBBC8006BA616 /* MSViewBalanceInfoVC.swift in Sources */,
+				E614D600217EC3C8006BA616 /* MSKindOfMoneyCell.swift in Sources */,
 				988071B62174ED2E00B11705 /* UIApplication.swift in Sources */,
 				E63113ED217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				9880716D21749EAF00B11705 /* MSNavigationVM.swift in Sources */,
@@ -1232,6 +1352,7 @@
 				98244CB7217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */,
 				988071A72174ED2D00B11705 /* NSObject.swift in Sources */,
 				98BE87E1217A743A0075BD76 /* MSExpenseVC.swift in Sources */,
+				E614D5F7217EBDEB006BA616 /* MSMonthlyIncomeCell.swift in Sources */,
 				988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
 				98BE8774217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */,
 				988071DF2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
@@ -1262,6 +1383,7 @@
 				5BF1349A217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071B02174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D7217508ED00B11705 /* MSModel.swift in Sources */,
+				E614D609217ED0AE006BA616 /* MSOutsideCashCell.swift in Sources */,
 				98244C9D217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
 				E636013621773CD900E4F898 /* Date+Extension.swift in Sources */,
 				988071CF217508C500B11705 /* MSBaseService.swift in Sources */,
@@ -1278,6 +1400,7 @@
 				98BE87ED217A743A0075BD76 /* MSPlanVC.swift in Sources */,
 				9880715921749EAF00B11705 /* MSBaseVM.swift in Sources */,
 				98A8D04C217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
+				E614D612217ED59A006BA616 /* MSPatrimonyCell.swift in Sources */,
 				98BE87A2217A743A0075BD76 /* MSDashboardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1288,6 +1411,8 @@
 			files = (
 				98A8D01A217A762100765F69 /* Enum.swift in Sources */,
 				98244CC0217CCFEB00E2E4A0 /* MSCornerView.swift in Sources */,
+				E614D5EB217EBBC8006BA616 /* MSViewBalanceInfoVC.swift in Sources */,
+				E614D5FE217EC3C8006BA616 /* MSKindOfMoneyCell.swift in Sources */,
 				E63113EB217B290F009DBA7C /* MSAddBalanceInfoDialog.swift in Sources */,
 				98A8D01C217A762100765F69 /* MSBaseVC.swift in Sources */,
 				E63113E2217B28F8009DBA7C /* MSConfirmDialog.swift in Sources */,
@@ -1299,6 +1424,7 @@
 				98A8D01F217A762100765F69 /* MSNavigationVM.swift in Sources */,
 				98A8D020217A762100765F69 /* MSBalanceInfoVC.swift in Sources */,
 				98A8D021217A762100765F69 /* MSDashboardVC.swift in Sources */,
+				E614D5F5217EBDEB006BA616 /* MSMonthlyIncomeCell.swift in Sources */,
 				98A8D022217A762100765F69 /* MSExpenseVC.swift in Sources */,
 				98A8D023217A762100765F69 /* MSFirstVC.swift in Sources */,
 				98A8D024217A762100765F69 /* MSFirstVM.swift in Sources */,
@@ -1329,6 +1455,7 @@
 				5BF13498217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				98A8D03B217A762100765F69 /* UIImageView.swift in Sources */,
 				98A8D03C217A762100765F69 /* UITableViewExtension.swift in Sources */,
+				E614D607217ED0AE006BA616 /* MSOutsideCashCell.swift in Sources */,
 				98244C9B217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */,
 				98A8D03D217A762100765F69 /* UITextField.swift in Sources */,
 				98A8D03E217A762100765F69 /* UIView.swift in Sources */,
@@ -1345,6 +1472,7 @@
 				98A8D046217A762100765F69 /* MSConstant.swift in Sources */,
 				98A8D047217A762100765F69 /* AppDelegate.swift in Sources */,
 				98A8D04A217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
+				E614D610217ED59A006BA616 /* MSPatrimonyCell.swift in Sources */,
 				98A8D048217A762100765F69 /* AppDelegate_LeftMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
