@@ -21,6 +21,12 @@
 		5BF1349E217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
 		5BF1349F217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
 		5BF134A0217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */; };
+		5BF4400F217F15A700CA502C /* MSPlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4400D217F15A700CA502C /* MSPlanCollectionViewCell.swift */; };
+		5BF44010217F15A700CA502C /* MSPlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4400D217F15A700CA502C /* MSPlanCollectionViewCell.swift */; };
+		5BF44011217F15A700CA502C /* MSPlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4400D217F15A700CA502C /* MSPlanCollectionViewCell.swift */; };
+		5BF44012217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4400E217F15A700CA502C /* MSPlanCollectionViewCell.xib */; };
+		5BF44013217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4400E217F15A700CA502C /* MSPlanCollectionViewCell.xib */; };
+		5BF44014217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4400E217F15A700CA502C /* MSPlanCollectionViewCell.xib */; };
 		98244C9B217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
 		98244C9C217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
 		98244C9D217BF1D500E2E4A0 /* MSPersonalizeCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98244C99217BF1D500E2E4A0 /* MSPersonalizeCC.swift */; };
@@ -274,6 +280,8 @@
 		5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
 		5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
 		5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVC.swift; sourceTree = "<group>"; };
+		5BF4400D217F15A700CA502C /* MSPlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPlanCollectionViewCell.swift; sourceTree = "<group>"; };
+		5BF4400E217F15A700CA502C /* MSPlanCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSPlanCollectionViewCell.xib; sourceTree = "<group>"; };
 		69FEA4E866B17198A19B89FC /* Pods-MoneyStack DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack DEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack DEV/Pods-MoneyStack DEV.debug.xcconfig"; sourceTree = "<group>"; };
 		795AAA9AA14128DC13506621 /* Pods-MoneyStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack/Pods-MoneyStack.debug.xcconfig"; sourceTree = "<group>"; };
 		96758BE11DE1BF87FB196226 /* Pods-MoneyStack UAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyStack UAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyStack UAT/Pods-MoneyStack UAT.release.xcconfig"; sourceTree = "<group>"; };
@@ -415,6 +423,15 @@
 				5BF13497217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift */,
 			);
 			path = FirstBalanceInfo;
+			sourceTree = "<group>";
+		};
+		5BF4400C217F152800CA502C /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BF4400D217F15A700CA502C /* MSPlanCollectionViewCell.swift */,
+				5BF4400E217F15A700CA502C /* MSPlanCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 		64E873FE6346BFE1011656A1 /* Pods */ = {
@@ -725,6 +742,7 @@
 		98BE879D217A743A0075BD76 /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				5BF4400C217F152800CA502C /* CollectionCell */,
 				98BE879E217A743A0075BD76 /* MSPlanVC.swift */,
 				98BE879F217A743A0075BD76 /* MSPlanVC.xib */,
 			);
@@ -958,6 +976,7 @@
 				98BE87B6217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718A2174EAF700B11705 /* OpenSans in Resources */,
 				98BE87C8217A743A0075BD76 /* MSFirstVC.xib in Resources */,
+				5BF44013217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */,
 				98BE87BC217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87EF217A743A0075BD76 /* MSPlanVC.xib in Resources */,
@@ -995,6 +1014,7 @@
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
 				98BE87C9217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				5BF44014217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */,
 				98BE87F0217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87C3217A743A0075BD76 /* MSMemberVC.xib in Resources */,
 				E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
@@ -1023,6 +1043,7 @@
 				98BE87C1217A743A0075BD76 /* MSMemberVC.xib in Resources */,
 				98BE87D6217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
 				98BE87C7217A743A0075BD76 /* MSFirstVC.xib in Resources */,
+				5BF44012217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */,
 				98BE87EE217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
@@ -1179,6 +1200,7 @@
 				E608D053217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */,
 				5BF1349F217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B22174ED2E00B11705 /* UIColor.swift in Sources */,
+				5BF44010217F15A700CA502C /* MSPlanCollectionViewCell.swift in Sources */,
 				98BE87D4217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
 				9880712921749DD000B11705 /* AppDelegate.swift in Sources */,
 				98BE87C5217A743A0075BD76 /* MSFirstVC.swift in Sources */,
@@ -1246,6 +1268,7 @@
 				E608D054217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */,
 				5BF134A0217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				988071B32174ED2E00B11705 /* UIColor.swift in Sources */,
+				5BF44011217F15A700CA502C /* MSPlanCollectionViewCell.swift in Sources */,
 				98BE87D5217A743A0075BD76 /* MSForgotPasswordVC.swift in Sources */,
 				9880713621749DFE00B11705 /* AppDelegate.swift in Sources */,
 				98BE87C6217A743A0075BD76 /* MSFirstVC.swift in Sources */,
@@ -1313,6 +1336,7 @@
 				E608D052217DB5500053C422 /* MSEditBalanceInfoDialog.swift in Sources */,
 				5BF1349E217D6B9B00D35DDB /* MSFirstBalanceInfoVC.swift in Sources */,
 				98A8D02D217A762100765F69 /* MSSavingVC.swift in Sources */,
+				5BF4400F217F15A700CA502C /* MSPlanCollectionViewCell.swift in Sources */,
 				98A8D02E217A762100765F69 /* MSModel.swift in Sources */,
 				98A8D02F217A762100765F69 /* MSTopBarView.swift in Sources */,
 				98A8D030217A762100765F69 /* MSButtonView.swift in Sources */,
