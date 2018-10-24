@@ -37,7 +37,7 @@ extension AppDelegate {
             ["Trang chủ": MSDashboardVC(nibName: MSDashboardVC.className, bundle: nil)],
             ["Tin tức": MSNewsVC(nibName: MSNewsVC.className, bundle: nil)],
             ["Chi tiêu": MSExpenseVC(nibName: MSExpenseVC.className, bundle: nil)],
-            ["Tiền": MSBalanceInfoVC(nibName: MSBalanceInfoVC.className, bundle: nil)],
+            ["Tiền": MSViewBalanceInfoVC(nibName: MSViewBalanceInfoVC.className, bundle: nil)],
             ["Tiết kiệm": MSSavingVC(nibName: MSSavingVC.className, bundle: nil)],
             ["Dự định": MSPlanVC(nibName: MSPlanVC.className, bundle: nil)],
             ["Thành viên": MSMemberVC(nibName: MSMemberVC.className, bundle: nil)],
