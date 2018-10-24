@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="MoneyStack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="X1C-N5-djM">
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="141"/>
+                        <subviews>
+                            <view clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEM-PI-M79">
+                                <rect key="frame" x="0.0" y="0.0" width="395" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bá Văn Đạo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCt-Nu-vRi">
+                                        <rect key="frame" x="143.5" y="9.5" width="107.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsn-Nk-gfQ">
+                                        <rect key="frame" x="355" y="7" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.60784313725490191" green="0.066666666666666666" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="N0E-rN-Dvj"/>
+                                            <constraint firstAttribute="height" constant="30" id="d6P-sE-BHd"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_close_45"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fCt-Nu-vRi" firstAttribute="centerY" secondItem="rEM-PI-M79" secondAttribute="centerY" id="9fS-3O-ru7"/>
+                                    <constraint firstAttribute="trailing" secondItem="xsn-Nk-gfQ" secondAttribute="trailing" constant="10" id="L5A-cU-O4F"/>
+                                    <constraint firstAttribute="height" constant="45" id="hWv-cW-DDx"/>
+                                    <constraint firstItem="fCt-Nu-vRi" firstAttribute="centerX" secondItem="rEM-PI-M79" secondAttribute="centerX" id="uol-kd-okR"/>
+                                    <constraint firstItem="xsn-Nk-gfQ" firstAttribute="centerY" secondItem="rEM-PI-M79" secondAttribute="centerY" id="zsS-dz-TiV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Gla-vK-M8b">
+                                <rect key="frame" x="0.0" y="48" width="395" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06/09/1969" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-bf-bEc">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.5" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql4-QD-xhZ">
+                                        <rect key="frame" x="198.5" y="0.0" width="196.5" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ncx-FQ-HFy"/>
+                                </constraints>
+                            </stackView>
+                            <view clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4w7-8V-2aX">
+                                <rect key="frame" x="0.0" y="96" width="395" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tổng chi tiêu:1.000.000.000 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8D-EO-Mwa">
+                                        <rect key="frame" x="68.5" y="9.5" width="259" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_next_black_45" translatesAutoresizingMaskIntoConstraints="NO" id="c4y-rW-Zsp">
+                                        <rect key="frame" x="357" y="14.5" width="13" height="15"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Eq7-eh-C4L"/>
+                                            <constraint firstAttribute="width" constant="13" id="rAT-cM-uPV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="c4y-rW-Zsp" firstAttribute="centerY" secondItem="4w7-8V-2aX" secondAttribute="centerY" id="9x0-oe-wOX"/>
+                                    <constraint firstItem="s8D-EO-Mwa" firstAttribute="centerX" secondItem="4w7-8V-2aX" secondAttribute="centerX" id="HXs-FV-Ecx"/>
+                                    <constraint firstAttribute="trailing" secondItem="c4y-rW-Zsp" secondAttribute="trailing" constant="25" id="IRw-qA-U2D"/>
+                                    <constraint firstAttribute="height" constant="45" id="XO7-VZ-Mhh"/>
+                                    <constraint firstItem="s8D-EO-Mwa" firstAttribute="centerY" secondItem="4w7-8V-2aX" secondAttribute="centerY" id="l3q-hW-eXV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="X1C-N5-djM" secondAttribute="top" id="7k5-Of-IzQ"/>
+                <constraint firstItem="X1C-N5-djM" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="B8Q-q7-rB6"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="X1C-N5-djM" secondAttribute="trailing" id="fHx-il-3b5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="395" height="141"/>
+            <point key="canvasLocation" x="8.5" y="-16.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_close_45" width="22" height="22"/>
+        <image name="ic_next_black_45" width="22" height="22"/>
+    </resources>
+</document>

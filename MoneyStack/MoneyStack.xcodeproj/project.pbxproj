@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		401FDFE872B4DACD0CB67F94 /* Pods_MoneyStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EDF2F550E74D9FAD206DC5 /* Pods_MoneyStack.framework */; };
 		485395C77EE137AEBBD6DF1D /* Pods_MoneyStack_UAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */; };
+		5B269F9E218022480066F258 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269F9C218022480066F258 /* CollectionViewCell.swift */; };
+		5B269F9F218022480066F258 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269F9C218022480066F258 /* CollectionViewCell.swift */; };
+		5B269FA0218022480066F258 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269F9C218022480066F258 /* CollectionViewCell.swift */; };
+		5B269FA1218022480066F258 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269F9D218022480066F258 /* CollectionViewCell.xib */; };
+		5B269FA2218022480066F258 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269F9D218022480066F258 /* CollectionViewCell.xib */; };
+		5B269FA3218022480066F258 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269F9D218022480066F258 /* CollectionViewCell.xib */; };
 		5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
@@ -306,6 +312,8 @@
 
 /* Begin PBXFileReference section */
 		4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_UAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B269F9C218022480066F258 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		5B269F9D218022480066F258 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
 		5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
 		5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
@@ -447,6 +455,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B269F9B2180221D0066F258 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				5B269F9C218022480066F258 /* CollectionViewCell.swift */,
+				5B269F9D218022480066F258 /* CollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
 		5BF1348F217D6B0B00D35DDB /* Label */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,6 +735,7 @@
 		98BE8787217A743A0075BD76 /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				5B269F9B2180221D0066F258 /* CollectionCell */,
 				98BE8788217A743A0075BD76 /* MSMemberVC.swift */,
 				98BE8789217A743A0075BD76 /* MSMemberVC.xib */,
 			);
@@ -1071,6 +1089,7 @@
 				98BE87AA217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
 				98BE8776217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
 				E614D60B217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */,
+				5B269FA2218022480066F258 /* CollectionViewCell.xib in Resources */,
 				98BE87A4217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
 				98BE87E3217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
 				98BE87B6217A743A0075BD76 /* MSSavingVC.xib in Resources */,
@@ -1097,6 +1116,7 @@
 			files = (
 				98BE87D8217A743A0075BD76 /* MSForgotPasswordVC.xib in Resources */,
 				9880713921749DFE00B11705 /* LaunchScreen.storyboard in Resources */,
+				5B269FA3218022480066F258 /* CollectionViewCell.xib in Resources */,
 				E608D057217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
 				98244CA0217BF1D500E2E4A0 /* MSPersonalizeCC.xib in Resources */,
 				98244CBA217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
@@ -1148,6 +1168,7 @@
 				98BE87D0217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				98BE87E2217A743A0075BD76 /* MSExpenseVC.xib in Resources */,
 				E614D60A217ED0AE006BA616 /* MSOutsideCashCell.xib in Resources */,
+				5B269FA1218022480066F258 /* CollectionViewCell.xib in Resources */,
 				98BE87E8217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
 				98BE8775217A740A0075BD76 /* MSLeftMenuCell.xib in Resources */,
 				98BE87C1217A743A0075BD76 /* MSMemberVC.xib in Resources */,
@@ -1340,6 +1361,7 @@
 				988071BB2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
 				98244CBD217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
 				E63113BE217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5B269F9F218022480066F258 /* CollectionViewCell.swift in Sources */,
 				5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
 				E64625442178348F004B3DFD /* Enum.swift in Sources */,
 				98BE87CB217A743A0075BD76 /* MSFirstVM.swift in Sources */,
@@ -1413,6 +1435,7 @@
 				988071BC2174ED2E00B11705 /* UITableViewExtension.swift in Sources */,
 				98244CBE217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
 				E63113BF217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5B269FA0218022480066F258 /* CollectionViewCell.swift in Sources */,
 				5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
 				E64625452178348F004B3DFD /* Enum.swift in Sources */,
 				98BE87CC217A743A0075BD76 /* MSFirstVM.swift in Sources */,
@@ -1486,6 +1509,7 @@
 				98A8D03F217A762100765F69 /* UIViewController.swift in Sources */,
 				98244CBC217CCE1100E2E4A0 /* MSFullSizeIconButton.swift in Sources */,
 				E63113BD217B2561009DBA7C /* MSRegisterVC.swift in Sources */,
+				5B269F9E218022480066F258 /* CollectionViewCell.swift in Sources */,
 				5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */,
 				98A8D040217A762100765F69 /* UIViewControllerExtension.swift in Sources */,
 				98A8D041217A762100765F69 /* UIViewExtensions.swift in Sources */,
