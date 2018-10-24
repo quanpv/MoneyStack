@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MSPatrimonyCell" customModule="MoneyStack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="138.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXe-zy-I6N" userLabel="View Tài Sản" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tài sản: 50.000.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-ht-qrv">
+                                <rect key="frame" x="79.5" y="7.5" width="197.5" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_question_45_red" translatesAutoresizingMaskIntoConstraints="NO" id="heE-q0-Zb5">
+                                <rect key="frame" x="320" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="CDe-ox-1lP"/>
+                                    <constraint firstAttribute="height" constant="25" id="EsU-PN-Dgc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="CNy-j3-vcl"/>
+                            <constraint firstItem="0L1-ht-qrv" firstAttribute="centerY" secondItem="iXe-zy-I6N" secondAttribute="centerY" id="HQo-aa-nWF"/>
+                            <constraint firstItem="heE-q0-Zb5" firstAttribute="centerY" secondItem="iXe-zy-I6N" secondAttribute="centerY" id="NNq-F4-MDb"/>
+                            <constraint firstAttribute="trailing" secondItem="heE-q0-Zb5" secondAttribute="trailing" constant="10" id="aWN-aa-itf"/>
+                            <constraint firstItem="0L1-ht-qrv" firstAttribute="centerX" secondItem="iXe-zy-I6N" secondAttribute="centerX" id="gGg-7N-2aj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWH-bH-B8h" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="47" width="355" height="92"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDR-gf-21q" userLabel="View Xe Máy" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xe máy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsh-Hx-fol">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="45"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2HW-kL-1Va"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gsh-Hx-fol" secondAttribute="trailing" constant="10" id="O6S-9w-Gok"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gsh-Hx-fol" secondAttribute="bottom" id="Yfn-Sg-71F"/>
+                                    <constraint firstItem="Gsh-Hx-fol" firstAttribute="leading" secondItem="LDR-gf-21q" secondAttribute="leading" id="be4-dm-uop"/>
+                                    <constraint firstItem="Gsh-Hx-fol" firstAttribute="top" secondItem="LDR-gf-21q" secondAttribute="top" id="jhj-NR-VBP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCi-2t-xur" userLabel="View Điện Thoại" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="47" width="176.5" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điện thoại" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvJ-dZ-Jh5">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="45"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yvJ-dZ-Jh5" secondAttribute="bottom" id="PcE-4V-Vdh"/>
+                                    <constraint firstItem="yvJ-dZ-Jh5" firstAttribute="top" secondItem="kCi-2t-xur" secondAttribute="top" id="Vo2-Kf-QUk"/>
+                                    <constraint firstItem="yvJ-dZ-Jh5" firstAttribute="leading" secondItem="kCi-2t-xur" secondAttribute="leading" id="Zfo-b4-foI"/>
+                                    <constraint firstAttribute="height" constant="45" id="o5a-ge-CK9"/>
+                                    <constraint firstAttribute="trailing" secondItem="yvJ-dZ-Jh5" secondAttribute="trailing" constant="10" id="xtu-7p-fFb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utp-tV-Ufi" userLabel="View Điện Thoại Value" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                                <rect key="frame" x="178" y="47" width="176.5" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10.000.000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OuT-HW-Z2h">
+                                        <rect key="frame" x="10" y="0.0" width="131.5" height="45"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_next_black_45" translatesAutoresizingMaskIntoConstraints="NO" id="XpE-T9-XMS">
+                                        <rect key="frame" x="141" y="11" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="5IH-lv-LSu"/>
+                                            <constraint firstAttribute="height" constant="23" id="TyH-Rk-8fe"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OuT-HW-Z2h" secondAttribute="bottom" id="4hq-hV-lgo"/>
+                                    <constraint firstAttribute="height" constant="45" id="Erf-Ls-8OU"/>
+                                    <constraint firstAttribute="trailing" secondItem="XpE-T9-XMS" secondAttribute="trailing" constant="12.5" id="JnV-ca-FAl"/>
+                                    <constraint firstItem="OuT-HW-Z2h" firstAttribute="top" secondItem="utp-tV-Ufi" secondAttribute="top" id="OIj-w4-Wet"/>
+                                    <constraint firstAttribute="trailing" secondItem="OuT-HW-Z2h" secondAttribute="trailing" constant="35" id="PYg-rC-cZL"/>
+                                    <constraint firstItem="XpE-T9-XMS" firstAttribute="centerY" secondItem="utp-tV-Ufi" secondAttribute="centerY" id="Vh3-nG-p8n"/>
+                                    <constraint firstItem="OuT-HW-Z2h" firstAttribute="leading" secondItem="utp-tV-Ufi" secondAttribute="leading" constant="10" id="YI4-Xu-L8u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1I-fS-c1q" userLabel="View Xe Máy Value" customClass="MSCornerView" customModule="MoneyStack" customModuleProvider="target">
+                                <rect key="frame" x="178.5" y="0.0" width="176.5" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10.000.000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-Zz-MI1">
+                                        <rect key="frame" x="10" y="0.0" width="131.5" height="45"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_next_black_45" translatesAutoresizingMaskIntoConstraints="NO" id="Jzh-94-4JI">
+                                        <rect key="frame" x="141" y="11" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="JbZ-6M-0mi"/>
+                                            <constraint firstAttribute="width" constant="23" id="NNN-Hp-WHp"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4bi-Zz-MI1" firstAttribute="top" secondItem="T1I-fS-c1q" secondAttribute="top" id="4jl-F4-5kg"/>
+                                    <constraint firstAttribute="height" constant="45" id="ApQ-Gj-qWQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="4bi-Zz-MI1" secondAttribute="bottom" id="BeQ-cz-G5q"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jzh-94-4JI" secondAttribute="trailing" constant="12.5" id="Lz6-xR-xVl"/>
+                                    <constraint firstItem="4bi-Zz-MI1" firstAttribute="leading" secondItem="T1I-fS-c1q" secondAttribute="leading" constant="10" id="O1j-xy-WWY"/>
+                                    <constraint firstItem="Jzh-94-4JI" firstAttribute="centerY" secondItem="T1I-fS-c1q" secondAttribute="centerY" id="Oz6-PC-KTc"/>
+                                    <constraint firstAttribute="trailing" secondItem="4bi-Zz-MI1" secondAttribute="trailing" constant="35" id="QM2-lO-K72"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T1I-fS-c1q" firstAttribute="width" secondItem="vWH-bH-B8h" secondAttribute="width" multiplier="1:2" constant="-1" id="1TM-rj-5ue"/>
+                            <constraint firstItem="LDR-gf-21q" firstAttribute="leading" secondItem="vWH-bH-B8h" secondAttribute="leading" id="63s-v4-XlE"/>
+                            <constraint firstItem="kCi-2t-xur" firstAttribute="leading" secondItem="vWH-bH-B8h" secondAttribute="leading" id="Hqb-DF-FKL"/>
+                            <constraint firstAttribute="trailing" secondItem="utp-tV-Ufi" secondAttribute="trailing" constant="0.5" id="LUK-4R-Ecw"/>
+                            <constraint firstItem="T1I-fS-c1q" firstAttribute="top" secondItem="vWH-bH-B8h" secondAttribute="top" id="RpS-pw-MYb"/>
+                            <constraint firstItem="kCi-2t-xur" firstAttribute="width" secondItem="vWH-bH-B8h" secondAttribute="width" multiplier="1:2" constant="-1" id="TrZ-iV-rk1"/>
+                            <constraint firstAttribute="trailing" secondItem="T1I-fS-c1q" secondAttribute="trailing" id="Vgt-gF-Vec"/>
+                            <constraint firstItem="LDR-gf-21q" firstAttribute="top" secondItem="vWH-bH-B8h" secondAttribute="top" id="VlD-pE-R0b"/>
+                            <constraint firstItem="LDR-gf-21q" firstAttribute="width" secondItem="vWH-bH-B8h" secondAttribute="width" multiplier="1:2" constant="-1" id="XqD-3F-Jr6"/>
+                            <constraint firstItem="utp-tV-Ufi" firstAttribute="width" secondItem="vWH-bH-B8h" secondAttribute="width" multiplier="1:2" constant="-1" id="byz-Bw-YkD"/>
+                            <constraint firstItem="utp-tV-Ufi" firstAttribute="top" secondItem="T1I-fS-c1q" secondAttribute="bottom" constant="2" id="pgW-Vw-TDf"/>
+                            <constraint firstItem="kCi-2t-xur" firstAttribute="top" secondItem="LDR-gf-21q" secondAttribute="bottom" constant="2" id="s3u-QU-9Yo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="iXe-zy-I6N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7J3-qt-dXk"/>
+                    <constraint firstItem="vWH-bH-B8h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cmq-o2-rKn"/>
+                    <constraint firstAttribute="trailing" secondItem="iXe-zy-I6N" secondAttribute="trailing" id="Dy7-hd-1Tb"/>
+                    <constraint firstAttribute="trailing" secondItem="vWH-bH-B8h" secondAttribute="trailing" id="cAC-Pb-7j7"/>
+                    <constraint firstItem="iXe-zy-I6N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iS6-lo-3SN"/>
+                    <constraint firstItem="vWH-bH-B8h" firstAttribute="top" secondItem="iXe-zy-I6N" secondAttribute="bottom" constant="2" id="rNZ-4L-saH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vWH-bH-B8h" firstAttribute="bottom" secondItem="njF-e1-oar" secondAttribute="bottom" id="tgx-VI-rSC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelTotalPatrimony" destination="0L1-ht-qrv" id="li4-1K-8qv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_next_black_45" width="22" height="22"/>
+        <image name="ic_question_45_red" width="22" height="22"/>
+    </resources>
+</document>
