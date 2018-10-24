@@ -15,6 +15,18 @@
 		5B269FA1218022480066F258 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269F9D218022480066F258 /* CollectionViewCell.xib */; };
 		5B269FA2218022480066F258 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269F9D218022480066F258 /* CollectionViewCell.xib */; };
 		5B269FA3218022480066F258 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269F9D218022480066F258 /* CollectionViewCell.xib */; };
+		5B269FA8218055D50066F258 /* MSMemberFirstLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269FA6218055D50066F258 /* MSMemberFirstLoginVC.swift */; };
+		5B269FA9218055D50066F258 /* MSMemberFirstLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269FA6218055D50066F258 /* MSMemberFirstLoginVC.swift */; };
+		5B269FAA218055D50066F258 /* MSMemberFirstLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269FA6218055D50066F258 /* MSMemberFirstLoginVC.swift */; };
+		5B269FAB218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FA7218055D50066F258 /* MSMemberFirstLoginVC.xib */; };
+		5B269FAC218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FA7218055D50066F258 /* MSMemberFirstLoginVC.xib */; };
+		5B269FAD218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FA7218055D50066F258 /* MSMemberFirstLoginVC.xib */; };
+		5B269FB12180563A0066F258 /* MSMemberFirstLoginCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269FAF2180563A0066F258 /* MSMemberFirstLoginCC.swift */; };
+		5B269FB22180563A0066F258 /* MSMemberFirstLoginCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269FAF2180563A0066F258 /* MSMemberFirstLoginCC.swift */; };
+		5B269FB32180563A0066F258 /* MSMemberFirstLoginCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269FAF2180563A0066F258 /* MSMemberFirstLoginCC.swift */; };
+		5B269FB42180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */; };
+		5B269FB52180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */; };
+		5B269FB62180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */; };
 		5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
@@ -314,6 +326,10 @@
 		4587FA3BCEA36C5B39B82573 /* Pods_MoneyStack_UAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyStack_UAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B269F9C218022480066F258 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		5B269F9D218022480066F258 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		5B269FA6218055D50066F258 /* MSMemberFirstLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMemberFirstLoginVC.swift; sourceTree = "<group>"; };
+		5B269FA7218055D50066F258 /* MSMemberFirstLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMemberFirstLoginVC.xib; sourceTree = "<group>"; };
+		5B269FAF2180563A0066F258 /* MSMemberFirstLoginCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMemberFirstLoginCC.swift; sourceTree = "<group>"; };
+		5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMemberFirstLoginCC.xib; sourceTree = "<group>"; };
 		5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
 		5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
 		5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
@@ -460,6 +476,26 @@
 			children = (
 				5B269F9C218022480066F258 /* CollectionViewCell.swift */,
 				5B269F9D218022480066F258 /* CollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		5B269FA521804E320066F258 /* MemberFirstLogin */ = {
+			isa = PBXGroup;
+			children = (
+				5B269FAE218055E20066F258 /* CollectionCell */,
+				5B269FA6218055D50066F258 /* MSMemberFirstLoginVC.swift */,
+				5B269FA7218055D50066F258 /* MSMemberFirstLoginVC.xib */,
+			);
+			name = MemberFirstLogin;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5B269FAE218055E20066F258 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				5B269FAF2180563A0066F258 /* MSMemberFirstLoginCC.swift */,
+				5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -633,6 +669,7 @@
 		9880715521749EAF00B11705 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B269FA521804E320066F258 /* MemberFirstLogin */,
 				E614D5E8217EBB20006BA616 /* ViewBalanceInfo */,
 				98BE878A217A743A0075BD76 /* First */,
 				5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */,
@@ -1081,9 +1118,11 @@
 				9880712C21749DD000B11705 /* LaunchScreen.storyboard in Resources */,
 				98244CB9217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
 				E608D056217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
+				5B269FAC218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */,
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
 				98BE87D1217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
+				5B269FB52180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */,
 				98BE87E9217A743A0075BD76 /* MSPersonalizeVC.xib in Resources */,
 				E614D5EF217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */,
 				98BE87AA217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
@@ -1141,11 +1180,13 @@
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
 				98BE87C9217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
+				5B269FAD218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */,
 				5BF44014217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */,
 				E614D603217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */,
 				98BE87F0217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87C3217A743A0075BD76 /* MSMemberVC.xib in Resources */,
 				E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
+				5B269FB62180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */,
 				E63113C2217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1160,9 +1201,11 @@
 				988071892174EAF700B11705 /* OpenSans in Resources */,
 				98244CB8217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
 				E608D055217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
+				5B269FAB218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */,
 				98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
 				E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
+				5B269FB42180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */,
 				98FE70DE217499F1007164EC /* Assets.xcassets in Resources */,
 				E614D5EE217EBBC8006BA616 /* MSViewBalanceInfoVC.xib in Resources */,
 				98BE87D0217A743A0075BD76 /* MSNewsVC.xib in Resources */,
@@ -1326,6 +1369,7 @@
 				988071A32174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
 				98BE8773217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */,
 				988071DE2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
+				5B269FA9218055D50066F258 /* MSMemberFirstLoginVC.swift in Sources */,
 				98BE87CE217A743A0075BD76 /* MSNewsVC.swift in Sources */,
 				98BE87BF217A743A0075BD76 /* MSMemberVC.swift in Sources */,
 				988071E221751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
@@ -1369,6 +1413,7 @@
 				988071D2217508D600B11705 /* MSUtils.swift in Sources */,
 				98BE87B3217A743A0075BD76 /* MSSavingVC.swift in Sources */,
 				988071BE2174ED2E00B11705 /* UIImage.swift in Sources */,
+				5B269FB22180563A0066F258 /* MSMemberFirstLoginCC.swift in Sources */,
 				98BE87EC217A743A0075BD76 /* MSPlanVC.swift in Sources */,
 				9880715821749EAF00B11705 /* MSBaseVM.swift in Sources */,
 				98A8D04B217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
@@ -1400,6 +1445,7 @@
 				988071A42174ED2D00B11705 /* UIWindowExtension.swift in Sources */,
 				98BE8774217A740A0075BD76 /* MSLeftMenuCell.swift in Sources */,
 				988071DF2175194500B11705 /* AppDelegate_LeftMenu.swift in Sources */,
+				5B269FAA218055D50066F258 /* MSMemberFirstLoginVC.swift in Sources */,
 				98BE87CF217A743A0075BD76 /* MSNewsVC.swift in Sources */,
 				98BE87C0217A743A0075BD76 /* MSMemberVC.swift in Sources */,
 				988071E321751BBF00B11705 /* MSBaseVCExtension.swift in Sources */,
@@ -1443,6 +1489,7 @@
 				988071D3217508D600B11705 /* MSUtils.swift in Sources */,
 				98BE87B4217A743A0075BD76 /* MSSavingVC.swift in Sources */,
 				988071BF2174ED2E00B11705 /* UIImage.swift in Sources */,
+				5B269FB32180563A0066F258 /* MSMemberFirstLoginCC.swift in Sources */,
 				98BE87ED217A743A0075BD76 /* MSPlanVC.swift in Sources */,
 				9880715921749EAF00B11705 /* MSBaseVM.swift in Sources */,
 				98A8D04C217B5FCA00765F69 /* MSThemeIV.swift in Sources */,
@@ -1474,6 +1521,7 @@
 				98A8D022217A762100765F69 /* MSExpenseVC.swift in Sources */,
 				98A8D023217A762100765F69 /* MSFirstVC.swift in Sources */,
 				98A8D024217A762100765F69 /* MSFirstVM.swift in Sources */,
+				5B269FA8218055D50066F258 /* MSMemberFirstLoginVC.swift in Sources */,
 				98A8D025217A762100765F69 /* MSForgotPasswordVC.swift in Sources */,
 				98A8D027217A762100765F69 /* MSMemberVC.swift in Sources */,
 				E63113EF217B2918009DBA7C /* MSBaseDialog.swift in Sources */,
@@ -1517,6 +1565,7 @@
 				98A8D043217A762100765F69 /* Date+Extension.swift in Sources */,
 				98A8D044217A762100765F69 /* UserDefaultExtension.swift in Sources */,
 				98A8D045217A762100765F69 /* MSUtils.swift in Sources */,
+				5B269FB12180563A0066F258 /* MSMemberFirstLoginCC.swift in Sources */,
 				98A8D046217A762100765F69 /* MSConstant.swift in Sources */,
 				98A8D047217A762100765F69 /* AppDelegate.swift in Sources */,
 				98A8D04A217B5FCA00765F69 /* MSThemeIV.swift in Sources */,

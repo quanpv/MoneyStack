@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MSMemberFirstLoginCC" customModule="MoneyStack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="182"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxm-XQ-a43">
+                        <rect key="frame" x="0.0" y="0.0" width="391" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họ và tên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-mY-UDg">
+                                <rect key="frame" x="151" y="9" width="89" height="27.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxG-6b-vCB">
+                                <rect key="frame" x="351" y="7.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.066666666666666666" blue="0.11764705882352941" alpha="0.70414169520547942" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="HX3-fA-0wW"/>
+                                    <constraint firstAttribute="height" constant="30" id="naU-Rc-k3e"/>
+                                </constraints>
+                                <state key="normal" image="ic_close_45"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionDeleteMember:" destination="gTV-IL-0wX" eventType="touchUpInside" id="v8V-Oi-9gZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hdW-mY-UDg" firstAttribute="centerX" secondItem="wxm-XQ-a43" secondAttribute="centerX" id="jCV-R6-vzG"/>
+                            <constraint firstItem="hdW-mY-UDg" firstAttribute="centerY" secondItem="wxm-XQ-a43" secondAttribute="centerY" id="nr1-rL-8aN"/>
+                            <constraint firstAttribute="trailing" secondItem="fxG-6b-vCB" secondAttribute="trailing" constant="10" id="oNM-we-mCi"/>
+                            <constraint firstAttribute="height" constant="45" id="x1Z-v5-Vca"/>
+                            <constraint firstItem="fxG-6b-vCB" firstAttribute="centerY" secondItem="wxm-XQ-a43" secondAttribute="centerY" id="zgJ-X4-Wji"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="vx5-6l-obq">
+                        <rect key="frame" x="0.0" y="48" width="391" height="45"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày sinh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iF-3k-9L5">
+                                <rect key="frame" x="0.0" y="0.0" width="194" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới tính" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAq-W7-aqB">
+                                <rect key="frame" x="197" y="0.0" width="194" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="SLm-8m-qce"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZy-ES-w6i">
+                        <rect key="frame" x="0.0" y="103" width="391" height="45"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.066666666666666666" blue="0.11764705882352941" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="rFb-eZ-IZ8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                        <state key="normal" title="Ghi thêm thành viên">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="actionAddMemebr:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Mz3-oI-BGe"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="wxm-XQ-a43" secondAttribute="trailing" id="0nO-aE-ku6"/>
+                <constraint firstItem="wxm-XQ-a43" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="E6E-UI-lbd"/>
+                <constraint firstItem="vx5-6l-obq" firstAttribute="top" secondItem="wxm-XQ-a43" secondAttribute="bottom" constant="3" id="Kk1-Lz-Veg"/>
+                <constraint firstItem="JZy-ES-w6i" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="Pa7-XA-XdU"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="wxm-XQ-a43" secondAttribute="top" id="URx-T7-TO4"/>
+                <constraint firstItem="JZy-ES-w6i" firstAttribute="top" secondItem="vx5-6l-obq" secondAttribute="bottom" constant="10" id="YWi-nk-k5K"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="JZy-ES-w6i" secondAttribute="trailing" id="qur-If-aP6"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="vx5-6l-obq" secondAttribute="trailing" id="vT9-gV-7mt"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="vx5-6l-obq" secondAttribute="leading" id="xJY-EN-XKc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="391" height="182"/>
+            <connections>
+                <outlet property="btnAddMember" destination="JZy-ES-w6i" id="f2I-ja-Dgl"/>
+                <outlet property="lblBirthday" destination="0iF-3k-9L5" id="Pn1-Zo-PRX"/>
+                <outlet property="lblGender" destination="aAq-W7-aqB" id="NtN-jC-WDS"/>
+                <outlet property="lblName" destination="hdW-mY-UDg" id="e9O-Zx-WN2"/>
+            </connections>
+            <point key="canvasLocation" x="-2.5" y="61"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_close_45" width="22" height="22"/>
+    </resources>
+</document>
