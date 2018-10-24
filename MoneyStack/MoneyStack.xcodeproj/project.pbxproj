@@ -141,7 +141,6 @@
 		98A8D01D217A762100765F69 /* MSBaseVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988071E021751BBF00B11705 /* MSBaseVCExtension.swift */; };
 		98A8D01E217A762100765F69 /* MSBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880715621749EAF00B11705 /* MSBaseVM.swift */; };
 		98A8D01F217A762100765F69 /* MSNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880716A21749EAF00B11705 /* MSNavigationVM.swift */; };
-		98A8D020217A762100765F69 /* MSBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */; };
 		98A8D021217A762100765F69 /* MSDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8779217A74390075BD76 /* MSDashboardVC.swift */; };
 		98A8D022217A762100765F69 /* MSExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8798217A743A0075BD76 /* MSExpenseVC.swift */; };
 		98A8D023217A762100765F69 /* MSFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE878B217A743A0075BD76 /* MSFirstVC.swift */; };
@@ -202,11 +201,6 @@
 		98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8783217A743A0075BD76 /* MSSavingVC.xib */; };
 		98BE87B6217A743A0075BD76 /* MSSavingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8783217A743A0075BD76 /* MSSavingVC.xib */; };
 		98BE87B7217A743A0075BD76 /* MSSavingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8783217A743A0075BD76 /* MSSavingVC.xib */; };
-		98BE87B9217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */; };
-		98BE87BA217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */; };
-		98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */; };
-		98BE87BC217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */; };
-		98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */; };
 		98BE87BF217A743A0075BD76 /* MSMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8788217A743A0075BD76 /* MSMemberVC.swift */; };
 		98BE87C0217A743A0075BD76 /* MSMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE8788217A743A0075BD76 /* MSMemberVC.swift */; };
 		98BE87C1217A743A0075BD76 /* MSMemberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE8789217A743A0075BD76 /* MSMemberVC.xib */; };
@@ -388,8 +382,6 @@
 		98BE877D217A74390075BD76 /* MSPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSPasswordVC.xib; sourceTree = "<group>"; };
 		98BE8782217A743A0075BD76 /* MSSavingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSavingVC.swift; sourceTree = "<group>"; };
 		98BE8783217A743A0075BD76 /* MSSavingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSavingVC.xib; sourceTree = "<group>"; };
-		98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBalanceInfoVC.swift; sourceTree = "<group>"; };
-		98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSBalanceInfoVC.xib; sourceTree = "<group>"; };
 		98BE8788217A743A0075BD76 /* MSMemberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMemberVC.swift; sourceTree = "<group>"; };
 		98BE8789217A743A0075BD76 /* MSMemberVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSMemberVC.xib; sourceTree = "<group>"; };
 		98BE878B217A743A0075BD76 /* MSFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstVC.swift; sourceTree = "<group>"; };
@@ -671,12 +663,12 @@
 			children = (
 				5B269FA521804E320066F258 /* MemberFirstLogin */,
 				E614D5E8217EBB20006BA616 /* ViewBalanceInfo */,
+				E614D5E8217EBB20006BA616 /* Balance */,
 				98BE878A217A743A0075BD76 /* First */,
 				5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */,
 				98BE8778217A74390075BD76 /* Dashboard */,
 				98BE878E217A743A0075BD76 /* News */,
 				98BE8797217A743A0075BD76 /* Expense */,
-				98BE8784217A743A0075BD76 /* Balance */,
 				98BE8781217A743A0075BD76 /* Saving */,
 				98BE879D217A743A0075BD76 /* Plan */,
 				98BE8787217A743A0075BD76 /* Member */,
@@ -758,15 +750,6 @@
 				98BE8783217A743A0075BD76 /* MSSavingVC.xib */,
 			);
 			path = Saving;
-			sourceTree = "<group>";
-		};
-		98BE8784217A743A0075BD76 /* Balance */ = {
-			isa = PBXGroup;
-			children = (
-				98BE8785217A743A0075BD76 /* MSBalanceInfoVC.swift */,
-				98BE8786217A743A0075BD76 /* MSBalanceInfoVC.xib */,
-			);
-			path = Balance;
 			sourceTree = "<group>";
 		};
 		98BE8787217A743A0075BD76 /* Member */ = {
@@ -910,14 +893,14 @@
 			path = EditBalanceInfoDialog;
 			sourceTree = "<group>";
 		};
-		E614D5E8217EBB20006BA616 /* ViewBalanceInfo */ = {
+		E614D5E8217EBB20006BA616 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
 				E614D5F1217EBCFA006BA616 /* Cell */,
 				E614D5E9217EBBC8006BA616 /* MSViewBalanceInfoVC.swift */,
 				E614D5EA217EBBC8006BA616 /* MSViewBalanceInfoVC.xib */,
 			);
-			path = ViewBalanceInfo;
+			path = Balance;
 			sourceTree = "<group>";
 		};
 		E614D5F1217EBCFA006BA616 /* Cell */ = {
@@ -1136,7 +1119,6 @@
 				E614D602217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */,
 				98BE87C8217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				5BF44013217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */,
-				98BE87BC217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				E63113C1217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87EF217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87C2217A743A0075BD76 /* MSMemberVC.xib in Resources */,
@@ -1220,7 +1202,6 @@
 				98BE87C7217A743A0075BD76 /* MSFirstVC.xib in Resources */,
 				5BF44012217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */,
 				98BE87EE217A743A0075BD76 /* MSPlanVC.xib in Resources */,
-				98BE87BB217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				E63113C0217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
 				98BE87A3217A743A0075BD76 /* MSDashboardVC.xib in Resources */,
 				E614D613217ED59A006BA616 /* MSPatrimonyCell.xib in Resources */,
@@ -1390,7 +1371,6 @@
 				9880717021749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071A92174ED2D00B11705 /* String.swift in Sources */,
 				98BE87E6217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
-				98BE87B9217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */,
 				98244CC6217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C12174ED2E00B11705 /* UITextField.swift in Sources */,
@@ -1466,7 +1446,6 @@
 				9880717121749EAF00B11705 /* MSConfig.swift in Sources */,
 				988071AA2174ED2D00B11705 /* String.swift in Sources */,
 				98BE87E7217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
-				98BE87BA217A743A0075BD76 /* MSBalanceInfoVC.swift in Sources */,
 				98244CC7217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C22174ED2E00B11705 /* UITextField.swift in Sources */,
@@ -1515,7 +1494,6 @@
 				98A8D01E217A762100765F69 /* MSBaseVM.swift in Sources */,
 				98244CB5217CC9A400E2E4A0 /* MSDashboardCC.swift in Sources */,
 				98A8D01F217A762100765F69 /* MSNavigationVM.swift in Sources */,
-				98A8D020217A762100765F69 /* MSBalanceInfoVC.swift in Sources */,
 				98A8D021217A762100765F69 /* MSDashboardVC.swift in Sources */,
 				E614D5F5217EBDEB006BA616 /* MSMonthlyIncomeCell.swift in Sources */,
 				98A8D022217A762100765F69 /* MSExpenseVC.swift in Sources */,

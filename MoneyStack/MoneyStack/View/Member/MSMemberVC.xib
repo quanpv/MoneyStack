@@ -46,7 +46,7 @@
                             <rect key="frame" x="10" y="10" width="355" height="45"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danh sách thành viên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsU-AA-yot">
-                                    <rect key="frame" x="59" y="7.5" width="239" height="30"/>
+                                    <rect key="frame" x="58" y="7.5" width="239" height="30"/>
                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="22"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
