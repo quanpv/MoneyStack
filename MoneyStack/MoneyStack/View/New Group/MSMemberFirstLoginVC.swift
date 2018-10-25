@@ -40,6 +40,28 @@ class MSMemberFirstLoginVC: MSBaseVC {
     }
     */
 
+    func showAddMemberDialog() -> Void {
+                let customDialog = MSAddMemberDialog(nibName: MSAddMemberDialog.className, bundle: nil)
+                customDialog.providesPresentationContextTransitionStyle = true
+                customDialog.definesPresentationContext = true
+                customDialog.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+                customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
+                self.present(customDialog, animated: true, completion: {
+                })
+    }
+    
+}
+
+extension MSMemberFirstLoginVC: MSActionMemberDelegate {
+    func deleteBtnPressed() {
+        
+    }
+    
+    func addBtnPressed() {
+        showAddMemberDialog()
+    }
+    
 }
 
 extension MSMemberFirstLoginVC: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -49,7 +71,7 @@ extension MSMemberFirstLoginVC: UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MSMemberFirstLoginCC.className, for: indexPath) as! MSMemberFirstLoginCC
-        
+        cell.delegate = self
         return cell
     }
     

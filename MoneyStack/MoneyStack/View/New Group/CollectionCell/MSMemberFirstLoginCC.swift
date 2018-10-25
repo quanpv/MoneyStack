@@ -8,12 +8,20 @@
 
 import UIKit
 
+protocol MSActionMemberDelegate:class {
+    func deleteBtnPressed()
+    func addBtnPressed()
+}
+
 class MSMemberFirstLoginCC: UICollectionViewCell {
 
     @IBOutlet var btnAddMember: UIButton!
     @IBOutlet var lblName: UILabel!
     @IBOutlet var lblBirthday: UILabel!
     @IBOutlet var lblGender: UILabel!
+    
+    var delegate: MSActionMemberDelegate?
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,5 +33,6 @@ class MSMemberFirstLoginCC: UICollectionViewCell {
     }
     
     @IBAction func actionAddMemebr(_ sender: Any) {
+        delegate?.addBtnPressed()
     }
 }

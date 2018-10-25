@@ -27,6 +27,12 @@
 		5B269FB42180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */; };
 		5B269FB52180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */; };
 		5B269FB62180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */; };
+		5B46360C2181726F000A1BFE /* MSAddMemberDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46360A2181726F000A1BFE /* MSAddMemberDialog.swift */; };
+		5B46360D2181726F000A1BFE /* MSAddMemberDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46360A2181726F000A1BFE /* MSAddMemberDialog.swift */; };
+		5B46360E2181726F000A1BFE /* MSAddMemberDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46360A2181726F000A1BFE /* MSAddMemberDialog.swift */; };
+		5B46360F2181726F000A1BFE /* MSAddMemberDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */; };
+		5B4636102181726F000A1BFE /* MSAddMemberDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */; };
+		5B4636112181726F000A1BFE /* MSAddMemberDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */; };
 		5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
@@ -324,6 +330,8 @@
 		5B269FA7218055D50066F258 /* MSMemberFirstLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMemberFirstLoginVC.xib; sourceTree = "<group>"; };
 		5B269FAF2180563A0066F258 /* MSMemberFirstLoginCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMemberFirstLoginCC.swift; sourceTree = "<group>"; };
 		5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMemberFirstLoginCC.xib; sourceTree = "<group>"; };
+		5B46360A2181726F000A1BFE /* MSAddMemberDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAddMemberDialog.swift; sourceTree = "<group>"; };
+		5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSAddMemberDialog.xib; sourceTree = "<group>"; };
 		5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
 		5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
 		5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
@@ -490,6 +498,15 @@
 				5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */,
 			);
 			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		5B4636092181716D000A1BFE /* AddMemberDialog */ = {
+			isa = PBXGroup;
+			children = (
+				5B46360A2181726F000A1BFE /* MSAddMemberDialog.swift */,
+				5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */,
+			);
+			path = AddMemberDialog;
 			sourceTree = "<group>";
 		};
 		5BF1348F217D6B0B00D35DDB /* Label */ = {
@@ -662,7 +679,6 @@
 			isa = PBXGroup;
 			children = (
 				5B269FA521804E320066F258 /* MemberFirstLogin */,
-				E614D5E8217EBB20006BA616 /* ViewBalanceInfo */,
 				E614D5E8217EBB20006BA616 /* Balance */,
 				98BE878A217A743A0075BD76 /* First */,
 				5BF13494217D6B9B00D35DDB /* FirstBalanceInfo */,
@@ -961,6 +977,7 @@
 		E63113DB217B28DC009DBA7C /* Dialog */ = {
 			isa = PBXGroup;
 			children = (
+				5B4636092181716D000A1BFE /* AddMemberDialog */,
 				E608D04F217DB5100053C422 /* EditBalanceInfoDialog */,
 				E63113EE217B2918009DBA7C /* MSBaseDialog.swift */,
 				E63113E5217B28FF009DBA7C /* AddBalanceInfo */,
@@ -1102,6 +1119,7 @@
 				98244CB9217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
 				E608D056217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
 				5B269FAC218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */,
+				5B4636102181726F000A1BFE /* MSAddMemberDialog.xib in Resources */,
 				9880712D21749DD000B11705 /* Assets.xcassets in Resources */,
 				98BE87D1217A743A0075BD76 /* MSNewsVC.xib in Resources */,
 				E63113E0217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
@@ -1161,12 +1179,12 @@
 				98BE87B7217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				9880718B2174EAF700B11705 /* OpenSans in Resources */,
 				98BE87C9217A743A0075BD76 /* MSFirstVC.xib in Resources */,
-				98BE87BD217A743A0075BD76 /* MSBalanceInfoVC.xib in Resources */,
 				5B269FAD218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */,
 				5BF44014217F15A700CA502C /* MSPlanCollectionViewCell.xib in Resources */,
 				E614D603217EC3C8006BA616 /* MSKindOfMoneyCell.xib in Resources */,
 				98BE87F0217A743A0075BD76 /* MSPlanVC.xib in Resources */,
 				98BE87C3217A743A0075BD76 /* MSMemberVC.xib in Resources */,
+				5B4636112181726F000A1BFE /* MSAddMemberDialog.xib in Resources */,
 				E63113E1217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
 				5B269FB62180563A0066F258 /* MSMemberFirstLoginCC.xib in Resources */,
 				E63113C2217B2561009DBA7C /* MSRegisterVC.xib in Resources */,
@@ -1184,6 +1202,7 @@
 				98244CB8217CC9A400E2E4A0 /* MSDashboardCC.xib in Resources */,
 				E608D055217DB5500053C422 /* MSEditBalanceInfoDialog.xib in Resources */,
 				5B269FAB218055D50066F258 /* MSMemberFirstLoginVC.xib in Resources */,
+				5B46360F2181726F000A1BFE /* MSAddMemberDialog.xib in Resources */,
 				98BE87B5217A743A0075BD76 /* MSSavingVC.xib in Resources */,
 				98BE87A9217A743A0075BD76 /* MSPasswordVC.xib in Resources */,
 				E63113DF217B28F8009DBA7C /* MSConfirmDialog.xib in Resources */,
@@ -1375,6 +1394,7 @@
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C12174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714B21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				5B46360D2181726F000A1BFE /* MSAddMemberDialog.swift in Sources */,
 				5BF13499217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071AF2174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D6217508ED00B11705 /* MSModel.swift in Sources */,
@@ -1450,6 +1470,7 @@
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C22174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714C21749EAF00B11705 /* MSBaseVC.swift in Sources */,
+				5B46360E2181726F000A1BFE /* MSAddMemberDialog.swift in Sources */,
 				5BF1349A217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				988071B02174ED2D00B11705 /* UIView.swift in Sources */,
 				988071D7217508ED00B11705 /* MSModel.swift in Sources */,
@@ -1525,6 +1546,7 @@
 				98A8D038217A762100765F69 /* UIApplication.swift in Sources */,
 				98A8D039217A762100765F69 /* UIColor.swift in Sources */,
 				98A8D03A217A762100765F69 /* UIImage.swift in Sources */,
+				5B46360C2181726F000A1BFE /* MSAddMemberDialog.swift in Sources */,
 				5BF13498217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift in Sources */,
 				98A8D03B217A762100765F69 /* UIImageView.swift in Sources */,
 				98A8D03C217A762100765F69 /* UITableViewExtension.swift in Sources */,
