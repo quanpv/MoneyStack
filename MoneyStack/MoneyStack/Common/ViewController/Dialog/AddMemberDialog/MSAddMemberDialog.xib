@@ -19,7 +19,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSAddMemberDialog" customModule="MoneyStack" customModuleProvider="target">
             <connections>
+                <outlet property="btnBirthday" destination="osB-ET-SEY" id="YXw-Hu-p1o"/>
                 <outlet property="btnGender" destination="jOw-qr-ycV" id="cVj-Ai-jWY"/>
+                <outlet property="txtFieldName" destination="mJz-6Y-ypW" id="iMB-q5-lWG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -109,6 +111,9 @@
                                             <real key="value" value="5"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="actionBirthday:" destination="-1" eventType="touchUpInside" id="Ywo-bb-LAN"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOw-qr-ycV">
                                     <rect key="frame" x="169" y="0.0" width="166" height="45"/>

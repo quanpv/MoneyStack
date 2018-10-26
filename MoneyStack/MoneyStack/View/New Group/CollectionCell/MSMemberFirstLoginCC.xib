@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="391" height="45"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họ và tên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-mY-UDg">
-                                <rect key="frame" x="151" y="9" width="89" height="27.5"/>
+                                <rect key="frame" x="152.5" y="11" width="86" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,6 +138,7 @@
             <size key="customSize" width="391" height="182"/>
             <connections>
                 <outlet property="btnAddMember" destination="JZy-ES-w6i" id="f2I-ja-Dgl"/>
+                <outlet property="btnDeleteMember" destination="fxG-6b-vCB" id="Gba-3j-EZ8"/>
                 <outlet property="lblBirthday" destination="0iF-3k-9L5" id="Pn1-Zo-PRX"/>
                 <outlet property="lblGender" destination="aAq-W7-aqB" id="NtN-jC-WDS"/>
                 <outlet property="lblName" destination="hdW-mY-UDg" id="e9O-Zx-WN2"/>

@@ -105,6 +105,9 @@
                                     <real key="value" value="5"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionIgnore:" destination="-1" eventType="touchUpInside" id="oyJ-es-PPC"/>
+                            </connections>
                         </button>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1K5-qO-j3r">
                             <rect key="frame" x="182.5" y="0.0" width="172.5" height="45"/>
@@ -122,6 +125,9 @@
                                     <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionGoNext:" destination="-1" eventType="touchUpInside" id="Z2F-vt-rFD"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -129,7 +135,7 @@
                     </constraints>
                 </stackView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zmM-gu-vb0">
-                    <rect key="frame" x="10" y="185" width="355" height="347"/>
+                    <rect key="frame" x="0.0" y="185" width="375" height="347"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ieA-f5-iSx">
                         <size key="itemSize" width="50" height="50"/>
@@ -149,9 +155,9 @@
                 <constraint firstItem="TkB-xa-fRD" firstAttribute="top" secondItem="f6E-Ur-ooQ" secondAttribute="bottom" constant="10" id="A1g-3Z-TlZ"/>
                 <constraint firstItem="CAm-bv-69B" firstAttribute="top" secondItem="P8T-CL-gO5" secondAttribute="bottom" constant="20" id="BZX-nJ-0JR"/>
                 <constraint firstItem="CAm-bv-69B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="PIy-Pl-XQK"/>
-                <constraint firstItem="zmM-gu-vb0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="QfF-PG-08o"/>
+                <constraint firstItem="zmM-gu-vb0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QfF-PG-08o"/>
                 <constraint firstItem="P8T-CL-gO5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="W0O-QR-yfZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zmM-gu-vb0" secondAttribute="trailing" constant="10" id="ZQ1-QA-XPS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zmM-gu-vb0" secondAttribute="trailing" id="ZQ1-QA-XPS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TkB-xa-fRD" secondAttribute="trailing" id="fon-LI-1gk"/>
                 <constraint firstItem="zmM-gu-vb0" firstAttribute="top" secondItem="CAm-bv-69B" secondAttribute="bottom" constant="10" id="hS2-R7-VT7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f6E-Ur-ooQ" secondAttribute="trailing" constant="10" id="iAG-h9-5CF"/>

@@ -16,6 +16,8 @@ class MSMemberFirstLoginVC: MSBaseVC {
     let lineSpace: CGFloat = 10
     var itemSize: CGSize = CGSize.zero
     
+    var listMember: [MemberModel] = [MemberModel("-------", "Ngày sinh", "Giới tính")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,12 +42,20 @@ class MSMemberFirstLoginVC: MSBaseVC {
     }
     */
 
-    func showAddMemberDialog() -> Void {
+    @IBAction func actionIgnore(_ sender: UIButton) {
+        self.selfClose()
+    }
+    
+    @IBAction func actionGoNext(_ sender: UIButton) {
+         self.selfClose()
+    }
+    func showAddMemberDialog() {
                 let customDialog = MSAddMemberDialog(nibName: MSAddMemberDialog.className, bundle: nil)
                 customDialog.providesPresentationContextTransitionStyle = true
                 customDialog.definesPresentationContext = true
                 customDialog.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
                 customDialog.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                customDialog.delegate = self
         
                 self.present(customDialog, animated: true, completion: {
                 })
@@ -54,24 +64,42 @@ class MSMemberFirstLoginVC: MSBaseVC {
 }
 
 extension MSMemberFirstLoginVC: MSActionMemberDelegate {
-    func deleteBtnPressed() {
-        
+    func deleteBtnPressed(index: Int) {
+        print("Position: \(index)")
+        listMember.remove(at: index)
+        memberCV.reloadData()
     }
     
     func addBtnPressed() {
         showAddMemberDialog()
     }
-    
+}
+
+extension MSMemberFirstLoginVC: SubmitDataMemberDelegate {
+    func submitMember(_ data: MemberModel) {
+        print("\(data.name ?? "-")  \(data.birthDay ?? "-") \(data.gender ?? "-")")
+        listMember.append(data)
+        memberCV.reloadData()
+    }
 }
 
 extension MSMemberFirstLoginVC: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return listMember.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MSMemberFirstLoginCC.className, for: indexPath) as! MSMemberFirstLoginCC
+        if(listMember.count==1 || (indexPath.row == listMember.count-1)) {
+            cell.btnAddMember.isHidden = false
+        } else {
+            cell.btnAddMember.isHidden = true
+          
+        }
         cell.delegate = self
+        cell.btnDeleteMember.tag = indexPath.row
+        let data = listMember[indexPath.row]
+        cell.setData(data)
         return cell
     }
     
@@ -91,6 +119,11 @@ extension MSMemberFirstLoginVC: UICollectionViewDelegateFlowLayout {
         return lineSpace
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return itemSize
+        if(listMember.count==1 || (indexPath.row == listMember.count-1)) {
+          return  CGSize(width: UIScreenConstant.WIDTH-interSpace*2, height: 45.0*3+13)
+        } else {
+          return  CGSize(width: UIScreenConstant.WIDTH-interSpace*2, height: 45.0*2+3)
+        }
+       
     }
 }

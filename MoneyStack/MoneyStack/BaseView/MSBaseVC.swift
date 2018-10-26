@@ -126,6 +126,9 @@ extension MSBaseVC: MSTopBarViewDelegate {
 
 extension MSBaseVC: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (heightOfTopBar == nil) {// QuanPV Modified avoid crash nil
+            return
+        }
         if scrollView.contentOffset.y > (heightOfTopBar?.constant)! {
             if heightOfTopBar?.constant != 0 {
                 heightOfTopBar?.constant = 0

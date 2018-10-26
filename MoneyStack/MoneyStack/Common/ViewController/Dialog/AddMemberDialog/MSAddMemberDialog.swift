@@ -8,12 +8,31 @@
 
 import UIKit
 
+enum PickerType: Int {
+    case DatePicker = 1,
+    PickerView
+}
+
+protocol SubmitDataMemberDelegate {
+    func submitMember(_ data: MemberModel)
+  
+}
+
 class MSAddMemberDialog: UIViewController {
 
+    @IBOutlet var txtFieldName: UITextField!
+    @IBOutlet var btnBirthday: UIButton!
     @IBOutlet var btnGender: UIButton!
     let placeHolder = UIButton()
     var pickerViewGender = UIPickerView()
-    let dataGender = ["Nam", "Nữ", "Gay"]
+    var datePicker = UIDatePicker()
+    let dataGender = ["Nam", "Nữ", "Không xác định"]
+    
+    let heightPicker: CGFloat = 200.0
+    var memberModel = MemberModel()
+    var delegate : SubmitDataMemberDelegate?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,19 +45,82 @@ class MSAddMemberDialog: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func createPickerView(_ pickerView:UIPickerView) {
+    func createPickerView(_ pickerView:UIView) {
         placeHolder.frame = CGRect(x: 0, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
         placeHolder.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         placeHolder.addTarget(self, action: #selector(MSAddMemberDialog.actionDismissPickerView(_:)), for: UIControlEvents.touchUpInside)
-        pickerView.frame = CGRect(x: 0, y: UIScreenConstant.HEIGHT-200, width: UIScreenConstant.WIDTH, height: 200)
+        pickerView.frame = CGRect(x: 0, y: UIScreenConstant.HEIGHT-heightPicker, width: UIScreenConstant.WIDTH, height: heightPicker)
         pickerView.backgroundColor = UIColor.white
         pickerView.layer.shadowRadius = 4
+        //
+        //ToolBar
+//        let toolbar = UIToolbar();
+//        toolbar.sizeToFit()
+//        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donedatePicker));
+//        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+//        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+//
+//        toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+//        toolbar.frame =  CGRect(x: 0, y: UIScreenConstant.HEIGHT-heightPicker-toolbar.height, width: UIScreenConstant.WIDTH, height: toolbar.height)
+//        placeHolder.addSubview(toolbar)
         placeHolder.addSubview(pickerView)
         view.addSubview(placeHolder)
     }
+
+    func createDatePicker() {
+        //Formate Date
+        datePicker.datePickerMode = .date
+        
+        placeHolder.frame = CGRect(x: 0, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
+        placeHolder.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        placeHolder.addTarget(self, action: #selector(MSAddMemberDialog.actionDismissPickerView(_:)), for: UIControlEvents.touchUpInside)
+        datePicker.frame = CGRect(x: 0, y: UIScreenConstant.HEIGHT-heightPicker, width: UIScreenConstant.WIDTH, height: heightPicker)
+        datePicker.backgroundColor = UIColor.white
+        datePicker.layer.shadowRadius = 4
+        //
+        //ToolBar
+        let toolbar = UIToolbar();
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneDatePicker));
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+        
+        toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+        toolbar.frame =  CGRect(x: 0, y: UIScreenConstant.HEIGHT-heightPicker-toolbar.height, width: UIScreenConstant.WIDTH, height: toolbar.height)
+        toolbar.tag = 100
+        placeHolder.addSubview(toolbar)
+        placeHolder.addSubview(datePicker)
+        view.addSubview(placeHolder)
+    }
+    
+    func removeAllPicker() {
+        if let toolbarWithTag = self.placeHolder.viewWithTag(100) {
+            toolbarWithTag.removeFromSuperview()
+        }
+        pickerViewGender.removeFromSuperview()
+        datePicker.removeFromSuperview()
+        placeHolder.removeFromSuperview()
+    }
+    
+    @objc func doneDatePicker() {
+           print("actionDone======>")
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        let sDate = formatter.string(from: datePicker.date)
+        btnBirthday.setTitle(sDate, for: UIControlState.normal)
+        self.memberModel.birthDay = sDate
+        removeAllPicker()
+        self.view.endEditing(true)
+    }
+    
+    @objc func cancelDatePicker() {
+           print("actionCancel======>")
+        removeAllPicker()
+        self.view.endEditing(true)
+    }
     
  @objc func actionDismissPickerView(_ sender:UIButton)  {
-        placeHolder.removeFromSuperview()
+    removeAllPicker()
         print("actionDismiss======>")
     }
     
@@ -49,6 +131,8 @@ class MSAddMemberDialog: UIViewController {
     }
     
     @IBAction func actionDone(_ sender: Any) {
+        memberModel.name = txtFieldName.text
+        delegate?.submitMember(memberModel)
         self.dismiss(animated: true, completion: {
             
         })
@@ -60,6 +144,9 @@ class MSAddMemberDialog: UIViewController {
         })
     }
     
+    @IBAction func actionBirthday(_ sender: Any) {
+        createDatePicker()
+    }
     @IBAction func actionGender(_ sender: Any) {
         pickerViewGender.delegate = self
         createPickerView(pickerViewGender)
@@ -91,5 +178,6 @@ extension MSAddMemberDialog: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         btnGender.titleLabel?.text = ""
         btnGender.setTitle(dataGender[row], for: UIControlState.normal)
+        memberModel.gender = dataGender[row]
     }
 }

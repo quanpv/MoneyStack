@@ -33,6 +33,9 @@
 		5B46360F2181726F000A1BFE /* MSAddMemberDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */; };
 		5B4636102181726F000A1BFE /* MSAddMemberDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */; };
 		5B4636112181726F000A1BFE /* MSAddMemberDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */; };
+		5B8D4C372182D71600E9B80B /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D4C362182D71600E9B80B /* MemberModel.swift */; };
+		5B8D4C382182D71600E9B80B /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D4C362182D71600E9B80B /* MemberModel.swift */; };
+		5B8D4C392182D71600E9B80B /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D4C362182D71600E9B80B /* MemberModel.swift */; };
 		5BF13491217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13492217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
 		5BF13493217D6B0B00D35DDB /* MSBaseLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */; };
@@ -332,6 +335,7 @@
 		5B269FB02180563A0066F258 /* MSMemberFirstLoginCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSMemberFirstLoginCC.xib; sourceTree = "<group>"; };
 		5B46360A2181726F000A1BFE /* MSAddMemberDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAddMemberDialog.swift; sourceTree = "<group>"; };
 		5B46360B2181726F000A1BFE /* MSAddMemberDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSAddMemberDialog.xib; sourceTree = "<group>"; };
+		5B8D4C362182D71600E9B80B /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
 		5BF13490217D6B0B00D35DDB /* MSBaseLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseLabelView.swift; sourceTree = "<group>"; };
 		5BF13495217D6B9B00D35DDB /* MSFirstBalanceInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFirstBalanceInfoVM.swift; sourceTree = "<group>"; };
 		5BF13496217D6B9B00D35DDB /* MSFirstBalanceInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFirstBalanceInfoVC.xib; sourceTree = "<group>"; };
@@ -619,6 +623,7 @@
 			isa = PBXGroup;
 			children = (
 				988071D4217508ED00B11705 /* MSModel.swift */,
+				5B8D4C362182D71600E9B80B /* MemberModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1391,6 +1396,7 @@
 				988071A92174ED2D00B11705 /* String.swift in Sources */,
 				98BE87E6217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
 				98244CC6217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
+				5B8D4C382182D71600E9B80B /* MemberModel.swift in Sources */,
 				988071AC2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C12174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714B21749EAF00B11705 /* MSBaseVC.swift in Sources */,
@@ -1467,6 +1473,7 @@
 				988071AA2174ED2D00B11705 /* String.swift in Sources */,
 				98BE87E7217A743A0075BD76 /* MSPersonalizeVC.swift in Sources */,
 				98244CC7217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
+				5B8D4C392182D71600E9B80B /* MemberModel.swift in Sources */,
 				988071AD2174ED2D00B11705 /* UIViewController.swift in Sources */,
 				988071C22174ED2E00B11705 /* UITextField.swift in Sources */,
 				9880714C21749EAF00B11705 /* MSBaseVC.swift in Sources */,
@@ -1543,6 +1550,7 @@
 				98A8D036217A762100765F69 /* NSObject.swift in Sources */,
 				98244CC5217CD97200E2E4A0 /* MSDashboardFirstCC.swift in Sources */,
 				98A8D037217A762100765F69 /* String.swift in Sources */,
+				5B8D4C372182D71600E9B80B /* MemberModel.swift in Sources */,
 				98A8D038217A762100765F69 /* UIApplication.swift in Sources */,
 				98A8D039217A762100765F69 /* UIColor.swift in Sources */,
 				98A8D03A217A762100765F69 /* UIImage.swift in Sources */,
