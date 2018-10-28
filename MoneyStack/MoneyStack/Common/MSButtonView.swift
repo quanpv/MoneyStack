@@ -37,7 +37,7 @@ class MSButtonView: UIView {
         addSubview(imageView)
         addSubview(button)
         
-        backgroundColor = isMain ? MSDelegate.config.mainColor : MSDelegate.config.subColor
+        backgroundColor = UIColor.clear // isMain ? MSDelegate.config.mainColor : MSDelegate.config.subColor
         layer.cornerRadius = hasCorner ? frame.height / 10 : 0
         clipsToBounds = hasCorner
         if hasBorder {

@@ -10,12 +10,11 @@ import UIKit
 
 class MSPasswordVC: MSBaseVC {
 
-    @IBOutlet weak var topBar: MSTopBarView!
-    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
-
+    @IBOutlet weak var topSpaceOfMainView: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTopBar(topBar,topBarHeight)
+        self.adjustableTopSpace = topSpaceOfMainView
 
         // Do any additional setup after loading the view.
     }

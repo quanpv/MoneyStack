@@ -11,9 +11,8 @@ import UIKit
 
 class MSPlanVC: MSBaseVC {
 
-    @IBOutlet weak var topBar: MSTopBarView!
-    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
-
+    @IBOutlet weak var topSpaceOfMainView: NSLayoutConstraint!
+    
     @IBOutlet var planCollectionView: UICollectionView!
     
     let interSpace: CGFloat = 10
@@ -22,7 +21,7 @@ class MSPlanVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTopBar(topBar,topBarHeight)
+        self.adjustableTopSpace = topSpaceOfMainView
 
         // Do any additional setup after loading the view.
         self.itemSize = CGSize(width: UIScreenConstant.WIDTH-interSpace*2, height: 45.0)

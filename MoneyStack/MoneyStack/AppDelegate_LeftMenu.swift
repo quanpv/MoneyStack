@@ -67,15 +67,14 @@ extension AppDelegate {
         let window2Frame = CGRect(x: leftMenuXOpen, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
         let windowFrame = CGRect(x: mainWindowXClose, y: 0, width: UIScreenConstant.WIDTH, height: UIScreenConstant.HEIGHT)
         window?.addSubview(darkerView)
+        if (self.windowLeftMenu?.isHidden)! {
+            self.windowLeftMenu?.isHidden = false
+        }
         UIView.animate(withDuration: 0.2, animations: {
             self.windowLeftMenu?.frame = window2Frame
             self.window?.frame = windowFrame
         }) { (finish) in
-            if (self.windowLeftMenu?.isHidden)! {
-                self.windowLeftMenu?.makeKeyAndVisible()
-            } else {
-                self.windowLeftMenu?.makeKey()
-            }
+            self.windowLeftMenu?.makeKey()
         }
     }
     

@@ -11,9 +11,7 @@ import UIKit
 class MSPersonalizeVC: MSBaseVC {
     
     /** Important **/
-    @IBOutlet weak var topBar: MSTopBarView!
-    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
-    
+    @IBOutlet weak var topSpaceOfMainView: NSLayoutConstraint!
     @IBOutlet weak var collectionView: UICollectionView!
     
     let interSpace: CGFloat = 10
@@ -23,8 +21,8 @@ class MSPersonalizeVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTopBar(topBar,topBarHeight)
-        
+        self.adjustableTopSpace = topSpaceOfMainView
+
         var width = (UIScreenConstant.WIDTH - CGFloat(itemPerLine + 1) * interSpace) / CGFloat(itemPerLine)
         width = CGFloat(floorf(Float(width)))
         var height = (UIScreenConstant.WIDTH - CGFloat(itemPerLine + 1) * interSpace) / CGFloat(itemPerLine)

@@ -15,10 +15,14 @@
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSPlanVC" customModule="MoneyStack" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="topBarType">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="planCollectionView" destination="8cx-bI-5gI" id="Jb8-Ca-p5m"/>
-                <outlet property="topBar" destination="TGJ-P4-5GY" id="7PF-fV-3lx"/>
-                <outlet property="topBarHeight" destination="28g-k3-zIJ" id="TDz-sp-gSh"/>
+                <outlet property="topSpaceOfMainView" destination="8kn-hd-zPy" id="MUd-GK-0Wv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,18 +31,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGJ-P4-5GY" customClass="MSTopBarView" customModule="MoneyStack" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="28g-k3-zIJ"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="type">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEK-c7-Dsd">
                     <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                     <subviews>
@@ -138,12 +130,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="zEK-c7-Dsd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="8kn-hd-zPy"/>
                 <constraint firstItem="zEK-c7-Dsd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JqU-y7-kGm"/>
-                <constraint firstItem="zEK-c7-Dsd" firstAttribute="top" secondItem="TGJ-P4-5GY" secondAttribute="bottom" id="Plk-Dz-jMp"/>
-                <constraint firstItem="TGJ-P4-5GY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Pza-PR-Jnv"/>
                 <constraint firstItem="zEK-c7-Dsd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c18-7X-ZaP"/>
-                <constraint firstItem="TGJ-P4-5GY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="q1z-fo-SoG"/>
-                <constraint firstItem="TGJ-P4-5GY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qPa-hs-3Cp"/>
                 <constraint firstItem="zEK-c7-Dsd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="rFQ-9l-xQ0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

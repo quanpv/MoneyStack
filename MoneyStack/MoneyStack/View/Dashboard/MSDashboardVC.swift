@@ -10,8 +10,7 @@ import UIKit
 
 class MSDashboardVC: MSBaseVC {
     
-    @IBOutlet weak var topBar: MSTopBarView!
-    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
+    @IBOutlet weak var topSpaceOfMainView: NSLayoutConstraint!
     @IBOutlet weak var viewMoneyBag: UIView!
     @IBOutlet weak var viewPlus: UIView!
     @IBOutlet weak var viewCollapse: UIView!
@@ -19,7 +18,7 @@ class MSDashboardVC: MSBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTopBar(topBar,topBarHeight)
+        self.adjustableTopSpace = topSpaceOfMainView
         collectionView.registerCellNib(MSDashboardCC.className)
         collectionView.registerCellNib(MSDashboardFirstCC.className)
         updateBottomItemsColor()
@@ -56,7 +55,7 @@ class MSDashboardVC: MSBaseVC {
 
 extension MSDashboardVC: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return 16
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

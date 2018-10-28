@@ -22,7 +22,7 @@ enum TopBarType: Int {
 
 class MSTopBarView: UIView {
     
-    @IBInspectable var type: Int = 0 //None - Refer to TopBarType
+    var type: Int = 0 //None - Refer to TopBarType
     var topBarType: TopBarType {
         guard let a = TopBarType(rawValue: self.type) else { return TopBarType.None }
         return a
@@ -31,6 +31,13 @@ class MSTopBarView: UIView {
     var leftButton: MSButtonView?
     var middleButton: UIButton?
     var rightButton: MSButtonView?
+    
+    convenience init(frame: CGRect, type: Int) {
+        self.init(frame: frame)
+        self.type = type
+        backgroundColor = UIColor.clear
+        createButton()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,7 +51,7 @@ class MSTopBarView: UIView {
     
     let buttonSize: CGSize = CGSize(width: MSBaseVCConstant.HEIGHT_TOP_MENU_BAR, height: MSBaseVCConstant.HEIGHT_TOP_MENU_BAR)
     let middleIconSize: CGSize = CGSize(width: 34, height: 34)
-    let buttonIconSize: CGSize = CGSize(width: 34, height: 34)
+    let buttonIconSize: CGSize = CGSize(width: 30, height: 30)
 
     var delegate: MSTopBarViewDelegate?
     
@@ -115,7 +122,7 @@ class MSTopBarView: UIView {
     }
     
     func createMenuButton(_ position: TopBarPosition) {
-        leftButton = MSButtonView.init(buttonSize, iconSize: buttonIconSize , iconName: "ic_menu_42", target: self, action: #selector(clickLeft), isMain: true, hasCorner: false, hasBorder: false)
+        leftButton = MSButtonView.init(buttonSize, iconSize: buttonIconSize , iconName: "ic_menu_96", target: self, action: #selector(clickLeft), isMain: true, hasCorner: false, hasBorder: false)
         addSubview(leftButton!)
     }
     

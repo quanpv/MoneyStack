@@ -9,9 +9,37 @@
 import UIKit
 
 extension MSBaseVC {
+    
+    func adjustTopSpace() -> CGFloat {
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.keyWindow
+            let topPadding = window?.safeAreaInsets.top
+            return topPadding!
+        } else {
+            adjustableTopSpace?.constant = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR + 20 // 20 for status bar
+            return 20
+        }
+    }
 
     @objc func callOpenLeftMenu() {
         MSDelegate.openLeftMenu()
+    }
+    
+    func makeTopBar() {
+        if topBarType  == 0 { return }
+        let additionHeight = adjustTopSpace()
+        
+        var point = CGPoint(x: 0, y: 0)
+        var size = CGSize(width: UIScreenConstant.WIDTH, height: MSBaseVCConstant.HEIGHT_TOP_MENU_BAR + additionHeight)
+        topBarContainer = UIView(frame: CGRect(origin: point, size: size))
+        topBarContainer?.backgroundColor = UIColor.black.withAlphaComponent(0.85)
+        
+        point.y = size.height - MSBaseVCConstant.HEIGHT_TOP_MENU_BAR
+        size.height = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR
+        topBarView = MSTopBarView(frame: CGRect(origin: point, size: size), type: self.topBarType)
+        topBarView?.delegate = self
+        topBarContainer?.addSubview(topBarView!)
+        view.addSubview(topBarContainer!)
     }
     
     func onViewDidLoad() {
@@ -19,6 +47,7 @@ extension MSBaseVC {
             autoBackground()
         }
         setupViewHolder()
+        makeTopBar()
     }
     
     private func autoBackground() {

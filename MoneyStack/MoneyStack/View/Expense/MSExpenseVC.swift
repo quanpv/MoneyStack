@@ -9,12 +9,12 @@
 import UIKit
 
 class MSExpenseVC: MSBaseVC {
-    @IBOutlet weak var topBar: MSTopBarView!
-    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
-
+    @IBOutlet weak var topSpaceOfMainView: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTopBar(topBar,topBarHeight)
+        self.adjustableTopSpace = topSpaceOfMainView
+
     }
 
     override func didReceiveMemoryWarning() {

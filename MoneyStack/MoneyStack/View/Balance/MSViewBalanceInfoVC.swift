@@ -11,13 +11,11 @@ import UIKit
 class MSViewBalanceInfoVC: MSBaseVC {
 
     @IBOutlet weak var tableview: UITableView!
-    @IBOutlet weak var topBar: MSTopBarView!
-    @IBOutlet weak var topBarHeight: NSLayoutConstraint!
-    
-    
+    @IBOutlet weak var topSpaceOfMainView: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTopBar(topBar, topBarHeight)
+        self.adjustableTopSpace = topSpaceOfMainView
         tableview.registerCellNib(MSMonthlyIncomeCell.self)
         tableview.registerCellNib(MSKindOfMoneyCell.self)
         tableview.registerCellNib(MSOutsideCashCell.self)

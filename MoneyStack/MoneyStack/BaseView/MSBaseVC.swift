@@ -10,8 +10,10 @@ import UIKit
 
 class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     
+    var topBarContainer: UIView?
     var topBarView: MSTopBarView?
-    var heightOfTopBar: NSLayoutConstraint?
+    var adjustableTopSpace: NSLayoutConstraint?
+    @IBInspectable var topBarType: Int = 0 // 0 is None
     
     var backGroundImage: UIImageView = UIImageView()
     var darkerView = UIView()
@@ -20,6 +22,9 @@ class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     private var viewHolder: MSStackOfView? // Root view will own this object
     var isStartedScreen: Bool { return false }
     var navigationVM: MSNavigationVM { return MSNavigationVM(self) }
+    
+    var currentOffset: CGPoint = CGPoint.zero
+    var isScrollUp: Bool = false
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -56,12 +61,6 @@ class MSBaseVC: UIViewController, MSNavigationVMProtocol {
     @objc func handleChangeTheme(notification: Notification) {
         topBarView?.updateColor()
         darkerView.backgroundColor = MSDelegate.config.mainColor.withAlphaComponent(darkViewAlpha)
-    }
-    
-    func setTopBar(_ correctTopBar: MSTopBarView, _ height: NSLayoutConstraint) {
-        self.topBarView = correctTopBar
-        self.topBarView?.delegate = self
-        self.heightOfTopBar = height
     }
     
     override func didReceiveMemoryWarning() {
@@ -125,20 +124,35 @@ extension MSBaseVC: MSTopBarViewDelegate {
 }
 
 extension MSBaseVC: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (heightOfTopBar == nil) {// QuanPV Modified avoid crash nil
-            return
-        }
-        if scrollView.contentOffset.y > (heightOfTopBar?.constant)! {
-            if heightOfTopBar?.constant != 0 {
-                heightOfTopBar?.constant = 0
-                self.topBarView?.isHidden = true
-            }
-        } else {
-            if heightOfTopBar?.constant != MSBaseVCConstant.HEIGHT_TOP_MENU_BAR {
-                heightOfTopBar?.constant = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR
-                self.topBarView?.isHidden = false
-            }
-        }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {//            let temp = scrollView.contentOffset.y >= currentOffset.y
+//            print("\(scrollView.contentOffset.y) - \(currentOffset.y)")
+//            currentOffset.y = scrollView.contentOffset.y >= 0 ? scrollView.contentOffset.y : 0
+//            if temp == isScrollUp { return } else { isScrollUp = temp }
+//            if isScrollUp { // Scroll up
+//                self.heightOfTopBar?.constant = 0
+//                self.topBarView?.isHidden = true
+//            } else { // Scroll down
+//                self.heightOfTopBar?.constant = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR
+//                self.topBarView?.isHidden = false
+//            }
+
+//            if scrollView.contentOffset.y >= (heightOfTopBar?.constant)! {
+//                if heightOfTopBar?.constant != 0 {
+//                    UIView.animate(withDuration: 0.4, animations: {
+//                        self.heightOfTopBar?.constant = 0
+//                    }) { (success) in
+//                        self.topBarView?.isHidden = true
+//                    }
+//                }
+//            } else {
+//                if heightOfTopBar?.constant != MSBaseVCConstant.HEIGHT_TOP_MENU_BAR {
+//                    UIView.animate(withDuration: 0.4, animations: {
+//                        self.heightOfTopBar?.constant = MSBaseVCConstant.HEIGHT_TOP_MENU_BAR
+//                    }) { (success) in
+//                        self.topBarView?.isHidden = false
+//                    }
+//                }
+//            }
+        
     }
 }

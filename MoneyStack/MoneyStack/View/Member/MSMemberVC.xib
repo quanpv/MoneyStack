@@ -15,10 +15,14 @@
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSMemberVC" customModule="MoneyStack" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="topBarType">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="memberCV" destination="RqZ-Je-bLI" id="zun-AD-bem"/>
-                <outlet property="topBar" destination="095-B2-um2" id="Rct-Ao-Szw"/>
-                <outlet property="topBarHeight" destination="oun-PD-D4q" id="lJ1-df-Pm4"/>
+                <outlet property="topSpaceOfMainView" destination="tcZ-k1-CeY" id="oOV-1L-lf3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,18 +31,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="095-B2-um2" customClass="MSTopBarView" customModule="MoneyStack" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="oun-PD-D4q"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="type">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-bi-PA7">
                     <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                     <subviews>
@@ -104,12 +96,9 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="bP2-bi-PA7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5yP-MB-SB4"/>
-                <constraint firstItem="bP2-bi-PA7" firstAttribute="top" secondItem="095-B2-um2" secondAttribute="bottom" id="IbE-Ou-IbB"/>
-                <constraint firstItem="095-B2-um2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="N05-hO-GGb"/>
-                <constraint firstItem="095-B2-um2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bJg-GR-MCc"/>
                 <constraint firstItem="bP2-bi-PA7" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="du0-Q1-j2E"/>
-                <constraint firstItem="095-B2-um2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iz4-ns-zZj"/>
                 <constraint firstItem="bP2-bi-PA7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rN1-DG-zcr"/>
+                <constraint firstItem="bP2-bi-PA7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="tcZ-k1-CeY"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
